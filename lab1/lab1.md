@@ -7,7 +7,7 @@ If you have any questions please feel free to reach out to Thomas Sears, Emma Pa
 # Step 1 - Setting up TinkerCad
 We can simulate the Arduino hardware with a program called Tinkercad. To begin working with Tinkercad, we first need to sign up for an acount. Go to the [main page](https://www.tinkercad.com) of tinker card and select the log-in button. 
 
-![TinkerCad Front Page](https://github.com/queens-satellite-team/Space-School/blob/74f1d61d318ca631573fe6f864db2afdac49c1e6/images/tinkercad-frontpage.png)
+![TinkerCad Front Page](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-frontpage.png)
 
 1. Select "Create a personal acount" and follow the steps to sign up. 
 2. After following the prompts and entering in some basic information, your acount shall be created and you will be signed in. 
@@ -15,7 +15,7 @@ We can simulate the Arduino hardware with a program called Tinkercad. To begin w
 4. You should now see a simple hardware circuit consisting of a coin cell battery, a resitor, an LED, and wire. This is where we will start tinkering! 
 
 Let's take a look at the dashboard now. 
-![TinkerCad Getting Started Dashboard](https://github.com/queens-satellite-team/Space-School/blob/df8fec85e9a819ae449f7e24d97e41d24cdcc435/images/tinkercad-dash-board-with-arrows.png)
+![TinkerCad Getting Started Dashboard](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-dash-board-with-arrows.png)
 
 1. This opens the text editor window where we can write our software in either block format or in the C/C++ language. We will be opting for the latter. 
 2. This is essentially "uploading your code" and turning on the power to your arduino in the simulation. 
@@ -32,10 +32,10 @@ So let's write our first bit of code to see if we have everything working. A *He
 4. To begin writing our script, select 'Code', and change 'Blocks' to 'Text' in the drop down menu. You screen should look as below. 
 5. Rename the design to *Hello World* be selecting *Start Simulating* at the top left of the screen and entering the new name. 
 
-![Tinkercad Hello World Start](https://github.com/queens-satellite-team/Space-School/blob/bce04aaba44186ed4bb293e38ece9e0c38ee3f5a/images/tinkercad-hello-world-v1.png)
+![Tinkercad Hello World Start](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-hello-world-v1.png)
 
 5. In the text editor area, change the code to resemble the following. 
-![Tinkercad Hello World Code](https://github.com/queens-satellite-team/Space-School/blob/02765ac9fd3c7e1c184d4af4e9663dec15db4325/images/tinkercad-hello-world-v2.png)
+![Tinkercad Hello World Code](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-hello-world-v2.png)
 
 Before running the simulation, let us take a look at what we just wrote. 
 
@@ -59,7 +59,7 @@ More information regarding these and all the Arduino functions can be found [her
 6. Press *Start Simulation*, and open the serial monitor by clicking the *Serial Monitor* button on the buttom of the text window. 
 7. You should now see the message *Hello World!* being printed out every second! 
 
-![Hello World Output](https://github.com/queens-satellite-team/Space-School/blob/e71d43660415920cd8eea5eb3fb0e01248d53249/images/tinkercad-hello-world-v3.png)
+![Hello World Output](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-hello-world-v3.png)
 
 A really cool feature of Tinkercad is that the code written here for the simulation can be downloaded into an arduino file and then uploaded and run on a physical arduino board. This is a great feature for working in teams or even wanting to test some functionality without bringing your hardware everywhere you go. Even if we do not have an arduino board yet, having the program to run arduino scripts will be useful for later labs and future projects. 
 
@@ -88,11 +88,11 @@ The Arduino integrated development environment (IDE) is a multipurpose toool to 
 # Step 4 - Hello World - Arduino IDE  
 Now welcome to the Arduino IDE! This is what your screen should look like now.
 
-![Blank Arduino IDE](https://github.com/queens-satellite-team/Space-School/blob/1e01387ff4d3da24ef29785931619ad8ce6db5c4/images/blank-arduino-ide.png?raw=true)
+![Blank Arduino IDE](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/blank-arduino-ide.png)
 
 The Arduino IDE is similiar to that of Tinkercad's dashboard, but there are some features that can be pointed out right away. 
 
-![Arduino IDE with Arrows Indicating IDE Functionality](https://github.com/queens-satellite-team/Space-School/blob/1e01387ff4d3da24ef29785931619ad8ce6db5c4/images/ide-with-arrows.png?raw=true)
+![Arduino IDE with Arrows Indicating IDE Functionality](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/ide-with-arrows.png)
 
 Most noticabbly is the *Verify* and *Upload* buttons located on the top left. The *Verify* button makes checks for any errors in your code (it will only check syntax errors though, not logical or procedural errors!) and the *Upload* button will upload the software into the hardware so the Arduino can operate as you specify in the code. 
 
@@ -101,13 +101,13 @@ We will take the code we wrote in Tinkercad, download it to an arduino file, and
 2. Once downloaded, you should have a *.ino* file called *hello_world.ino*
 3. Attempt to open the file, and you should be greeted by a message similiar to the one below. 
 
-![Arduino Ino File Message](https://github.com/queens-satellite-team/Space-School/blob/a60f70522cb9fb1143a7ca9c66deb617e7497fe9/images/arduino-ino-file-mesg.png)
+![Arduino Ino File Message](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/arduino-ino-file-mesg.png)
 
 Ardiuno files have the extension *.ino* and must be placed in a folder with the same name as the file. Fortunately, when you save the file using the IDE, the IDE will generate this folder for you and place the *.ino* in there. For example, our hello_world.ino will have a path of *~/Arduino/hello-world/hello_world.ino*. So, select *OK* to continue. 
 
 4. Select *Verify* in the Arduino IDE, and the message *Compiling Sketch* should appear near the bottom of the IDE. Once this is finished it will say *Done Compiling* and display memory information about your code. 
 
-![Arduino Good Compile Message](https://github.com/queens-satellite-team/Space-School/blob/72e03ae0bc213c89aa75e48b7dc751dc8d079e35/images/arduino-good-compile-msg.png)
+![Arduino Good Compile Message](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/arduino-good-compile-msg.png)
 
 5. If you have an arduino ready to use please follow the steps in *4.1 Uploading and Reading Serial Monitor*, else skip to *Step 5 - Blinky Test - Tinkercad*
 
@@ -123,12 +123,12 @@ Ardiuno files have the extension *.ino* and must be placed in a folder with the 
 7. Change your baudrate to match what we specified in the programm: 9600 baud. 
 8. You should now have "Hello World!" being printed to the monitor every second! Congrats so far! 
 
-![Hello World! Serial Monitor Output](https://github.com/queens-satellite-team/Space-School/blob/70acc73a802000d13ea7bd14e14754109967e10e/images/hello-world-serial-monitor.png?raw=true)
+![Hello World! Serial Monitor Output](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/hello-world-serial-monitor.png)
 
 # Step 5 - Blinky Test - Tinkercad 
 So we made sure our software and our serial communication was working, now let us validate our hardware connections! We will first take a look at the pins on the Arduino Uno and see if there is one we can use to turn off and on an LED. 
 
-![Arduino Uno Pinout](https://github.com/queens-satellite-team/Space-School/blob/9bde41f750b6e04e95c85d9edcadd7472c931f80/images/Pinout-UNOrev3_latest.png)
+![Arduino Uno Pinout](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/Pinout-UNOrev3_latest.png)
 
 While some pins have some extra functionality, pins D2 to D8 are simple input and output pins that will fulfil our needs for now. Anyone of these will work, but we will choose pin 8 for this setup. 
 
@@ -140,11 +140,11 @@ While some pins have some extra functionality, pins D2 to D8 are simple input an
 3. Regarding the LED, these devices are polarity sensitive. So you can think of the cathode as the *negative terminal* and the anode as the *positve terminal*. 
 - You can connect the cathode to ground, the anode to one end of the resitor, and the other end of the resitor to the arduino pinout. You circuit should be as follows. 
 
-![Blinky Hardware Setup](https://github.com/queens-satellite-team/Space-School/blob/718e8f4dfd2d927e474edf64d2dc04f58b824ba8/images/blinky-hw-setup.png)
+![Blinky Hardware Setup](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/blinky-hw-setup.png)
 
 ## Step 5.2 - Blinky Software
 1. Replace your code in the text box with the following. 
-![Blinky Software Setup](https://github.com/queens-satellite-team/Space-School/blob/bf46d1ad826bb1c5cd305f71697fe9762898dfb6/images/blinky-sw-setup.png)
+![Blinky Software Setup](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/blinky-sw-setup.png)
 
 Let us take a look at some of these new functions that we are using! 
 
@@ -159,7 +159,7 @@ Again, more information regarding these and all the Arduino functions can be fou
 
 2. Select *Start Simulation* and you should see your LED blinking. 
 
-![LED Blink](https://github.com/queens-satellite-team/Space-School/blob/55108d7096f01e9fe0ef2a4eb41e27cad4be2d83/images/led-do-flash.png)
+![LED Blink](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/led-do-flash.png)
 
 We can now run simulations for implementing both software and hardware using tinkercad, and can download that code to be used in the Arduino IDE to iterate upon it and upload it to our arduino boards! Feel free to tinker away with more of the hardware provided by Tinkercad, and look into some of the reference documentation for the Arduino functions. 
 
