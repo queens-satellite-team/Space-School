@@ -82,13 +82,12 @@ __Line 9: *delay(1000);*__
 
 # Contact Info 
 
-Thomas Sears: thomas.sears@queensu.ca
+Sean Tedesco: 17sart@queensu.ca
 
 Emma Paczkowski: emma.paczkowski@queensu.ca
+
+Thomas Sears: thomas.sears@queensu.ca
 
 Kate Szabo: kate.szabo@queensu.ca
 
 Piper Steffen: 16pis@queensu.ca
-
-Sean Tedesco: 17sart@queensu.ca
-
