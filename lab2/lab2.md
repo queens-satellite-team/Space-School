@@ -50,13 +50,26 @@ So for example, if the voltage out is 1V that means that the temperature is ((10
 # Step 2 - Hardware Connections 
 As we saw in the [datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf), the style of the TMP36 sensor we are using is the "TO-92" package. This means the chip is housed in a plastic hemi-cylinder with three legs. The legs can be bent easily to allow the sensor to be plugged into a breadboard. You can also solder to the pins to connect long wires. 
 
+These sensors have little chips in them and while they're not that delicate, they do need to be handled properly. Be careful of static electricity when handling them and make sure the power supply is connected up correctly and is between 2.7 and 5.5V DC - so don't try to use a 9V battery!
+
+Remember that you can use anywhere between 2.7V and 5.5V as the power supply. For this example I'm showing it with a 5V supply but note that you can use this with a 3.3v supply just as easily. No matter what supply you use, the analog output voltage reading will range from about 0V (ground) to about 1.75V. We can connect our sensor to the arduino board without any intermidient connections, so our basic hardware set up will be as follows: 
+
+![TMP36 hardware setup v1](https://github.com/queens-satellite-team/Space-School/blob/b5f909abff8ab9da178e1989abed70ed6fba3ad8/lab2/lab2-images/tmp36-hw-setup-v1.0.png)
+
+And that is it for our hardware requirements! Once you get comfortable with working with the sensor see if you can include an LED light that turns on at certian temperatures with a similiar hardware and software setup as we made in [LAB 1](https://github.com/queens-satellite-team/Space-School/tree/main/lab1). 
+
+## Step 2 - Analog Inputs
+Before going forward with the software, we should take a moment to understand how the arduino board will interpret the voltage that it receives from the TMP36 sensor. The arduino uses an analog-to-digital converter (ADC) to map a continuous-time-varying variable such as voltage into what a machine can understand - a digital signal consisting of 0's and 1's. The arduino we are using has a 10-bit ADC. This means the ADC can produce a range of values from 0 all the way to 2^10 or 1024 depending on what the input voltage is. 
+
+
+
 # Step 3 - Software Implementation 
 This is where we boop. 
 
 # Step 4 - Verify Results 
 This is where we beep boop and everything works! 
 
-# Step 5 - Datasheet Examples 
+# Step 5 - Stretch Goal / Datasheet Examples 
 
 # Contact Info 
 
