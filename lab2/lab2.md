@@ -1,11 +1,11 @@
 # Introduction
 
-Hello! Welcome to the second lab of Space School! In this lab we will look at some programming basics including functions, datatypes, and conditional statements in order to get an arduino to communicate with a sensor! We will also start getting comfortable with looking at datasheets as these guide both our hardware and software implementation. In this lab we will be working with the **TMP36** temperature sensor.
+Hello! Welcome to the second lab of Space School! In this lab, we will look at some programming basics including functions, datatypes, and conditional statements in order to get an arduino to communicate with a sensor! We will also start getting comfortable with looking at datasheets as these guide both our hardware and software implementation. In this lab, we will be working with the **TMP36** temperature sensor.
 
-With respect, the majority of this lab was sourced by creater Lady Ada's [TMP36 Temperature Sensor Documentation](https://cdn-learn.adafruit.com/downloads/pdf/tmp36-temperature-sensor.pdf) from The Adafruit Learning System. If you have any questions regarding this lab or just want to reach out, please feel free to speak to Thomas Sears, Emma Paczkowski, Kate Szabo, Piper Steffen, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found at the bottom of the lab. 
+With respect, the majority of this lab was sourced by creator Lady Ada's [TMP36 Temperature Sensor Documentation](https://cdn-learn.adafruit.com/downloads/pdf/tmp36-temperature-sensor.pdf) from The Adafruit Learning System. If you have any questions regarding this lab or just want to reach out, please feel free to speak to Thomas Sears, Emma Paczkowski, Kate Szabo, Piper Steffen, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found at the bottom of the lab. 
 
 # Step 1 - Overview and Datasheet 
-The TMP36 is an analog temperature sensor - it is a chip that tells you what the ambient temperature is! *As an aside, an analog signal is a continous signal where one time-varying variable represents another time varying variable. We say that the first time-varying signal is analogous to the other. In this lab, we will have a  voltage measurement that is analogous to temperature.*
+The TMP36 is an analog temperature sensor - it is a chip that tells you what the ambient temperature is! *As an aside, an analog signal is a continuous-time signal where one time-varying variable represents another time-varying variable. We say that the first time-varying signal is analogous to the other. In this lab, we will have a  voltage measurement that is analogous to temperature.*
 
 ![TMP36 Next to a Coin](https://github.com/queens-satellite-team/Space-School/blob/01efedf88740647ccd69433bf9f45f66f0af0abe/lab2/lab2-images/tmp36-overview.jpeg)
 
@@ -15,23 +15,23 @@ So let's look at some characteristics of our sensor now. Looking at the [datashe
 
 ![TMP36 Feature List](https://github.com/queens-satellite-team/Space-School/blob/7a96f4cc5526eacf4cb35bf12e6b0ef8bec684fd/lab2/lab2-images/tmp36-features.png)
 
-1. *Low Voltage Operation (2.7 to 5.5 V)* - This is the range of acceptable voltages that the sensor can be powered with. Arduino boards have both a 3V3 and a 5V0 ouput voltage so we can choose either one without worrying that it will break the sensor. 
+1. *Low Voltage Operation (2.7 to 5.5 V)* - This is the range of acceptable voltages that the sensor can be powered with. Arduino boards have both a 3V3 and a 5V0 output voltage so we can choose either one without worrying that it will break the sensor. 
 
-2. *Callibrated right in °C* - This is good news! So our output will be analogous to a temperature reading in Celcius. We can expect that our ouput would be linear then. We then may not need any serious math involved to change our one time-varying signal to another. 
+2. *Calibrated right in °C* - This is good news! So our output will be analogous to a temperature reading in Celcius. We can expect that our output would be linear then. We then may not need any serious math involved to change our one time-varying signal to another. 
 
-3. *10mV / C Scale Factor* - This is the conversion between voltage and temperature and can be thought of as the slope (m) between their linear relationship. So to convert to one variable to another we use this scale factor, with perhaps plus or minus an offset (b) value. 
+3. *10mV / C Scale Factor* - This is the conversion between voltage and temperature and can be thought of as the slope (m) between their linear relationship. So to convert one variable to another we use this scale factor, with perhaps plus or minus an offset (b) value. 
 
 4. *±2 °C Accuracy over Temperature* This is how close the actual temperature is to what the sensor is reading. 
 
 5. *±0.5 °C Linearity* - This is how close the sensor output will be to a linear equation. 
 
-- As an aside, knowing the accuracing, precision, and the linearity of our sensor determines which applications this sensor can be used for. However, it is more typicall to start with outlining your required accuracy, precision, and linearity metrics first, then finding hardware to meet those requirements. 
+- As an aside, knowing the accuracy, precision, and linearity of our sensor determines which applications this sensor can be used for. However, it is more typical to start with outlining your required accuracy, precision, and linearity metrics first, then finding hardware to meet those requirements. 
 
 6. *Specified –40 °C to +125 °C, Operation to +150 °C* This is our operating temperature range of the sensor. Going above or below may result in not just incorrect output readings but may damage the sensor as well. 
 
 7. *Less than 50 uA Quiescent Current* This is the current draw when the device is not doing anything - when there is no output connection. 
 
-8. *Low Self Heating* This is more than likely mentioned to say that the temperature of the sesnor does not interfere with the sensor's own reading. 
+8. *Low Self Heating* This is more than likely mentioned to say that the temperature of the sensor does not interfere with the sensor's own reading. 
 
 Okay, great! So we have lots of information right from the start, there are just a few more pieces we need. The first is the pinout, and the second is the possible offset (b) value to the linear relationship. The pinout can be found on the first page again and is shown below alongside a photo of the physical sensor. 
 
@@ -48,23 +48,43 @@ We can see that at 0C the ouput voltage will be 0V5 or 500mV. This will be our o
 So for example, if the voltage out is 1V that means that the temperature is ((1000 mV - 500) / 10) = 50 °C
 
 # Step 2 - Hardware Connections 
-As we saw in the [datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf), the style of the TMP36 sensor we are using is the "TO-92" package. This means the chip is housed in a plastic hemi-cylinder with three legs. The legs can be bent easily to allow the sensor to be plugged into a breadboard. You can also solder to the pins to connect long wires. 
+As we saw in the [datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf), the style of the TMP36 sensor we are using is the "TO-92" package. This means the chip is housed in a plastic semi-cylinder with three legs. The legs can be bent easily to allow the sensor to be plugged into a breadboard. You can also solder to the pins to connect long wires. 
 
 These sensors have little chips in them and while they're not that delicate, they do need to be handled properly. Be careful of static electricity when handling them and make sure the power supply is connected up correctly and is between 2.7 and 5.5V DC - so don't try to use a 9V battery!
 
-Remember that you can use anywhere between 2.7V and 5.5V as the power supply. For this example I'm showing it with a 5V supply but note that you can use this with a 3.3v supply just as easily. No matter what supply you use, the analog output voltage reading will range from about 0V (ground) to about 1.75V. We can connect our sensor to the arduino board without any intermidient connections, so our basic hardware set up will be as follows: 
+Remember that you can use anywhere between 2.7V and 5.5V as the power supply. For this example, I'm showing it with a 5V supply but note that you can use this with a 3.3v supply just as easily. No matter what supply you use, the analog output voltage reading will range from about 0V (ground) to about 1.75V. We can connect our sensor to the arduino board without any intermittent connections, so our basic hardware setup will be as follows: 
 
 ![TMP36 hardware setup v1](https://github.com/queens-satellite-team/Space-School/blob/b5f909abff8ab9da178e1989abed70ed6fba3ad8/lab2/lab2-images/tmp36-hw-setup-v1.0.png)
 
-And that is it for our hardware requirements! Once you get comfortable with working with the sensor see if you can include an LED light that turns on at certian temperatures with a similiar hardware and software setup as we made in [LAB 1](https://github.com/queens-satellite-team/Space-School/tree/main/lab1). 
+And that is it for our hardware requirements! Once you get comfortable with working with the sensor see if you can include an LED light that turns on at certain temperatures with a similar hardware and software setup as we made in [LAB 1](https://github.com/queens-satellite-team/Space-School/tree/main/lab1). 
 
 ## Step 2 - Analog Inputs
-Before going forward with the software, we should take a moment to understand how the arduino board will interpret the voltage that it receives from the TMP36 sensor. The arduino uses an analog-to-digital converter (ADC) to map a continuous-time-varying variable such as voltage into what a machine can understand - a digital signal consisting of 0's and 1's. The arduino we are using has a 10-bit ADC. This means the ADC can produce a range of values from 0 all the way to 2^10 or 1024 depending on what the input voltage is. 
-
-
+Before going forward with the software, we should take a moment to understand how the arduino board will interpret the voltage that it receives from the TMP36 sensor. The arduino uses an analog-to-digital converter (ADC) to map a continuous-time-varying variable such as voltage into what a machine can understand - a digital signal consisting of 0's and 1's. The arduino we are using has a 10-bit ADC. This means that depending on the voltage at the arduino's analog input, the ADC can produce a range of values from 0 all the way to 2^10 or 1024. So this means we have another conversion to do. We have must convert the ADC 10-bit value to a voltage value, then to a temperature value. We will keep this in mind going forward. 
 
 # Step 3 - Software Implementation 
-This is where we boop. 
+So let us begin writing some code! Open the text editor within Tinkercad and copy the lines of code shown below into your own monitor. Our first iteration will be to show what happens 
+
+![TMP36 Software Setup v1](https://github.com/queens-satellite-team/Space-School/blob/30fa3adc33bb848d88b189a41a39b36e814525b6/lab2/lab2-images/tmp36-sw-setup-v1.0.png)
+
+`Line 4: int sensor_pin = 0;`
+- We can assign a more readable name to the chosen analog input pin on our arduino. This makes our code easier to read for us as well as others, and easier to come back to when we have not seen our code in many months. 
+
+- This line is seperated as *data type* *variable name* = *value*. The equal sign does not really mean *equal* but more so *assign*. We assign the value of *0* to the variable *sensor_pin* of type *int*. Every variable will have a type, name, and a value. 
+  
+`Line 8: Serial.begin(9600);`
+- Just like in lab 1, we want to open a communication link between the arduino board and the serial monitor. We set the baudrate to 9600 baud.
+
+`Line 13: int analog_data = analogRead(sensor_pin);`
+- In this line, we are calling the function *analogRead()*. At a high level, functions have input arguements, a name, and a return value. So in this line, the function name is *analogRead()*, the input arguement is a variable of type int with a value of (0 - 5) specifying the analog pin input, and has a return value of type int with a value of (0-1024). 
+
+`Line 15: Serial.print("Analog Value: ");` 
+ - This line sends the character string "Analog Value: " to the serial monitor.
+ - 
+`Line 16: Serial.println(analog_data);`
+
+  
+`Line 18: delay(100);` 
+- This line pauses the arduino's execution of the code at this line for the number of milliseconds specified. In this case we are waiting for 1s between telling the arduino board to send another message.
 
 # Step 4 - Verify Results 
 This is where we beep boop and everything works! 
@@ -73,12 +93,13 @@ This is where we beep boop and everything works!
 
 # Contact Info 
 
-Thomas Sears: thomas.sears@queensu.ca
+Sean Tedesco: 17sart@queensu.ca
 
 Emma Paczkowski: emma.paczkowski@queensu.ca
+
+Thomas Sears: thomas.sears@queensu.ca
 
 Kate Szabo: kate.szabo@queensu.ca
 
 Piper Steffen: 16pis@queensu.ca
 
-Sean Tedesco: 17sart@queensu.ca
