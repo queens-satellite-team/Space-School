@@ -13,7 +13,7 @@ If you have any questions please feel free to reach out to Thomas Sears, Emma Pa
 An Arduino is a [microcontroller](https://www.youtube.com/watch?v=CqrQmQqpHXc), or a small computer than can perform instructions that we write. We can write a program - a series of instructions - that tells this small computer on how it should interact with sensors, lights, and input from users. We will be using these Arduinos as the on-board computer for our toastSat, which is one of the six subsystems of our satellite. 
 
 # Step 1 - Setting up TinkerCad
-We can simulate the Arduino hardware with a program called Tinkercad. To begin working with Tinkercad, we first need to sign up for an acount. Go to the [main page](https://www.tinkercad.com) of tinker card and select the log-in button. 
+We can simulate a working Arduino with a program called Tinkercad. We are using TinkerCad as we do not have physical boards yet, but want to get started on learning how to use them. To begin working with Tinkercad, we first need to sign up for an acount. Go to the [main page](https://www.tinkercad.com) of tinker card and select the log-in button. 
 
 ![TinkerCad Front Page](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-frontpage.png)
 
