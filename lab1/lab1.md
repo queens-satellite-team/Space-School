@@ -2,7 +2,15 @@
 
 Hello! Welcome to the first lab of Space School! In this lab we will begin with getting the Arduino IDE up and running, then we will start exploring some of the different ways we can program our Arduino board to do some fun little actions for us. 
 
-If you have any questions please feel free to reach out to Thomas Sears, Emma Paczkowski, Kate Szabo, Piper Steffen, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found at the bottom of the lab. 
+If you have any questions please feel free to reach out to Thomas Sears, Emma Paczkowski, Kate Szabo, Piper Steffen, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found at the main page of this repository. 
+
+# Goals of Lab 1 
+- Setting up Woking Environment
+- Understanding the Arduino Microcontroller 
+- Hello World Program 
+
+## What is an Arduino? 
+An Arduino is a [microcontroller](https://www.youtube.com/watch?v=CqrQmQqpHXc), or a small computer than can perform instructions that we write. We can write a program - a series of instructions - that tells this small computer on how it should interact with sensors, lights, and input from users. We will be using these Arduinos as the on-board computer for our toastSat, which is one of the six subsystems of our satellite. 
 
 # Step 1 - Setting up TinkerCad
 We can simulate the Arduino hardware with a program called Tinkercad. To begin working with Tinkercad, we first need to sign up for an acount. Go to the [main page](https://www.tinkercad.com) of tinker card and select the log-in button. 
@@ -17,11 +25,11 @@ We can simulate the Arduino hardware with a program called Tinkercad. To begin w
 Let's take a look at the dashboard now. 
 ![TinkerCad Getting Started Dashboard](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-dash-board-with-arrows.png)
 
-1. This opens the text editor window where we can write our software in either block format or in the C/C++ language. We will be opting for the latter. 
-2. This is essentially "uploading your code" and turning on the power to your arduino in the simulation. 
-3. Here is a list of the available components that Tinkercad offers with the simulation. There is a good selection of passive and active components to choose from. 
-4. This create a PCB design file to be used by another Tinkercad service. 
-5. Create with others by sharing a link to your design. People with the link may view and make changes to your design.
+1. Test Editor: This opens the text editor window where we can write our software in either block format or in the C/C++ language. We will be opting for the latter. 
+2. Begin Simulation / Run Code: This is essentially "uploading your code" and turning on the power to your arduino in the simulation. 
+3. Available Componetenst: Here is a list of the available components that Tinkercad offers with the simulation. There is a good selection of passive and active components to choose from. 
+4. Export Hardware File: This create a PCB design file that can be used by another Tinkercad service. 
+5. Share and Collaborate: Create with others by sharing a link to your design. People with the link may view and make changes to your design.
 
 # Step 2 - Hello World - Tinkercad
 So let's write our first bit of code to see if we have everything working. A *Hello World!* test is the first and most basic program you can run to validate your setup, so that is what we will be doing.
@@ -40,16 +48,19 @@ So let's write our first bit of code to see if we have everything working. A *He
 Before running the simulation, let us take a look at what we just wrote. 
 
 `Line 3: void setup()` 
-- This is a function specific to working with Arduinos. This function will only be executed once, and is typically used to setup any variables, objects, data, etc. 
+- This is a function specific to working with Arduinos. This function will only be executed once when the ARduino is powered on or after being reset. It is used  to setup any variables, objects, data, etc. 
 
 `Line 8: void loop()`
 - This is another function specific to working with Arduinos. This function will be continuously executed in a loop while the Arduino is powered on. This is where we will be writing our code to collect and store our desired data. 
 
 `Line 5: *Serial.begin(9600);`
-- This line opens up a communication link between the arduino board and the serial monitor. The number 9600 specifies the baudrate. The baud rate - or symbol rate - is the rate at which information is transferred in a communication channel. For the serial monitor, *9600 baud* means that the serial monitor is capable of transferring / reading a maximum of 9600 bits per second. Another common rate is 115200 baud. 
+- This line opens up the serial monitor so we can send information from the Ardunio to our own computer.  
+- Extra info: _The 9600 specified in this line is the baudrate of the serial monitor. The buadrate, or symbol rate, is the rate at which information in transferred in a communication channel. _ 
 
 `Line 10: Serial.println("Hello World!");`
-- This line sends the message in qoutes along with a newline character from the arduino board to the serial monitor. This message is a C++ *string* data type which we will discuss more later. In this line of code, we are using *Serial.println()* to include a new line character for each message. This way each new message will apear on a new line, and not get mushed together. You can try removing the *ln* from *Serial.println()* to see what happens! 
+- This line sends the message in qoutes from the Arduino to the serial monitor. 
+
+- Extra info: _This message is a C++ *string* data type which we will discuss more later. In this line of code, we are using *Serial.println()* to include a new line character for each message. This way each new message will apear on a new line, and not get mushed together. You can try removing the *ln* from *Serial.println()* to see what happens!_
 
 `Line 11: *delay(1000);*`
 - This line pauses the arduino's execution of the code at this line for the number of milliseconds specified. In this case we are waiting for 1s between telling the arduino board to send another message. 
@@ -163,14 +174,3 @@ Again, more information regarding these and all the Arduino functions can be fou
 
 We can now run simulations for implementing both software and hardware using tinkercad, and can download that code to be used in the Arduino IDE to iterate upon it and upload it to our arduino boards! Feel free to tinker away with more of the hardware provided by Tinkercad, and look into some of the reference documentation for the Arduino functions. 
 
-# Contact Info 
-
-Sean Tedesco: 17sart@queensu.ca
-
-Emma Paczkowski: emma.paczkowski@queensu.ca
-
-Thomas Sears: thomas.sears@queensu.ca
-
-Kate Szabo: kate.szabo@queensu.ca
-
-Piper Steffen: 16pis@queensu.ca
