@@ -2,7 +2,7 @@
 
 Hello! Welcome to the second lab of Space School! In this lab, we will look at some programming basics including functions, datatypes, and conditional statements in order to get an arduino to communicate with a sensor! We will also start getting comfortable with looking at datasheets as these guide both our hardware and software implementation. In this lab, we will be working with the **TMP36** temperature sensor.
 
-With respect, the majority of this lab was sourced by creator Lady Ada's [TMP36 Temperature Sensor Documentation](https://cdn-learn.adafruit.com/downloads/pdf/tmp36-temperature-sensor.pdf) from The Adafruit Learning System. If you have any questions regarding this lab or just want to reach out, please feel free to speak to Thomas Sears, Emma Paczkowski, Kate Szabo, Piper Steffen, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found at the bottom of the lab. 
+With respect, the majority of this lab was sourced by creator Lady Ada's [TMP36 Temperature Sensor Documentation](https://cdn-learn.adafruit.com/downloads/pdf/tmp36-temperature-sensor.pdf) from The Adafruit Learning System. If you have any questions regarding this lab or just want to reach out, please feel free to speak to Thomas Sears, Emma Paczkowski, Kate Szabo, Piper Steffen, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found in the Space School README file. 
 
 # Step 1 - Overview and Datasheet 
 The TMP36 is an analog temperature sensor - it is a chip that tells you what the ambient temperature is! *As an aside, an analog signal is a continuous-time signal where one time-varying variable represents another time-varying variable. We say that the first time-varying signal is analogous to the other. In this lab, we will have a  voltage measurement that is analogous to temperature.*
@@ -67,7 +67,7 @@ So let us begin writing some code! Open the text editor within Tinkercad and cop
 ![TMP36 Software Setup v1](https://github.com/queens-satellite-team/Space-School/blob/30fa3adc33bb848d88b189a41a39b36e814525b6/lab2/lab2-images/tmp36-sw-setup-v1.0.png)
 
 `Line 4: int sensor_pin = 0;`
-- We can assign a more readable name to the chosen analog input pin on our arduino. This makes our code easier to read for us as well as others, and easier to come back to when we have not seen our code in many months. 
+- We want to assign a more readable name to the analog input pin on our arduino that we are using. This makes our code easier to read for us and for others, especially when we must revisit our code many months later. 
 
 - This line is seperated as *data type* *variable name* = *value*. The equal sign does not really mean *equal* but more so *assign*. We assign the value of *0* to the variable *sensor_pin* of type *int*. Every variable will have a type, name, and a value. 
   
@@ -91,15 +91,4 @@ This is where we beep boop and everything works!
 
 # Step 5 - Stretch Goal / Datasheet Examples 
 
-# Contact Info 
-
-Sean Tedesco: 17sart@queensu.ca
-
-Emma Paczkowski: emma.paczkowski@queensu.ca
-
-Thomas Sears: thomas.sears@queensu.ca
-
-Kate Szabo: kate.szabo@queensu.ca
-
-Piper Steffen: 16pis@queensu.ca
 
