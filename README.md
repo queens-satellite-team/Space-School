@@ -12,6 +12,7 @@ By the end of Space School you will gain experience in the following areas:
 - Technical skills
   - LAUNCHING SOMETHING INTO THE STRATOSPHERE :rocket:
   - Coding in C/C++
+  - Arduino
   - CAD
   - 3D printing
   - Soldering
