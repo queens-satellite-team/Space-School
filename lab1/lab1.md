@@ -87,7 +87,8 @@ Before running the simulation, let us take a look at what we just wrote.
 
 `Serial.begin(9600);`
 - This line opens up the serial monitor so we can send information from the Ardunio to our own computer.  
-- Extra info: _The 9600 specified in this line is the baudrate of the serial monitor. The buadrate, or symbol rate, is the rate at which information in transferred in a communication channel. _ 
+
+- Extra info: _The 9600 specified in this line is the baudrate of the serial monitor. The buadrate, or symbol rate, is the rate at which information in transferred in a communication channel._ 
 
 `Serial.println("Hello World!");`
 - This line sends the message in qoutes from the Arduino to the serial monitor. 
