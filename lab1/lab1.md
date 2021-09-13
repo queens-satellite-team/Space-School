@@ -57,27 +57,44 @@ So let's write our first bit of code to see if we have everything working. A *He
 
 ![Tinkercad Hello World Start](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-hello-world-v1.png)
 
-5. In the text editor area, change the code to resemble the following. 
-![Tinkercad Hello World Code](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-hello-world-v2.png)
+5. In the text editor area, change the code to resemble the following (you can copy and paste this). 
+```
+// Title:         Hello World Program
+// Last Updated:  September 15th, 2021
+// Author:        < your name here >
+// Breif:         Simple program to make sure our setup is working.  
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  Serial.println("Hello World!");
+  delay(1000);
+}
+```
 
 Before running the simulation, let us take a look at what we just wrote. 
 
-`Line 3: void setup()` 
+` // ` 
+- The double forward slashes create comment lines. They are ignored from the rest of the lines of code and are there to help with reading the code and providing supplementary information. 
+
+`void setup()` 
 - This is a function specific to working with Arduinos. This function will only be executed once when the ARduino is powered on or after being reset. It is used  to setup any variables, objects, data, etc. 
 
-`Line 8: void loop()`
+`void loop()`
 - This is another function specific to working with Arduinos. This function will be continuously executed in a loop while the Arduino is powered on. This is where we will be writing our code to collect and store our desired data. 
 
-`Line 5: *Serial.begin(9600);`
+`Serial.begin(9600);`
 - This line opens up the serial monitor so we can send information from the Ardunio to our own computer.  
 - Extra info: _The 9600 specified in this line is the baudrate of the serial monitor. The buadrate, or symbol rate, is the rate at which information in transferred in a communication channel. _ 
 
-`Line 10: Serial.println("Hello World!");`
+`Serial.println("Hello World!");`
 - This line sends the message in qoutes from the Arduino to the serial monitor. 
 
 - Extra info: _This message is a C++ *string* data type which we will discuss more later. In this line of code, we are using *Serial.println()* to include a new line character for each message. This way each new message will apear on a new line, and not get mushed together. You can try removing the *ln* from *Serial.println()* to see what happens!_
 
-`Line 11: *delay(1000);*`
+`delay(1000);`
 - This line pauses the arduino's execution of the code at this line for the number of milliseconds specified. In this case we are waiting for 1s between telling the arduino board to send another message. 
 
 More information regarding these and all the Arduino functions can be found [here](https://www.arduino.cc/reference/en/)!
@@ -90,7 +107,7 @@ More information regarding these and all the Arduino functions can be found [her
 A really cool feature of Tinkercad is that the code written here for the simulation can be downloaded into an arduino file and then uploaded and run on a physical arduino board. This is a great feature for working in teams or even wanting to test some functionality without bringing your hardware everywhere you go. Even if we do not have an arduino board yet, having the program to run arduino scripts will be useful for later labs and future projects. 
 
 # Step 3 - Setup Arduino IDE
-The Arduino integrated development environment (IDE) is a multipurpose toool to write the software and upload code to the arduino board. To get started download the required software from the [Arduino Download Page.](https://www.arduino.cc/en/software)
+We started with Tinkercad as it is a good simulation tool while we are away from our Arduinos, but when we do have a physical Arduino we will want to use the Arduino IDE. We will go through the steps to set this up now, so that it will be easier later on and allow you some flexibility on the way you work. The Arduino integrated development environment or [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) is a multipurpose toool to write the software and upload code to the arduino board. To get started download the required software from the [Arduino Download Page.](https://www.arduino.cc/en/software)
 
 ### Step 3.1 - Arduino IDE For Windows
 1. In the blue box titled *Download Options* select *Windows Win 7 and newer*. 
@@ -135,7 +152,9 @@ Ardiuno files have the extension *.ino* and must be placed in a folder with the 
 
 ![Arduino Good Compile Message](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/arduino-good-compile-msg.png)
 
-5. If you have an arduino ready to use please follow the steps in *4.1 Uploading and Reading Serial Monitor*, else skip to *Step 5 - Blinky Test - Tinkercad*
+⚠️ ⚠️ ⚠️
+
+5. If you have an arduino ready to use please follow the steps in *4.1 Uploading and Reading Serial Monitor*, if not skip to *Step 5 - Blinky Test - Tinkercad*
 
 ## 4.1 Uploading and Reading Serial Monitor 
 1. Connect your arduino board to your computer with a USB cable. This will supply power as well as communication to and from the arduino board. You should see a red or orange LED turn on indicating that the arduino board is receiving power. 
@@ -170,15 +189,32 @@ While some pins have some extra functionality, pins D2 to D8 are simple input an
 
 ## Step 5.2 - Blinky Software
 1. Replace your code in the text box with the following. 
-![Blinky Software Setup](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/blinky-sw-setup.png)
+
+```
+// Title:         Blinky Program
+// Last Updated:  September 15th, 2021
+// Author:        < your name here >
+// Breif:         Simple program to make sure our hardware setup is working.  
+
+void setup() {
+  pinMode(8, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(8, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(8, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+```
 
 Let us take a look at some of these new functions that we are using! 
 
-`Line 5: pinMode(8, OUTPUT);`
+`pinMode(8, OUTPUT);`
 - This lets the Arduino know that we want to use pin 8 as an ouput. This function can set pins to either input or output and can assign any of the digital pins. 
 
-`Line 10: digitalWrite(8, HIGH);`
-`Line 12: digitalWrite(8, LOW);`
+`digitalWrite(8, HIGH);`
+`digitalWrite(8, LOW);`
 - This changes wether or not the specified pin has a high voltage (5V) or a low voltage (0V). The digital pins are limited to these high and low states, and are typically 5V ouputs unless specified. 
 
 Again, more information regarding these and all the Arduino functions can be found [here](https://www.arduino.cc/reference/en/). This is a wonderful reference tool, and something to keep handy going forward. 
@@ -187,5 +223,5 @@ Again, more information regarding these and all the Arduino functions can be fou
 
 ![LED Blink](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/led-do-flash.png)
 
-We can now run simulations for implementing both software and hardware using tinkercad, and can download that code to be used in the Arduino IDE to iterate upon it and upload it to our arduino boards! Feel free to tinker away with more of the hardware provided by Tinkercad, and look into some of the reference documentation for the Arduino functions. 
+We can now run simulations for implementing both software and hardware using Tinkercad, and can download that code to be used in the Arduino IDE to iterate upon it and upload it to our arduino boards! Feel free to tinker away with more of the hardware provided by Tinkercad, and look into some of the reference documentation for the Arduino functions. 
 
