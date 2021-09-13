@@ -5,15 +5,26 @@ Hello! Welcome to the first lab of Space School! In this lab we will begin with 
 If you have any questions please feel free to reach out to Thomas Sears, Emma Paczkowski, Kate Szabo, Piper Steffen, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found at the main page of this repository. 
 
 # Goals of Lab 1 
-- Setting up Woking Environment
-- Understanding the Arduino Microcontroller 
-- Hello World Program 
+
+1️⃣  Setting up Woking Programming Environment
+
+2️⃣  Understanding the Arduino Microcontroller 
+
+3️⃣  Writing a Hello World Program 
+
+4️⃣  Building a Blinky LED Program and Circuit
 
 ## What is an Arduino? 
-An Arduino is a [microcontroller](https://www.youtube.com/watch?v=CqrQmQqpHXc), or a small computer than can perform instructions that we write. We can write a program - a series of instructions - that tells this small computer on how it should interact with sensors, lights, and input from users. We will be using these Arduinos as the on-board computer for our toastSat, which is one of the six subsystems of our satellite. 
+An Arduino is a [microcontroller](https://www.youtube.com/watch?v=CqrQmQqpHXc), or a small computer than can perform instructions that we write. We can write a program - a series of instructions - that tells this small computer on how it should interact with sensors, lights, and various input from human-users. We will be using these Arduinos as the on-board computer for our toastSat, which is one of the six subsystems of our satellite. The basic parts of an Arduino are outlined below:
+
+![Tour of the Arduino Uno](https://github.com/queens-satellite-team/Space-School/blob/7f8071ea2d7ded19a6e13e2484f204bbb08ad3b6/lab1/lab1-images/arduino-uno-tour.jpeg)
+
+For now keep note of where the digital and analog pins are, the usb connector, and the power port. The USB connector allows us to *upload* our set of instructions, or program, from our computer to the Arduino as well as supply power to it. We can also supply power to the Arduino through the power port with a battery. When the Arduino is powered this way, it will perform the program that was previously uploaded to it. Power configurations are shown below.
+
+![USB Powered Arduino](https://github.com/queens-satellite-team/Space-School/blob/0c69e70192f59fa8af48e341d15ac462e6f01af3/lab1/lab1-images/arduino-powered-usb.jpeg) ![Battery Powered Arduino](https://github.com/queens-satellite-team/Space-School/blob/0c69e70192f59fa8af48e341d15ac462e6f01af3/lab1/lab1-images/arduino-powered-battery.jpeg)
 
 # Step 1 - Setting up TinkerCad
-We can simulate a working Arduino with a program called Tinkercad. We are using TinkerCad as we do not have physical boards yet, but want to get started on learning how to use them. To begin working with Tinkercad, we first need to sign up for an acount. Go to the [main page](https://www.tinkercad.com) of tinker card and select the log-in button. 
+While we do not have our Arduinos quite yet, we are not going to let that stop us getting familiar with them and getting some ciruits built and programs written! We can simulate a working Arduino with a program called Tinkercad. To begin working with Tinkercad, we first need to sign up for an acount. Go to the [main page](https://www.tinkercad.com) of tinker card and select the log-in button. 
 
 ![TinkerCad Front Page](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-frontpage.png)
 
@@ -25,11 +36,15 @@ We can simulate a working Arduino with a program called Tinkercad. We are using 
 Let's take a look at the dashboard now. 
 ![TinkerCad Getting Started Dashboard](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-dash-board-with-arrows.png)
 
-1. Test Editor: This opens the text editor window where we can write our software in either block format or in the C/C++ language. We will be opting for the latter. 
-2. Begin Simulation / Run Code: This is essentially "uploading your code" and turning on the power to your arduino in the simulation. 
-3. Available Componetenst: Here is a list of the available components that Tinkercad offers with the simulation. There is a good selection of passive and active components to choose from. 
-4. Export Hardware File: This create a PCB design file that can be used by another Tinkercad service. 
-5. Share and Collaborate: Create with others by sharing a link to your design. People with the link may view and make changes to your design.
+1️⃣ Test Editor: This opens the text editor window where we can write our software in either block format or in the C/C++ language. We will be opting for the latter.
+
+2️⃣ Begin Simulation / Run Code: This is essentially "uploading your code" and turning on the power to your arduino in the simulation. 
+
+3️⃣ Available Componetenst: Here is a list of the available components that Tinkercad offers with the simulation. There is a good selection of passive and active components to choose from. 
+
+4️⃣ Export Hardware File: This create a PCB design file that can be used by another Tinkercad service. 
+
+5️⃣ Share and Collaborate: Create with others by sharing a link to your design. People with the link may view and make changes to your design.
 
 # Step 2 - Hello World - Tinkercad
 So let's write our first bit of code to see if we have everything working. A *Hello World!* test is the first and most basic program you can run to validate your setup, so that is what we will be doing.
