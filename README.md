@@ -39,6 +39,8 @@ The week numbers correspond to the weeks of the school semester.
 - Week 10: Developing Payload Chassis (lab 8)
 - Week 11: Integration (lab 9)
 - Week 12: Integration (lab 9)
+## Feebcak
+PLEASE give us any feedback you have.  You can either send any of us individual messages, fill out the [feedback form](https://forms.gle/ZNMfWeRQVinnbxpEA) or both!
 
 ## Contact Info 
 Feel free to email or message on teams.
@@ -52,3 +54,4 @@ Sean Tedesco: 17sart@queensu.ca
 Emma Paczkowski: emma.paczkowski@queensu.ca
 
 Kate Szabo: kate.szabo@queensu.ca
+
