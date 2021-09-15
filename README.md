@@ -41,6 +41,7 @@ The week numbers correspond to the weeks of the school semester.
 - Week 12: Integration (lab 9)
 
 ## Contact Info 
+Feel free to email or message on teams.
 
 Piper Steffen: 16pis@queensu.ca
 
