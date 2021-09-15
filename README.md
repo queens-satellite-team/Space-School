@@ -26,7 +26,7 @@ By the end of Space School you will gain experience in the following areas:
   - Get to know all the amazing people we have on the team 🙂
 
 ## Content Overview
-The week numbers correspond to the weeks of the school semester.
+The week numbers correspond to the weeks of the school semester. We meet weekly on Wednesdays 7:00 - 8:30 pm EST on Teams until further notice. 
 - Week 1: QSET taster event
 - Week 2: Intro to Space School 
 - Week 3: Coding and Arduino (lab 1)
