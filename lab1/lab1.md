@@ -40,14 +40,14 @@ Let's take a look at the dashboard now.
 
 2️⃣ Begin Simulation / Run Code: This is essentially "uploading your code" and turning on the power to your arduino in the simulation. 
 
-3️⃣ Available Componetenst: Here is a list of the available components that Tinkercad offers with the simulation. There is a good selection of passive and active components to choose from. 
+3️⃣ Available Componetenst: Here is a list of the available components that Tinkercad offers with the simulation. 
 
-4️⃣ Export Hardware File: This create a PCB design file that can be used by another Tinkercad service. 
+4️⃣ Export Hardware File: This create a PCB design file that can be used by another Tinkercad service. We will not be using this for Space School.
 
 5️⃣ Share and Collaborate: Create with others by sharing a link to your design. People with the link may view and make changes to your design.
 
 # Step 2 - Hello World - Tinkercad
-So let's write our first bit of code to see if we have everything working. A *Hello World!* test is the first and most basic program you can run to validate your setup, so that is what we will be doing.
+So let's write our first bit of code to see if we have everything working. A *Hello World!* program is the first and most basic program you can run to validate your setup, so that is what we will be doing.
 
 1. We can start our first basic program by first removing the components on the dashboard (select component, and hit delete or backspace) to get a clean space. 
 2. From the 'Components' drop-down menu select 'All', and then type 'arduino' into the search bar. 
@@ -80,7 +80,7 @@ Before running the simulation, let us take a look at what we just wrote.
 - The double forward slashes create comment lines. They are ignored from the rest of the lines of code and are there to help with reading the code and providing supplementary information. 
 
 `void setup()` 
-- This is a function specific to working with Arduinos. This function will only be executed once when the ARduino is powered on or after being reset. It is used  to setup any variables, objects, data, etc. 
+- This is a function specific to working with Arduinos. This function will only be executed once when the Arduino is powered on or after being reset. It is used  to setup any variables, objects, data, etc. You can think of a function as a piece of code that proforms an action. We will get more into this later but if you are interested in knowing more see [here](https://www.arduino.cc/en/Reference/FunctionDeclaration)
 
 `void loop()`
 - This is another function specific to working with Arduinos. This function will be continuously executed in a loop while the Arduino is powered on. This is where we will be writing our code to collect and store our desired data. 
@@ -92,8 +92,6 @@ Before running the simulation, let us take a look at what we just wrote.
 
 `Serial.println("Hello World!");`
 - This line sends the message in qoutes from the Arduino to the serial monitor. 
-
-- Extra info: _This message is a C++ *string* data type which we will discuss more later. In this line of code, we are using *Serial.println()* to include a new line character for each message. This way each new message will apear on a new line, and not get mushed together. You can try removing the *ln* from *Serial.println()* to see what happens!_
 
 `delay(1000);`
 - This line pauses the arduino's execution of the code at this line for the number of milliseconds specified. In this case we are waiting for 1s between telling the arduino board to send another message. 
@@ -182,8 +180,8 @@ While some pins have some extra functionality, pins D2 to D8 are simple input an
 1. Place an LED and a resistor from the component menu onto the breadboard. 
 2. Change the value of the resistor to 330 Ohms. 
 - The Arduino is limited to a 20 mA output current for each of it's input/output pins acording to the [specifications](https://store.arduino.cc/usa/arduino-uno-rev3) provided by Arduino. This resistor will ensure a controlled amount of current will be drawn from the output pin. 
-- As an exercise, determine the minimum size resistor to be included in this circuit! Note that we can approxiate that the LED will have a constant voltage drop of ~0.7V in this circuit. 
-3. Regarding the LED, these devices are polarity sensitive. So you can think of the cathode as the *negative terminal* and the anode as the *positve terminal*. 
+- As an exercise, determine the minimum size resistor to be included in this circuit! Note that we can approxiate that the LED will have a constant voltage drop of ~0.7V in this circuit. It is not expected that you know how to do this yet.
+3. Regarding the LED, these devices are polarity sensitive which means it matters which way you place it in the circuit. If you place it the wrong way the circuit will not work. The shorter leg of the LED is the cathode *(negative terminal)* and the longer leg is the andoe *(positve terminal)*. 
 - You can connect the cathode to ground, the anode to one end of the resitor, and the other end of the resitor to the arduino pinout. You circuit should be as follows. 
 
 ![Blinky Hardware Setup](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/blinky-hw-setup.png)
