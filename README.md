@@ -45,7 +45,7 @@ PLEASE give us any feedback you have.  You can either send any of us individual 
 ## Contact Info 
 Feel free to email or message on teams.
 
-Piper Steffen: 16pis@queensu.ca
+Piper Steffen: piper.steffen@queensu.ca
 
 Thomas Sears: thomas.sears@queensu.ca
 
