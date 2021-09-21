@@ -39,7 +39,7 @@ The week numbers correspond to the weeks of the school semester. We meet weekly 
 - Week 10: Developing Payload Chassis (lab 8)
 - Week 11: Integration (lab 9)
 - Week 12: Integration (lab 9)
-## Feebcak
+## Feedback
 PLEASE give us any feedback you have.  You can either send any of us individual messages, fill out the [feedback form](https://forms.gle/ZNMfWeRQVinnbxpEA) or both!
 
 ## Contact Info 
