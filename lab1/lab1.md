@@ -6,7 +6,7 @@ If you have any questions please feel free to reach out to Thomas Sears, Emma Pa
 
 # Goals of Lab 1 
 
-1️⃣  Setting up Woking Programming Environment
+1️⃣  Setting up Working Programming Environment
 
 2️⃣  Understanding the Arduino Microcontroller 
 
