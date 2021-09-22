@@ -2,17 +2,17 @@
 
 Hello! Welcome to the first lab of Space School! In this lab we will begin with getting the Arduino IDE up and running, then we will start exploring some of the different ways we can program our Arduino board to do some fun little actions for us. 
 
-If you have any questions please feel free to reach out to Thomas Sears, Emma Paczkowski, Kate Szabo, Piper Steffen, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found at the main page of this repository. 
+If you have any questions please feel free to reach out to Thomas Sears, Emma Paczkowski, Piper Steffen, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found at the main page of this repository. 
 
 # Goals of Lab 1 
 
-1️⃣  Setting up Working Programming Environment
+1️⃣  Setting up a working programming environment
 
-2️⃣  Understanding the Arduino Microcontroller 
+2️⃣  Understanding the Arduino microcontroller 
 
-3️⃣  Writing a Hello World Program 
+3️⃣  Writing a Hello World program 
 
-4️⃣  Building a Blinky LED Program and Circuit
+4️⃣  Building a blinky LED program and circuit
 
 ## What is an Arduino? 
 An Arduino is a [microcontroller](https://www.youtube.com/watch?v=CqrQmQqpHXc), or a small computer than can perform instructions that we write. We can write a program - a series of instructions - that tells this small computer on how it should interact with sensors, lights, and various input from human-users. We will be using these Arduinos as the on-board computer for our toastSat, which is one of the six subsystems of our satellite. The basic parts of an Arduino are outlined below:
@@ -136,9 +136,9 @@ The Arduino IDE is similiar to that of Tinkercad's dashboard, but there are some
 
 ![Arduino IDE with Arrows Indicating IDE Functionality](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/ide-with-arrows.png)
 
-Most noticabbly is the *Verify* and *Upload* buttons located on the top left. The *Verify* button makes checks for any errors in your code (it will only check syntax errors though, not logical or procedural errors!) and the *Upload* button will upload the software into the hardware so the Arduino can operate as you specify in the code. 
+Most noticeably is the *Verify* and *Upload* buttons located on the top left. The *Verify* button makes checks for any errors in your code (it will only check syntax errors though, not logical or procedural errors!) and the *Upload* button will upload the software into the hardware so the Arduino can operate as you specify in the code. 
 
-We will take the code we wrote in Tinkercad, download it to an arduino file, and verify it in the Arduino IDE. 
+We will take the code we wrote in Tinkercad, download it to an Arduino file, and verify it in the Arduino IDE. 
 1. Go back to Tinkercad and select *Download Code* by selecting the button directly beside the *Text* drop down menu. 
 2. Once downloaded, you should have a *.ino* file called *hello_world.ino*
 3. Attempt to open the file, and you should be greeted by a message similiar to the one below. 
