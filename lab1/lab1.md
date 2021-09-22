@@ -36,7 +36,7 @@ While we do not have our Arduinos quite yet, we are not going to let that stop u
 Let's take a look at the dashboard now. 
 ![TinkerCad Getting Started Dashboard](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-dash-board-with-arrows.png)
 
-1️⃣ Test Editor: This opens the text editor window where we can write our software in either block format or in the C/C++ language. We will be opting for the latter.
+1️⃣ Text Editor: This opens the text editor window where we can write our software in either block format or in the C/C++ language. We will be opting for the latter.
 
 2️⃣ Begin Simulation / Run Code: This is essentially "uploading your code" and turning on the power to your Arduino in the simulation. 
 
