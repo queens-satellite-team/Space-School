@@ -31,7 +31,7 @@ While we do not have our Arduinos quite yet, we are not going to let that stop u
 1. Select "Create a personal account" and follow the steps to sign up. 
 2. After following the prompts and entering in some basic information, your account shall be created and you will be signed in. 
 3. You should now be on your user dashboard. Select "Circuits" in the left-hand panel, and then select "Try Circuits". 
-4. You should now see a simple hardware circuit consisting of a coin cell battery, a resitor, an LED, and wire. This is where we will start tinkering! 
+4. You should now see a simple hardware circuit consisting of a coin cell battery, a resistor, an LED, and wire. This is where we will start tinkering! 
 
 Let's take a look at the dashboard now. 
 ![TinkerCad Getting Started Dashboard](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-dash-board-with-arrows.png)
@@ -182,7 +182,7 @@ While some pins have some extra functionality, pins D2 to D8 are simple input an
 - The Arduino is limited to a 20 mA output current for each of it's input/output pins acording to the [specifications](https://store.arduino.cc/usa/arduino-uno-rev3) provided by Arduino. This resistor will ensure a controlled amount of current will be drawn from the output pin. 
 - As an exercise, determine the minimum size resistor to be included in this circuit! Note that we can approxiate that the LED will have a constant voltage drop of ~0.7V in this circuit. It is not expected that you know how to do this yet.
 3. Regarding the LED, these devices are polarity sensitive which means it matters which way you place it in the circuit. If you place it the wrong way the circuit will not work. The shorter leg of the LED is the cathode *(negative terminal)* and the longer leg is the andoe *(positve terminal)*. 
-- You can connect the cathode to ground, the anode to one end of the resitor, and the other end of the resitor to the arduino pinout. You circuit should be as follows. 
+- You can connect the cathode to ground, the anode to one end of the resistor, and the other end of the resistor to the arduino pinout. You circuit should be as follows. 
 
 ![Blinky Hardware Setup](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/blinky-hw-setup.png)
 
