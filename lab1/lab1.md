@@ -24,12 +24,12 @@ For now keep note of where the digital and analog pins are, the usb connector, a
 ![USB Powered Arduino](https://github.com/queens-satellite-team/Space-School/blob/0c69e70192f59fa8af48e341d15ac462e6f01af3/lab1/lab1-images/arduino-powered-usb.jpeg) ![Battery Powered Arduino](https://github.com/queens-satellite-team/Space-School/blob/0c69e70192f59fa8af48e341d15ac462e6f01af3/lab1/lab1-images/arduino-powered-battery.jpeg)
 
 # Step 1 - Setting up TinkerCad
-While we do not have our Arduinos quite yet, we are not going to let that stop us getting familiar with them and getting some ciruits built and programs written! We can simulate a working Arduino with a program called Tinkercad. To begin working with Tinkercad, we first need to sign up for an acount. Go to the [main page](https://www.tinkercad.com) of tinker card and select the log-in button. 
+While we do not have our Arduinos quite yet, we are not going to let that stop us getting familiar with them and getting some ciruits built and programs written! We can simulate a working Arduino with a program called Tinkercad. To begin working with Tinkercad, we first need to sign up for an account. Go to the [main page](https://www.tinkercad.com) of tinker card and select the log-in button. 
 
 ![TinkerCad Front Page](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/tinkercad-frontpage.png)
 
-1. Select "Create a personal acount" and follow the steps to sign up. 
-2. After following the prompts and entering in some basic information, your acount shall be created and you will be signed in. 
+1. Select "Create a personal account" and follow the steps to sign up. 
+2. After following the prompts and entering in some basic information, your account shall be created and you will be signed in. 
 3. You should now be on your user dashboard. Select "Circuits" in the left-hand panel, and then select "Try Circuits". 
 4. You should now see a simple hardware circuit consisting of a coin cell battery, a resitor, an LED, and wire. This is where we will start tinkering! 
 
@@ -38,7 +38,7 @@ Let's take a look at the dashboard now.
 
 1️⃣ Test Editor: This opens the text editor window where we can write our software in either block format or in the C/C++ language. We will be opting for the latter.
 
-2️⃣ Begin Simulation / Run Code: This is essentially "uploading your code" and turning on the power to your arduino in the simulation. 
+2️⃣ Begin Simulation / Run Code: This is essentially "uploading your code" and turning on the power to your Arduino in the simulation. 
 
 3️⃣ Available Componetenst: Here is a list of the available components that Tinkercad offers with the simulation. 
 
