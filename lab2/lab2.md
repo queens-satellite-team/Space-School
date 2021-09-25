@@ -1,11 +1,44 @@
 # Introduction
 
-Hello! Welcome to the second lab of Space School! In this lab, we will look at some programming basics including functions, datatypes, and conditional statements in order to get an arduino to communicate with a sensor! We will also start getting comfortable with looking at datasheets as these guide both our hardware and software implementation. In this lab, we will be working with the **TMP36** temperature sensor.
+Hello! Welcome to the second lab of Space School! In this lab we continue with our circuits and coding section of Space School by diving a bit deeper in working with our Arduino microcontroller. We will be working with the **TMP36** temperature sensor to learn some fundamental programming and circuit skills. The goal is to learn how to get a simple sensor working, so that you can be more comfortable getting your own more complex sensor to work on your payload. 
 
-With respect, the majority of this lab was sourced by creator Lady Ada's [TMP36 Temperature Sensor Documentation](https://cdn-learn.adafruit.com/downloads/pdf/tmp36-temperature-sensor.pdf) from The Adafruit Learning System. If you have any questions regarding this lab or just want to reach out, please feel free to speak to Thomas Sears, Emma Paczkowski, Kate Szabo, Piper Steffen, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found in the Space School README file. 
+If you have any questions please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found at the main page of this repository. 
 
-# Step 1 - Overview and Datasheet 
-The TMP36 is an analog temperature sensor - it is a chip that tells you what the ambient temperature is! *As an aside, an analog signal is a continuous-time signal where one time-varying variable represents another time-varying variable. We say that the first time-varying signal is analogous to the other. In this lab, we will have a  voltage measurement that is analogous to temperature.*
+# Goals of Lab 2
+
+1️⃣  Simulate the hardware of a TMP36 temperature sensor
+
+2️⃣  Write software to read values form a TMP36 temperature sensor
+
+3️⃣  Use the TMP36's data sheet to guide our implementation of hardware and software
+
+# Step 1 - TMP36 Overview
+Our goal is to read the ambient temperature of our payload using a sensor. We can do this by using the TMP36 temperature sensor, which is an analog electronic device. In Step 1, we will figure out what exactly that means, and what are the characteristics of this sensor. 
+
+## Analog vs. Digital Signals
+Working with electronics means dealing with both analog and digital signals, inputs and outputs. Our electronics projects have to interact with the real, analog world in some way, but most of our microprocessors, computers, and logic units are purely digital components.
+
+**Signal** - a thing that can convey information and that can change with time. 
+
+**Digital** - a discrete signal that can only take on discrete states, such as ON or OFF. 
+
+**Analog** - a continuous signal which represents physical measurements.
+
+**DIGITAL SIGNAL**
+
+![digitla_circuit](https://github.com/queens-satellite-team/Space-School/blob/05136f902023ba22127d2734c8aa126bb90d718e/lab2/lab2-images/digital_signal.png) 
+
+**ANALOG SIGNAL**
+
+![analog_circuit](https://github.com/queens-satellite-team/Space-School/blob/05136f902023ba22127d2734c8aa126bb90d718e/lab2/lab2-images/analog_signal.png)
+
+So a good way to think of the difference between these two signals in an electrical engineering context is that a digital signal will turn on and off an LED, but an analog signal will dim the led a litter more or less bright. 
+
+❓ What are some other things you may want to measure using your toastSat that is going 30km into the atmoshere? 
+
+❓ Are these measurements digital or analog? 
+
+## Datasheet
 
 ![TMP36 Next to a Coin](https://github.com/queens-satellite-team/Space-School/blob/01efedf88740647ccd69433bf9f45f66f0af0abe/lab2/lab2-images/tmp36-overview.jpeg)
 
@@ -41,11 +74,16 @@ To find the offset (b) value we want to look for a graph of the output character
 
 ![tmp36-voltage-temp-conversion-chart](https://github.com/queens-satellite-team/Space-School/blob/85e73e4f4b51446189f5e0e27c2e8949096455b9/lab2/lab2-images/tmp36-voltage-temp-conversion-chart.png)
 
-We can see that at 0C the ouput voltage will be 0V5 or 500mV. This will be our offset value and our final conversion equation will look like:
+We can see that at 0C the ouput voltage will be 0V5 or 500mV. With this being our offset value, can you determine what the final conversion factor equation will look like? 
 
-**Temperate C = [Vout in mV - 500mV] / (10mV / °C)** 
 
+<details>
+<summary> 📈 Click here to show the final equation!</summary>
+<br>
+⭐ Temperate C = [Vout in mV - 500mV] / (10mV / °C) ⭐
+  
 So for example, if the voltage out is 1V that means that the temperature is ((1000 mV - 500) / 10) = 50 °C
+</details>
 
 # Step 2 - Hardware Connections 
 As we saw in the [datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf), the style of the TMP36 sensor we are using is the "TO-92" package. This means the chip is housed in a plastic semi-cylinder with three legs. The legs can be bent easily to allow the sensor to be plugged into a breadboard. You can also solder to the pins to connect long wires. 
