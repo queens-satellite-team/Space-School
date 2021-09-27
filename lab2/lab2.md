@@ -2,7 +2,7 @@
 
 Hello! Welcome to the second lab of Space School! In this lab we continue with our circuits and coding section of Space School by diving a bit deeper with our Arduino microcontroller. We will be working with the [TMP36 temperature](https://create.arduino.cc/projecthub/m_karim02/using-a-temp-sensor-with-arduino-tmp36-temperature-sensor-1e1d0b) to learn some fundamental programming and circuit skills. The big picture goal is to learn how to get a simple sensor working so that you can be more comfortable getting a more complex sensor to work on your own toastSat.
 
-If you have any questions please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found at the main page of this repository. 
+If you have any questions please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
 # Goals of Lab 2
 
