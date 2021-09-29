@@ -205,10 +205,11 @@ void loop() {
 `delay(100);` 
 - The delay pauses the arduino's execution of the code at this line for the number of milliseconds specified. In this case we are waiting for 0.1s between telling the arduino board to continue. 
 
-1. Open the serial monitor in Tinkercad and observe the values. 
-2. Click on the TMP36 sensor to make the temperature slider appear. 
-3. Play with the slider to see how the analog voltage value changes.
-4. Verify your output with the photo below. 
+1. Click Start Simulation
+2. Open the serial monitor in Tinkercad and observe the values. 
+3. Click on the TMP36 sensor to make the temperature slider appear. 
+4. Play with the slider to see how the analog voltage value changes.
+5. Verify your output with the photo below. 
 
 ![analog voltage reading](https://github.com/queens-satellite-team/Space-School/blob/60c58bc4ff0ed775c0aa3d22761b3a3bb9a68bf3/lab2/lab2-images/analog_voltage_reading.png)
 
@@ -267,10 +268,11 @@ void loop()
 
 We started with `Temperate C = [Vout in mV - 500mV] / (10mV / °C)` and converted 1) Vout = analog_data, 2) 500 mV = 0.5V, 3) 1 / (10mV / °C) = 1°C / 10 mV = 1°C / 0.010 V = 100°C / 1V to get the following `temperatureC = (analog_data - 0.5) * 100`.
 
-1. Open the serial monitor in Tinkercad and observe the values. 
-2. Click on the TMP36 sensor to make the temperature slider appear. 
-3. Play with the slider to see how the analog voltage value changes.
-4. Verify your output with the photo below. 
+1. Click Start Simulation
+2. Open the serial monitor in Tinkercad and observe the values. 
+3. Click on the TMP36 sensor to make the temperature slider appear. 
+4. Play with the slider to see how the analog voltage value changes.
+5. Verify your output with the photo below. 
 
 ![without_analog_mapping_reading](https://github.com/queens-satellite-team/Space-School/blob/0f0cebe8573f15c58772ff7085d6da67a8c0aae1/lab2/lab2-images/without_analog_mapping_reading.png)
 
@@ -341,10 +343,11 @@ As stated in section 2.1, when we use the analog inputs we have to map the maxim
   1024       analog_data
 ```
 
-1. Open the serial monitor in Tinkercad and observe the values. 
-2. Click on the TMP36 sensor to make the temperature slider appear. 
-3. Play with the slider to see how the temperature value changes.
-4. Verify your output with the photo below. 
+1. Click Start Simulation
+2. Open the serial monitor in Tinkercad and observe the values. 
+3. Click on the TMP36 sensor to make the temperature slider appear. 
+4. Play with the slider to see how the temperature value changes.
+5. Verify your output with the photo below. 
 
 ![final temperature reading](https://github.com/queens-satellite-team/Space-School/blob/3577567d6b1087e243e1dc69c2789a75a1a7469c/lab2/lab2-images/temperature_reading.png)
 
