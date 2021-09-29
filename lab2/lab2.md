@@ -129,14 +129,14 @@ To find the offset (b) value we want to look for a graph of the output character
 
 ![tmp36-voltage-temp-conversion-chart](https://github.com/queens-satellite-team/Space-School/blob/85e73e4f4b51446189f5e0e27c2e8949096455b9/lab2/lab2-images/tmp36-voltage-temp-conversion-chart.png)
 
-❓ We can see that at 0 °C the ouput voltage will be 0V5 or 500mV. With this being our offset value, and knowing our (m) value, can you determine what the final conversion factor equation will look like? 
+❓ We can see that at 0 °C the ouput voltage will be 0.5 V or 500mV. With this being our offset value, and knowing our (m) value, can you determine what the final conversion factor equation will look like? 
 
 <details>
 <summary> 📈 Click here to show the final equation!</summary>
 <br>
 ⭐ Temperate C = [Vout in mV - 500mV] / (10mV / °C) ⭐
   
-So for example, if the voltage out is 1V that means that the temperature is ((1000 mV - 500) / 10) = 50 °C
+So for example, if the voltage out is 1V that means that the temperature is ((1000 mV - 500 mV) / 10 mV / °C) = 50 °C
 </details>
 
 # Step 2 - Hardware Connections 
