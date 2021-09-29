@@ -31,7 +31,7 @@ Working with electronics means dealing with both analog and digital signals, inp
 <details>
 <summary> <b>Definition of Digital</b> </summary>
 <br>
-- a discrete signal that can only take on one value at any given time, such as ON or OFF. 
+- a discrete signal that can only take on one value at any given time, such as LOW, MEDIUM, or HIGH.
 </details>
 
 <details>
@@ -123,20 +123,20 @@ Okay, great! So we have lots of information right from the start, there are just
 ![TMP36 Pinout V1](https://github.com/queens-satellite-team/Space-School/blob/bb1df16b5dcc6b585fb614fad82e5aceec367c11/lab2/lab2-images/tmp36-pinout-v1.png) ![TMP36 Pinout V2](https://github.com/queens-satellite-team/Space-School/blob/bb1df16b5dcc6b585fb614fad82e5aceec367c11/lab2/lab2-images/tmp36-pinout-v2.png)
 
 ### 1.2.3 Voltage to Temperature Equation
-We know that this sensor has a linear relationship between its input and output. This means that we can model the input and output by the equation `y = mx + b`, where y is the temperature in °C and x is the Vout of the sensor. We know from looking at the datasheet that our (m) value will be (10mV / °C), so all we are left is to determine our offset or (b) value. 
+We know that this sensor has a linear relationship between its input and output. This means that we can model the input and output by the equation `y = mx + b`, where y is the temperature in °C and x is the output voltage (Vout) of the sensor. We know from looking at the datasheet that our (m) value will be (10mV / 1°C), so all we are left is to determine our offset or (b) value. 
 
-To find the offset (b) value we want to look for a graph of the output characteristics of the sensor. Fortunately, what we are looking for exactly can be found on top of page 4. 
+To find the offset (b) value we want to look for a graph of the output characteristics of the sensor. Fortunately, what we are looking for exactly can be found on top of page 4 of the [datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf). 
 
 ![tmp36-voltage-temp-conversion-chart](https://github.com/queens-satellite-team/Space-School/blob/85e73e4f4b51446189f5e0e27c2e8949096455b9/lab2/lab2-images/tmp36-voltage-temp-conversion-chart.png)
 
-❓ We can see that at 0 °C the ouput voltage will be 0V5 or 500mV. With this being our offset value, and knowing our (m) value, can you determine what the final conversion factor equation will look like? 
+❓ We can see that at 0 °C the ouput voltage will be 0.5 V or 500mV. With this being our offset value, and knowing our (m) value, can you determine what the final conversion factor equation will look like? 
 
 <details>
 <summary> 📈 Click here to show the final equation!</summary>
 <br>
-⭐ Temperate C = [Vout in mV - 500mV] / (10mV / °C) ⭐
+⭐ Temperate C = [Vout in mV - 500mV] / (10mV / 1 °C) ⭐
   
-So for example, if the voltage out is 1V that means that the temperature is ((1000 mV - 500) / 10) = 50 °C
+So for example, if the voltage out is 1V that means that the temperature is ((1000 mV - 500 mV) / 10 mV / °C) = 50 °C
 </details>
 
 # Step 2 - Hardware Connections 
@@ -205,10 +205,11 @@ void loop() {
 `delay(100);` 
 - The delay pauses the arduino's execution of the code at this line for the number of milliseconds specified. In this case we are waiting for 0.1s between telling the arduino board to continue. 
 
-1. Open the serial monitor in Tinkercad and observe the values. 
-2. Click on the TMP36 sensor to make the temperature slider appear. 
-3. Play with the slider to see how the analog voltage value changes.
-4. Verify your output with the photo below. 
+1. Click Start Simulation
+2. Open the serial monitor in Tinkercad and observe the values. 
+3. Click on the TMP36 sensor to make the temperature slider appear. 
+4. Play with the slider to see how the analog voltage value changes.
+5. Verify your output with the photo below. 
 
 ![analog voltage reading](https://github.com/queens-satellite-team/Space-School/blob/60c58bc4ff0ed775c0aa3d22761b3a3bb9a68bf3/lab2/lab2-images/analog_voltage_reading.png)
 
@@ -267,10 +268,11 @@ void loop()
 
 We started with `Temperate C = [Vout in mV - 500mV] / (10mV / °C)` and converted 1) Vout = analog_data, 2) 500 mV = 0.5V, 3) 1 / (10mV / °C) = 1°C / 10 mV = 1°C / 0.010 V = 100°C / 1V to get the following `temperatureC = (analog_data - 0.5) * 100`.
 
-1. Open the serial monitor in Tinkercad and observe the values. 
-2. Click on the TMP36 sensor to make the temperature slider appear. 
-3. Play with the slider to see how the analog voltage value changes.
-4. Verify your output with the photo below. 
+1. Click Start Simulation
+2. Open the serial monitor in Tinkercad and observe the values. 
+3. Click on the TMP36 sensor to make the temperature slider appear. 
+4. Play with the slider to see how the analog voltage value changes.
+5. Verify your output with the photo below. 
 
 ![without_analog_mapping_reading](https://github.com/queens-satellite-team/Space-School/blob/0f0cebe8573f15c58772ff7085d6da67a8c0aae1/lab2/lab2-images/without_analog_mapping_reading.png)
 
@@ -341,10 +343,11 @@ As stated in section 2.1, when we use the analog inputs we have to map the maxim
   1024       analog_data
 ```
 
-1. Open the serial monitor in Tinkercad and observe the values. 
-2. Click on the TMP36 sensor to make the temperature slider appear. 
-3. Play with the slider to see how the temperature value changes.
-4. Verify your output with the photo below. 
+1. Click Start Simulation
+2. Open the serial monitor in Tinkercad and observe the values. 
+3. Click on the TMP36 sensor to make the temperature slider appear. 
+4. Play with the slider to see how the temperature value changes.
+5. Verify your output with the photo below. 
 
 ![final temperature reading](https://github.com/queens-satellite-team/Space-School/blob/3577567d6b1087e243e1dc69c2789a75a1a7469c/lab2/lab2-images/temperature_reading.png)
 
@@ -381,7 +384,7 @@ Average Temp: 26.2 °C
 ⚠️ Warning ⚠️ Using multiple analog sensors may lead to them interfering with eachother providing inconsistent readings. Some relevant discussions can be found [here](https://forums.adafruit.com/viewtopic.php?f=25&t=11597) and [here](https://forums.adafruit.com/viewtopic.php?f=25&t=14332).
 
 ## 4.3 Datasheet Examples
-Look through the remaining pages of the data sheet and find some of the cool examples that it provides. These are out of the scope for Space School, as well as 1st and 2nd year engineering, but it is still cool to see some of the differenet applications these sensors can be put through.
+Look through the remaining pages of the [datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf) and find some of the cool examples that it provides. These are out of the scope for Space School, as well as 1st and 2nd year engineering, but it is still cool to see some of the differenet applications these sensors can be put through.
 
 ## Extra Information 
 
