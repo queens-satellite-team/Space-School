@@ -31,7 +31,7 @@ Working with electronics means dealing with both analog and digital signals, inp
 <details>
 <summary> <b>Definition of Digital</b> </summary>
 <br>
-- a discrete signal that can only take on one value at any given time, such as ON or OFF. 
+- a discrete signal that can only take on one value at any given time, such as LOW, MEDIUM, or HIGH.
 </details>
 
 <details>
