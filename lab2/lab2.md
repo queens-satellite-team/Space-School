@@ -384,7 +384,7 @@ Average Temp: 26.2 °C
 ⚠️ Warning ⚠️ Using multiple analog sensors may lead to them interfering with eachother providing inconsistent readings. Some relevant discussions can be found [here](https://forums.adafruit.com/viewtopic.php?f=25&t=11597) and [here](https://forums.adafruit.com/viewtopic.php?f=25&t=14332).
 
 ## 4.3 Datasheet Examples
-Look through the remaining pages of the data sheet and find some of the cool examples that it provides. These are out of the scope for Space School, as well as 1st and 2nd year engineering, but it is still cool to see some of the differenet applications these sensors can be put through.
+Look through the remaining pages of the [datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf) and find some of the cool examples that it provides. These are out of the scope for Space School, as well as 1st and 2nd year engineering, but it is still cool to see some of the differenet applications these sensors can be put through.
 
 ## Extra Information 
 
