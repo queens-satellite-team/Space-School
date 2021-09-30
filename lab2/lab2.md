@@ -334,7 +334,7 @@ void loop()
 ```
 
 `voltage_reading = analog_data * (5.0/1024.0);`
-As stated in section 2.1, when we use the analog inputs we have to map the maximum voltage the sensor can have to the maximum value that the ADC can have. We can do this with a simple ratio shown below where the left side is always a constant. 
+As stated in section 2.1, when we use the analog inputs we have to map the maximum voltage the sensor can have to the maximum value that the ADC can have. We can do this with a simple ratio shown below. This means that if we get a value from our ADC that is 1024 we know there will be 5.0 volts at the input pin; if we have a value from our ADC that is 0, we know there will be 0.0 volts at the input pin; and if we have something inbetween 1024 and 0, let us say 278, we know it will be some value between 5.0 and 0.0 volts. 
 
 
 ```
