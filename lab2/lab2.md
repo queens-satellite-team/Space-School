@@ -194,7 +194,7 @@ void loop() {
 - Just like in lab 1, we want to open a communication connection between the arduino board and the serial monitor. This way we can see any output messages from the arduino such as our temperature data. 
 
 `analog_data = analogRead(sensor_pin);`
-- In this line, we are calling the function *analogRead()*. At a high level, functions have input arguements, a name, and a return value. So in this line, the function name is *analogRead()*, the input arguement is a variable with a value of (0,1,2,3,4, or 5) specifying the analog pin input, and has a return value of a number between 0 and 1024. 
+- In this line, we are calling the function *analogRead()*. At a high level, functions have input arguements, a name, and a return value. So in this line, the function name is *analogRead()*, the input arguement is a variable with a value of (0,1,2,3,4, or 5) specifying which one of the six analog pins that the Arduino has that we will be using, and has a return value of a number between 0 and 1024. 
 
 `Serial.print("Analog Value: ");` 
  - Just like we saw in LAB 1, we are able to print whatever is in the qoutes to our serial monitor. If working with a real arduino board, it will send this message from the arduino to your computer. In this line we send the character string "Analog Value: " to the serial monitor.
@@ -334,7 +334,7 @@ void loop()
 ```
 
 `voltage_reading = analog_data * (5.0/1024.0);`
-As stated in section 2.1, when we use the analog inputs we have to map the maximum voltage the sensor can have to the maximum value that the ADC can have. We can do this with a simple ratio shown below. 
+As stated in section 2.1, when we use the analog inputs we have to map the maximum voltage the sensor can have to the maximum value that the ADC can have. We can do this with a simple ratio shown below where the left side is always a constant. 
 
 
 ```
@@ -342,6 +342,8 @@ As stated in section 2.1, when we use the analog inputs we have to map the maxim
   -----  =  ----------------
   1024       analog_data
 ```
+
+
 
 1. Click Start Simulation
 2. Open the serial monitor in Tinkercad and observe the values. 
@@ -392,9 +394,9 @@ Look through the remaining pages of the [datasheet](https://cdn-learn.adafruit.c
 <summary>❗ Extra Information on Analog Inputs</summary>
 <br>
 
-1. If we have 2 types of digits, such that each digit may have a value of 0 or 1, then we call this a binary number. We call each one of the digits a bit, so that if we have a binary number that is 10 digits long we can say this a 10-bit binary number. For our 10-bit ADC, the smallest value it can take on is 0000000000 and the largest is 1111111111. This means that if we have a number that has 2 types of digits and a maximum length of 10 different digits, we may have 2^10 = 1024 unique values of 0s and 1s.
+1. If we have 2 types of digits, such that each digit may have a value of 0 or 1, then we call this a binary number. We call each one of the digits a bit, so that if we have a binary number that is 10 digits long we can say this a 10-bit binary number. For our 10-bit ADC, the smallest value it can take on is 0000000000 and the largest is 1111111111. This means that if we have a number that has 2 types of digits and a maximum length of 10 different digits, we may have 2^10 = 1024 unique values of 0s and 1s. This means that no matter what the input is to the ADC it can only output a finite range of values including the number 0 to 1023. 
 
-2. The arduino we are using has a 10-bit ADC. This means that when the ADC reads an analog input it can convert it to a digital value that is 10 digits long and each digit may have a value of 0 or 1. The digital value can be any value in the range of 0000000000, 0000000001, 0000000010, 0000000011, 0000000100, 0000000101, ..., 1111111110, 1111111111. We can say that the value of 0000000000 can represent a voltage of 0 V, and a value of 1111111111 represents our maximum voltage. However the ADC does not know what our maximum voltage is, so we must map this maximum voltage value to the maximum 10-bit ADC value. The maximum voltage will be our supply of 5V and the maximum 10-bit ADC value is 1024. Thus our conversion will be:
+2. The arduino we are using has a 10-bit ADC. This means that when the ADC reads an analog input it can convert it to a digital value that is 10 digits long and each digit may have a value of 0 or 1. The digital value can be any discrete value in the range of 0000000000, 0000000001, 0000000010, 0000000011, 0000000100, 0000000101, ..., 1111111110, 1111111111. We can say that the value of 0000000000 can represent a voltage of 0 V, and a value of 1111111111 represents our maximum voltage (5.0 V or 3.3 V). However the ADC does not know what our maximum voltage is, so we must map this maximum voltage value to the maximum 10-bit ADC value. The maximum voltage will be our supply of 5.0 or 3.3 volts and the maximum 10-bit ADC value is 1024. Thus our conversion will be:
 
 ⭐ Voltage at analog pin in milliVolts = (reading from ADC) * (maxSuppliedVoltage/1024) ⭐
 </details>
