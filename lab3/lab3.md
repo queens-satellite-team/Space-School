@@ -4,7 +4,7 @@
 
 1️⃣ Practice writing your own code and building your own hardware setup. 
 
-2️⃣ Store data we collect onto an SD card. 
+2️⃣ Read values from an LCD display screen. 
 
 3️⃣ Learn about the software libraries Arduino has to offer and how to use them. 
 
@@ -20,13 +20,13 @@
 
 ## 2.1 Helpful Libraries and Where to Find Them 
 
-## 2.2 Introduction to SD.h and SPI.h Libraries
+## 2.2 Introduction to LCD.h Libraries
 
-# Step 3.0 - Writing our Data to an SD Card
+# Step - 3.0 Working with the LCD Display
 
-## 3.1 Setup the Hardware 
+## 3.1 Setup the Hardware - Build Your Own Circuit! 
 
-## 3.2 Implement the Software
+## 3.2 Implement the Software - Write Your Own Code! 
 
 # Step 4.0 - Payload Design Constraints 
 
