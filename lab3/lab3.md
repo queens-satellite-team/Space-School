@@ -2,42 +2,51 @@
 
 # Goals of Lab 3 
 
-1️⃣ Practice writing your own code and building your own hardware setup. 
+1️⃣ Determine mission for toastSat payload. 
 
-2️⃣ Read values from an LCD display screen. 
+2️⃣ Determine payload instrumentation to begin designing your sensor suite.
 
-3️⃣ Learn about the software libraries Arduino has to offer and how to use them. 
+3️⃣ Consider constraints on the toastSat payload to guided implementation of your sensor suite.
 
-4️⃣ Consider the imposed constraints on the payload to begin designing your sensor suite. 
+# Satellite Mission Concepts 
 
-# Step 1.0 - Reading Data from a Sensor 
+## Communications
 
-## 1.1 Setup the Hardware - Build Your Own Circuit! 
+## Earth Observation - Human
 
-## 1.2 Implement the Software - Write Your Own Code! 
+## Earth Observation - Other
 
-# Step 2.0 - Arduino's Software Libraries
+## Earth and Space Science
 
-## 2.1 Helpful Libraries and Where to Find Them 
+## Astronomy
 
-## 2.2 Introduction to LCD.h Libraries
+## Chemical and Biological Experimentation
 
-# Step - 3.0 Working with the LCD Display
+## Technology Demonstration
 
-## 3.1 Setup the Hardware - Build Your Own Circuit! 
+## Education, Entertainment, Culture
 
-## 3.2 Implement the Software - Write Your Own Code! 
+# toastSat Design 
 
-# Step 4.0 - Payload Design Constraints 
+## Flight Details 
 
-## 4.1 Mass, Power, Volume Constraints
+## Constraints 
 
-## 4.2 Closing the Budgets
+| MASS | VOLUME | POWER |
+| --- | --- | --- |
+| 100 grams | 10cm x 10cm x 5cm | 800 mAh @ 3.7 volts |
 
-# Step 5.0 - Stretch Goals
+## toastSat Sensors 
 
-## 5.1 Handling Multiple Sensors Concurrently 
+### Photoresistive Sensor
 
-## 5.2 Designing a Payload
+### Accelerometer / Gyroscope
+
+### Barometric Pressure Sensor
+
+### IR Sensor
+
+### TMP36 Temperature Sensor 
+
 
 
