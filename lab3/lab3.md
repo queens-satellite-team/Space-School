@@ -30,6 +30,11 @@
 
 ## Flight Details 
 
+Duration of Flight: ~4 hours 
+Maximum Possible Altitude: 30 km 
+Time of Day: Daytime (afternoon) 
+Weather: No rainfall, no snowfall. Minimal to no wind. 
+
 ## Constraints 
 
 | MASS | VOLUME | POWER |
@@ -39,14 +44,20 @@
 ## toastSat Sensors 
 
 ### Photoresistive Sensor
+<img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/photosensitive-resistance-sensor.png" width="250">
 
 ### Accelerometer / Gyroscope
+<img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/accelerometer.png" width="250">
 
 ### Barometric Pressure Sensor
+<img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/barometric-pressure-sensor.jpeg" width="250">
 
 ### IR Sensor
+<img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/ir-receiver-sensor.jpeg" width="250">
+
 
 ### TMP36 Temperature Sensor 
+<img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/temperature-sensor.jpeg" width="250">
 
 
 
