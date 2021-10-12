@@ -70,7 +70,7 @@ The Earth and its atmosphere are worth studying from space!
 - [remote Earth measurements](https://earthdata.nasa.gov/learn/backgrounders/remote-sensing)
 
 **Examples**
-- [ConSat 1](https://space.skyrocket.de/doc_sdat/consat-1.htm] (South-Atlantic anomaly monitor)
+- [ConSat 1](https://space.skyrocket.de/doc_sdat/consat-1.html) (South-Atlantic anomaly monitor)
 - [Ex-Alta 1](https://albertasat.ca/ex-alta-1/) (space plasma physics), Killick-1 (sea ice)
 
 ## Astronomy
@@ -209,6 +209,7 @@ French cubeSat looked at pressure on re-entry into the atmosphere.
 
 FireSat
 Access to other electromagnetic wavelengths 
+[Resource Link](https://create.arduino.cc/projecthub/Raushancpr/arduino-with-ir-sensor-1579b6)
 
 ### TMP36 Temperature Sensor 
 <img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/temperature-sensor.jpeg" width="250">
