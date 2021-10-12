@@ -26,8 +26,9 @@ Connecting people through satellites can be easier than vast networks on the gro
 
 **Examples**
 
-- [TARS aka Kepler-2](https://space.skyrocket.de/doc_sdat/kepler-3.htm) (IoT and M2M communications)
-- [LEO Vantage 1](https://space.skyrocket.de/doc_sdat/leo-vantage-1.htm) (high-speed communications)
+[TARS aka Kepler-2](https://space.skyrocket.de/doc_sdat/kepler-3.htm) (IoT and M2M communications) - [LEO Vantage 1](https://space.skyrocket.de/doc_sdat/leo-vantage-1.htm) (high-speed communications)
+
+<img src="https://space.skyrocket.de/img_sat/kepler-3__1.jpg" width="350"> <img src="https://space.skyrocket.de/img_sat/telesat-leo-sstl__1.jpg" width="350">
 
 ## Earth Observation - Human
 **Description** 
@@ -41,8 +42,10 @@ Provides a new perspective of life on Earth.
 
 **Examples**
 
-- [exactView 9](https://space.skyrocket.de/doc_sdat/exactview-1.htm) (tracking of marine vessels)
-- [Claire](https://www.ghgsat.com/en/what-we-do/) (GHGSat-D, a GHG monitor) 
+[exactView 9](https://space.skyrocket.de/doc_sdat/exactview-1.htm) (tracking of marine vessels) - [Claire](https://www.ghgsat.com/en/what-we-do/) (GHGSat-D, a GHG monitor) 
+
+<img src="https://space.skyrocket.de/img_sat/exactview-1__1.jpg" width="350"> <img src="https://utias-sfl.net/wp-content/uploads/GHGSat-D-in-clean-room.jpg" width="350">
+
 
 ## Earth Observation - Other
 **Description** 
@@ -59,6 +62,8 @@ There is plenty more than silly little people to watch from space.
 - [Wyvern](https://wyvern.space/) (farm land health)
 - [NEMO-HD](https://space.skyrocket.de/doc_sdat/nemo-hd.htm) (real-time video downlink)
 
+<img src="https://media2.spaceq.ca/wp-content/uploads/2021/04/01115651/AAC_Clyde_Space_EPIC-6U_Wyvern-310x165.jpg" width="350"><img src="https://space.skyrocket.de/img_sat/nemo-hd__1.jpg" width="350">
+
 ## Earth and Space Science
 **Description**
 
@@ -70,8 +75,10 @@ The Earth and its atmosphere are worth studying from space!
 - [remote Earth measurements](https://earthdata.nasa.gov/learn/backgrounders/remote-sensing)
 
 **Examples**
-- [ConSat 1](https://space.skyrocket.de/doc_sdat/consat-1.html) (South-Atlantic anomaly monitor)
+- [ConSat 1](https://space.skyrocket.de/doc_sdat/consat-1.htm) (South-Atlantic anomaly monitor)
 - [Ex-Alta 1](https://albertasat.ca/ex-alta-1/) (space plasma physics), Killick-1 (sea ice)
+
+<img src="https://space.skyrocket.de/img_sat/consat-1__1.jpg" width="350"><img src="https://space.skyrocket.de/img_sat/ex-alta-1__1.jpg" width="350">
 
 ## Astronomy
 **Description** 
@@ -86,6 +93,7 @@ From space we can monitors stars and planets in a way that cannot be accomplishe
 - [CanX-3 BRITE constellation](https://space.skyrocket.de/doc_sdat/unibrite.htm) (stellar luminosity)
 - [NEOSSAT](https://www.asc-csa.gc.ca/eng/satellites/neossat/Default.asp) (near Earth object monitor)
 
+<img src="" width="350"><img src="" width="350">
 
 ## Chemical and Biological Experimentation
 **Description** 
@@ -98,6 +106,8 @@ New reactions and behaviours occur in zero-gravity environments.
 
 **Examples**
 - [HERON Mk II](https://www.iai.co.il/p/heron-mk-ii) (infection experiment)
+
+<img src="" width="350">
 
 ## Technology Demonstration
 **Description** 
@@ -114,6 +124,8 @@ Want to prove something works in a low-risk mission.
 - [CanX-4 and CanX-5](https://space.skyrocket.de/doc_sdat/canx-4.htm) (propulsion and formation flight)
 - [CanX-7](https://directory.eoportal.org/web/eoportal/satellite-missions/c-missions/canx-7) (debris mitigation and aircraft monitor)
 
+<img src="" width="350"><img src="" width="350">
+
 ## Education, Entertainment, Culture
 **Description** 
 
@@ -129,6 +141,8 @@ With prices going down, opportunities for other missions go up.
 - [AuroraSat](https://nwtresearch.com/research-projects/projects/sky-and-space/cubesat) (share indigenous culture with imagery and stories)
 - [YukonSat](https://yukoncubesatellite.com/) (coding challenges for youth, sharing recordings)
 - [Western CubeSat](https://cpsx.uwo.ca/research/Missions%20and%20Instruments/cubesat_project/index.html) (VR-ready camera)
+
+<img src="" width="350"><img src="" width="350"><img src="" width="350">
 
 # toastSat Design 
 The design of the toastSat is to be the most simple and barebones product that can highlight key features of a potential large-scale mission. Each toastSat will be put into a carrier vessel, dubbed the "Toaster", and that carrier vessel will be attached to a weather balloon. As there is limited space in the Toaster, each toastSat must be light weight, have low power cunsumption, and fit within a certian volume. The toastSats are also limited in their procesing power and how much memory they have so software intensive missions such as broadcasting and imaging may exist out of the scope of toastSats. The toastSats are to be built within a small timeframe of one semester so their mission scope must be also simplified. In order for a successful design and mission under all of these considerations, our toastSats will take on the KISS (keep it simple, silly) philosophy. Every aspect of the toastSat design will be simplified, but it will work. 
