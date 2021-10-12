@@ -14,20 +14,122 @@ If you have any questions please feel free to reach out to Emma Paczkowski, Sean
 # Satellite Mission Concepts 
 
 ## Communications
+**Description** 
+
+Connecting people through satellites can be easier than vast networks on the ground. 
+
+**Topics** 
+
+- [internet of things](https://en.wikipedia.org/wiki/Internet_of_things)
+- [radio communications](https://en.wikipedia.org/wiki/Radio)
+- [store-and-forward](https://en.wikipedia.org/wiki/Store_and_forward#:~:text=Store%20and%20forward%20is%20a,or%20to%20another%20intermediate%20station.)
+
+**Examples**
+
+- [TARS aka Kepler-2](https://space.skyrocket.de/doc_sdat/kepler-3.htm) (IoT and M2M communications)
+- [LEO Vantage 1](https://space.skyrocket.de/doc_sdat/leo-vantage-1.htm) (high-speed communications)
 
 ## Earth Observation - Human
+**Description** 
+
+Provides a new perspective of life on Earth. 
+
+**Topics** 
+- [traffic](https://www.esa.int/esapub/bulletin/bullet115/chapter7_bul115.pdf)
+- [pollution](https://www.epa.gov/sciencematters/tempo-new-era-air-quality-monitoring-space)
+- [navigation](https://en.wikipedia.org/wiki/Satellite_navigation)
+
+**Examples**
+
+- [exactView 9](https://space.skyrocket.de/doc_sdat/exactview-1.htm) (tracking of marine vessels)
+- [Claire](https://www.ghgsat.com/en/what-we-do/) (GHGSat-D, a GHG monitor) 
 
 ## Earth Observation - Other
+**Description** 
+
+There is plenty more than silly little people to watch from space. 
+
+**Topics** 
+- [Farming](https://www.farmersedge.ca/satellite-imagery/)
+- [Ecosystems](https://www.asc-csa.gc.ca/eng/satellites/everyday-lives/monitoring-and-protecting-our-ecosystems-from-space.asp)
+- [Mapping](https://www.cgg.com/geoscience/satellite-mapping)
+- [General Imaging](https://www.nrcan.gc.ca/maps-tools-and-publications/satellite-imagery-and-air-photos/10782)
+
+**Examples**
+- [Wyvern](https://wyvern.space/) (farm land health)
+- [NEMO-HD](https://space.skyrocket.de/doc_sdat/nemo-hd.htm) (real-time video downlink)
 
 ## Earth and Space Science
+**Description**
+
+The Earth and its atmosphere are worth studying from space!
+
+**Topics** 
+- [ionospheric measurements](https://en.wikipedia.org/wiki/Ionosphere)
+- [space environment](https://en.wikipedia.org/wiki/Space_environment)
+- [remote Earth measurements](https://earthdata.nasa.gov/learn/backgrounders/remote-sensing)
+
+**Examples**
+- [ConSat 1](https://space.skyrocket.de/doc_sdat/consat-1.htm] (South-Atlantic anomaly monitor)
+- [Ex-Alta 1](https://albertasat.ca/ex-alta-1/) (space plasma physics), Killick-1 (sea ice)
 
 ## Astronomy
+**Description** 
+
+From space we can monitors stars and planets in a way that cannot be accomplished on Earth
+
+**Topics** 
+- [space weather](https://en.wikipedia.org/wiki/Space_weather)
+- [astrophysics](https://en.wikipedia.org/wiki/Astrophysics)
+
+**Examples**
+- [CanX-3 BRITE constellation](https://space.skyrocket.de/doc_sdat/unibrite.htm) (stellar luminosity)
+- [NEOSSAT](https://www.asc-csa.gc.ca/eng/satellites/neossat/Default.asp) (near Earth object monitor)
+
 
 ## Chemical and Biological Experimentation
+**Description** 
+
+New reactions and behaviours occur in zero-gravity environments.
+
+**Topics** 
+- [drug performance](https://www.nasa.gov/feature/space-life-physical-sciences-research-and-applications-spacex-15-experiments-payloads)
+- [biological behaviour](https://en.wikipedia.org/wiki/Astrobiology)
+
+**Examples**
+- [HERON Mk II](https://www.iai.co.il/p/heron-mk-ii) (infection experiment)
 
 ## Technology Demonstration
+**Description** 
+
+Want to prove something works in a low-risk mission. 
+
+**Topics** 
+- [new materials](https://www.realclearscience.com/articles/2019/09/23/what_materials_keep_satellites_safe_in_space.html)
+- [mechanism](https://www.ruag.com/en/products-services/space/spacecraft/satellite-mechanisms)
+- [system](https://solarsystem.nasa.gov/basics/chapter11-1/)
+- [hardware/software](https://www.nasa.gov/smallsat-institute/space-mission-design-tools)
+
+**Examples**
+- [CanX-4 and CanX-5](https://space.skyrocket.de/doc_sdat/canx-4.htm) (propulsion and formation flight)
+- [CanX-7](https://directory.eoportal.org/web/eoportal/satellite-missions/c-missions/canx-7) (debris mitigation and aircraft monitor)
 
 ## Education, Entertainment, Culture
+**Description** 
+
+With prices going down, opportunities for other missions go up.
+
+**Topics** 
+- [art]()
+- [outreach]()
+- [community building]()
+- [virtual reality]()
+
+**Examples**
+- AuroraSat (share indigenous culture with imagery and stories)
+- YukonSat (coding challenges for youth, sharing recordings)
+- Western CubeSat (VR-ready camera)
+
 
 # toastSat Design 
 The design of the toastSat is to be the most simple and barebones product that can highlight key features of a potential large-scale mission. Each toastSat will be put into a carrier vessel, dubbed the "Toaster", and that carrier vessel will be attached to a weather balloon. As there is limited space in the Toaster, each toastSat must be light weight, have low power cunsumption, and fit within a certian volume. The toastSats are also limited in their procesing power and how much memory they have so software intensive missions such as broadcasting and imaging may exist out of the scope of toastSats. The toastSats are to be built within a small timeframe of one semester so their mission scope must be also simplified. In order for a successful design and mission under all of these considerations, our toastSats will take on the KISS (keep it simple, silly) philosophy. Every aspect of the toastSat design will be simplified, but it will work. 
@@ -81,18 +183,38 @@ The budget for each toastSat is summarized in the table below. The values within
 ### Photoresistive Sensor
 <img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/photosensitive-resistance-sensor.png" width="250">
 
+Sun sensor, where is it bright in the sky? 
+ADCS uses these
+Payload uses these 
+Biological and Chemical experiment (get fancy with some bio luminescence)
+Technology demonstration (replace accelerometer, possible relationship with IR sensor, possible relationship with temperature sensor?)  
+Positioning is important 
+
+
 ### Accelerometer / Gyroscope
 <img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/accelerometer.png" width="250">
+
+What is my pitch, roll, and yaw? 
+Not where I am, but how and where am I moving? 
+the D in ADCS 
+Technology demonstration, earth and space science, astronomy (canx-4 and canx-5 positioning)
 
 ### Barometric Pressure Sensor
 <img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/barometric-pressure-sensor.jpeg" width="250">
 
+Earth and Space Science
+French cubeSat looked at pressure on re-entry into the atmosphere. 
+
 ### IR Sensor
 <img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/ir-receiver-sensor.jpeg" width="250">
 
+FireSat
+Access to other electromagnetic wavelengths 
 
 ### TMP36 Temperature Sensor 
 <img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/temperature-sensor.jpeg" width="250">
+
+
 
 # Homework
 Before proceeding to the next lab, seriously consider how you want to use these sensors. Consider their hardware requirements, and a logical flow to acquiring data. Some guiding questions are asked below.
