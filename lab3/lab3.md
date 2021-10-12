@@ -120,16 +120,15 @@ Want to prove something works in a low-risk mission.
 With prices going down, opportunities for other missions go up.
 
 **Topics** 
-- [art]()
-- [outreach]()
-- [community building]()
-- [virtual reality]()
+- [art](https://en.wikipedia.org/wiki/Art)
+- [outreach](https://communityoutreach.ca/)
+- [community building](https://www.nten.org/article/community-building-digital-inclusion/)
+- [virtual reality](https://en.wikipedia.org/wiki/Virtual_reality)
 
 **Examples**
-- AuroraSat (share indigenous culture with imagery and stories)
-- YukonSat (coding challenges for youth, sharing recordings)
-- Western CubeSat (VR-ready camera)
-
+- [AuroraSat](https://nwtresearch.com/research-projects/projects/sky-and-space/cubesat) (share indigenous culture with imagery and stories)
+- [YukonSat](https://yukoncubesatellite.com/) (coding challenges for youth, sharing recordings)
+- [Western CubeSat](https://cpsx.uwo.ca/research/Missions%20and%20Instruments/cubesat_project/index.html) (VR-ready camera)
 
 # toastSat Design 
 The design of the toastSat is to be the most simple and barebones product that can highlight key features of a potential large-scale mission. Each toastSat will be put into a carrier vessel, dubbed the "Toaster", and that carrier vessel will be attached to a weather balloon. As there is limited space in the Toaster, each toastSat must be light weight, have low power cunsumption, and fit within a certian volume. The toastSats are also limited in their procesing power and how much memory they have so software intensive missions such as broadcasting and imaging may exist out of the scope of toastSats. The toastSats are to be built within a small timeframe of one semester so their mission scope must be also simplified. In order for a successful design and mission under all of these considerations, our toastSats will take on the KISS (keep it simple, silly) philosophy. Every aspect of the toastSat design will be simplified, but it will work. 
@@ -214,7 +213,7 @@ Access to other electromagnetic wavelengths
 ### TMP36 Temperature Sensor 
 <img src="https://github.com/queens-satellite-team/Space-School/blob/c912eb47ebdadc9f7dc569c38bc38e4d7393ae3b/lab3/lab3-images/temperature-sensor.jpeg" width="250">
 
-
+[Resource Link](https://cdn-learn.adafruit.com/downloads/pdf/tmp36-temperature-sensor.pdf)
 
 # Homework
 Before proceeding to the next lab, seriously consider how you want to use these sensors. Consider their hardware requirements, and a logical flow to acquiring data. Some guiding questions are asked below.
