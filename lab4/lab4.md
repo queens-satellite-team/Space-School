@@ -69,9 +69,9 @@ void loop()
 
 # 6.0 SD Card Writer
 
-## 5.1 Hardware Requirements
+## 6.1 Hardware Requirements
 
-## 5.2 Software Requirements
+## 6.2 Software Requirements
 
-## 5.3 Example
+## 6.3 Example
 
