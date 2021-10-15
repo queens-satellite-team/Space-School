@@ -41,3 +41,37 @@
 ## 5.2 Software Requirements
 
 ## 5.3 Example
+
+```
+// set the analog input pin
+int input_pin = 0;
+
+int analog_data;
+float voltage_reading;
+float temperatureC; 
+  
+void setup()
+{
+}
+
+void loop()
+{
+  // read the analog input
+  analog_data = analogRead(sensor_pin);
+  
+  // convert analog input to a voltage value
+  voltage_reading = analog_data * (5.0/1024.0); 
+  
+  // convert voltage value to a temperature value
+  temperatureC = (voltage_reading - 0.5) * 100; 
+}
+```
+
+# 6.0 SD Card Writer
+
+## 5.1 Hardware Requirements
+
+## 5.2 Software Requirements
+
+## 5.3 Example
+
