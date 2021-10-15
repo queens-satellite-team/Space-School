@@ -74,7 +74,7 @@ void loop()
 [data sheet](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-microsd-spi-sdio.pdf)  
 
 ## 6.1 Hardware Requirements
-### Pinouts
+### Pinouts 📌
   -  Power Pins
       - **3V** - This is the power pin. MicroSD cards must use 3.3V, so take care to only hook 3.3V to this pin. Hooking 5V or VBAT to this pin will damage your microSD card.
      - **GND** - common ground for power and logic.
