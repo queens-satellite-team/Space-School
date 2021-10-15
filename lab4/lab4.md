@@ -19,10 +19,14 @@
 ## 2.3 Example
 
 # 3.0 Barometric Pressure Sensor
+The BMP180 is a high precision digital pressure sensors for consumer applications. 
 
-## 3.1 Hardware Requirements
+## 3.1 🛠️ Hardware Requirements
+- the four pins you need are labeled +, -, CL, and DA. (If you're wondering, the fifth pin labeled IO allows you to alter the I/O voltage for very low voltage processors (e.g. 1.8V). This pin is disabled by default, and you can normally leave that pin disconnected.)
+- 
 
-## 3.2 Software Requirements
+## 3.2 💻  Software Requirements
+- I2C interface
 
 ## 3.3 Example
 
