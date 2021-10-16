@@ -5,7 +5,7 @@
   The circuit:
 
 */
-#define photoresistivePin A0
+#define photoresistivePin 11
 
 void setup()
 {
@@ -13,7 +13,10 @@ void setup()
 }
 void loop()
 {
- if (analogRead(photoresistivePin) > 20) Serial.println("Light");
- else Serial.println("Dark");
+ if (digitalRead(photoresistivePin)){
+    Serial.println("Dark");
+ } else {
+    Serial.println("Light");
+ }
  delay(100);
 }
