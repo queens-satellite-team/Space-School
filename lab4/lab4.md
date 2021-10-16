@@ -1,6 +1,15 @@
 # Introduction 
+Hello! Welcome to the fourth lab of Space School! In this lab we are going to design the software for your payload. In this lab you will find the hardware that we have purchased for the payloads along with the software requirements, hardware requirements and example code. In your groups you will be selecting which sensors you want to implement and developing the software to put them together.
+
+If you have any questions please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
 # Goals of Lab 4
+1️⃣ Select your sensors.
+
+2️⃣ Use the example code to develop your software for yoru toasSat.
+
+3️⃣ Use the hardware requirements to help piece you sensors all together.
+
 
 # 1.0 Photoresistive Sensor
 A photoresistor, or light-dependent resistor (LDR) is a resistor whose resistance will decrease when incident light intensity increase; in other words, it exhibits photoconductivity. This sensor has an adjustable dial so that you can set a light threshold for the sensor to detect. When the ambient light intensity does not reach the threshold value, the sensor output is high ; when the ambient light level exceeds the set threshold, the sendor outputs a low value.
@@ -232,8 +241,8 @@ void loop()
 ``` 
 
    
-# 6.0 [SD Card Writer](https://www.digikey.ca/en/products/detail/4682/1528-4682-ND/12822319?itemSeq=377815692)
-[data sheet](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-microsd-spi-sdio.pdf)  
+# 6.0 SD Card Reader/Writer
+The SD Card reader/writer is used to store data that you collect during your flight on an SD card. More infomation can be found with the [data sheet](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-microsd-spi-sdio.pdf)  
 
 ## 6.1 Hardware Requirements
 ### Pinouts 📌
