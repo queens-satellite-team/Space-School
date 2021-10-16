@@ -87,7 +87,7 @@ void loop()
    - SPI Logic Pins
      If you're using SPI to connect to your SD cards, the pins have the following functions:
       - **CLK** - This is the SPI **C**lock pin /** SCK** **S**erial **C**lock, its an input to the chip.
-      - **SO** - this is the **S**erial **O**ut / Microcontroller **I**n **S**erial **O**ut pin, for data sent from the SD card to your processor.
+      - **SO** - this is the **S**erial **O**ut / **M**icrocontroller **I**n **S**erial **O**ut pin, for data sent from the SD card to your processor.
        - **SI** - this is the **S**erial **I**n / **M**icrocontroller **O**ut **S**erial **I**n pin, for data sent from your processor to the SD card. Its an input to the chip and can use 3V logic only.
       - **CS** - this is the **C**hip **S**elect pin, drop it low to start an SPI transaction. Its an input to the chip and can use 3V logic only.
 Pull ups are provided on all SPI logic pin.
