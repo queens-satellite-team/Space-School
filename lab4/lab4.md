@@ -29,7 +29,7 @@ This is the [Gikfun GY-521 MPU-6050 3 Axis Accelerometer Gyroscope](https://www.
 ## 2.2 💻 Software Requirements
 
 - Import the **Wire** card library. This library is required for any I2C device. 
-- The sensor stores the acceleration and gyroscopic data in things called [registers](https://www.javatpoint.com/computer-registers). You can read and write to these registers to get the desired data. The [datasheet](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf) contains all of the names, address, and purpose for each register. These explain where the numbers like `0x3B` and `0x68` come from. 
+- The sensor stores the acceleration and gyroscopic data in things called [registers](https://www.javatpoint.com/computer-registers). You can read and write to these registers to get the desired data. The [datasheet](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf) contains all of the names, address, and purpose for each register. These explain where the numbers like `0x3B` and `0x68` come from in the example below. 
 
 There is also an outstanding library that can be used to interact with the accelerometer / gyroscope [found here!](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050) This library has support for [Processing](https://processing.org/) which can be used to visualize the motions of the accelerometer. 
 
