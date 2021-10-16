@@ -10,17 +10,74 @@
 
 ## 1.3 Example
 
-# 2.0 Accelerometer
+# 2.0 Accelerometer / Gyroscope 🧭
+This is the [Gikfun GY-521 MPU-6050 3 Axis Accelerometer Gyroscope](https://www.amazon.ca/Gikfun-MPU-6050-Accelerometer-Gyroscope-EK1091x3C/dp/B07JPK26X2/ref=sr_1_32?crid=1JQ9V4LAR8E4I&dchild=1&keywords=arduino+sensor&qid=1632086125&sprefix=arduino+sen%2Caps%2C188&sr=8-32) This sensor contains a 3-axis gyroscope, a 3-axis accelerometer, a digital motion processor (DMP), and a temperature sensor. The digital motion processor can be used to process complex algorithms directly on the board. Usually, the DMP processes algorithms that turn the raw values from the sensors into stable position data. **[Datasheet](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf)**
 
-## 2.1 Hardware Requirements
+![accelerometer](https://github.com/queens-satellite-team/Space-School/blob/43b3b927f3488278fb81b365fd4e02bb42c2b63f/lab4/lab4-images/mpu_650_pinout.jpg)
 
-## 2.2 Software Requirements
+## 2.1 🛠️ Hardware Requirements
+
+- **Pin VCC:** This is the power connection to the sensor. Needs to be connected to 3.3 or 5.0 volt power supply. (On the Arduino Uno/Nano: 3V3) (the breakout board has a voltage regulator). 
+- **Pin GND:** This is the ground connection to the sensor. Needs to be connected to the ground of the power supply. (On the Arduino Uno/Nano: GND) 
+- **Pin SCL:** This is the I2C clock communication line. Neends to be connected to any pin labelled SCL. (On the Arduino Uno/Nano: A5)
+- **Pin SDA:** This is the I2C data communication line. Needs to be connected to any pin labeled SDA. (On the Arduino Uno/Nano: A4) 
+- **Pin XDA:** This is the I2C auxiliary data line. Used if the sensor is to be an I2C master while connected to external sensors.
+- **Pin XCL:** This is the I2C auxiliary clock line. Used if the sensor is to be an I2C master while connected to external sensors.
+- **Pin AD0:** If this pin is LOW, the I2C address of the board will be 0x68. Otherwise, if the pin is HIGH, the address will be 0x69.
+- **Pin INT:** This is the interupt pin. The sensor uses this digital ouput to send an interupt to another sensor or controller.
+
+## 2.2 💻 Software Requirements
+
+- Import the **Wire** card library. This library is required for any I2C device. To learn more about the I2C communication protocol check out [Harrison Gordon's work in our documentaiton repository](https://github.com/queens-satellite-team/documentation/blob/master/obc/i2c.md). 
+- The sensor stores the acceleration and gyroscopic data in things called [registers](https://www.javatpoint.com/computer-registers). You can read and write to these registers to get the desired data. The [datasheet](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf) contains all of the names, address, and purpose for each register. These explain where the numbers like `0x3B` and `0x68` come from in the example below. 
+
+There is also an outstanding library that can be used to interact with the accelerometer / gyroscope [found here!](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050) This library has support for [Processing](https://processing.org/) which can be used to visualize the motions of the accelerometer. 
 
 ## 2.3 Example
+```
+#include<Wire.h>
+const int MPU=0x68; 
+int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
+
+void setup(){
+  Wire.begin();
+  Wire.beginTransmission(MPU);
+  Wire.write(0x6B); 
+  Wire.write(0);    
+  Wire.endTransmission(true);
+  Serial.begin(9600);
+}
+void loop(){
+  Wire.beginTransmission(MPU);
+  Wire.write(0x3B);  
+  Wire.endTransmission(false);
+  Wire.requestFrom(MPU,12,true);  
+  AcX=Wire.read()<<8|Wire.read();    
+  AcY=Wire.read()<<8|Wire.read();  
+  AcZ=Wire.read()<<8|Wire.read();  
+  GyX=Wire.read()<<8|Wire.read();  
+  GyY=Wire.read()<<8|Wire.read();  
+  GyZ=Wire.read()<<8|Wire.read();  
+  
+  Serial.print("Accelerometer: ");
+  Serial.print("X = "); Serial.print(AcX);
+  Serial.print(" | Y = "); Serial.print(AcY);
+  Serial.print(" | Z = "); Serial.println(AcZ); 
+  
+  Serial.print("Gyroscope: ");
+  Serial.print("X = "); Serial.print(GyX);
+  Serial.print(" | Y = "); Serial.print(GyY);
+  Serial.print(" | Z = "); Serial.println(GyZ);
+  Serial.println(" ");
+  delay(333);
+}
+```
 
 
-# 3.0 Barometric Pressure Sensor
-The BMP180 is a high precision digital pressure sensors for consumer applications. 
+# 3.0 Barometric Pressure Sensor ☁️ 
+The BMP180 is a high precision digital pressure sensors for consumer applications. **[Datasheet](https://cdn-shop.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf)**
+
+<img src="https://github.com/queens-satellite-team/Space-School/blob/e697f3d8fc927e8535929e84a08d4a9251217532/lab4/lab4-images/pressure_sensor_pinout.jpeg" width="500" height="500">
 
 ## 3.1 🛠️ Hardware Requirements
 
@@ -30,7 +87,7 @@ The BMP180 is a high precision digital pressure sensors for consumer application
 - **Pin CL (SCL):** This is the I2C clock communication line. Neends to be connected to any pin labelled SCL. (On the Arduino Uno/Nano: A5) 
 - **Pin IO (VDDIO):** This is the input/output voltage control line. Leave this disconnected unless you're connecting to a lower-voltage microprocessor. 
 
-## 3.2 💻  Software Requirements
+## 3.2 💻 Software Requirements
 To easily communicate with this sesnor we can use a pre-written library. Libraries are collections of software functions geared towards a single purpose, such as communicating with a specific device. Fortunately there is a pre-written Arduino library called SFE_BMP180 that allows you to easily talk to the BMP180 sensor. This library is not included with the stock Arduino software, but don't worry, installing new libraries is easy.
 
 1. Follow this link: https://learn.sparkfun.com/tutorials/bmp180-barometric-pressure-sensor-hookup-/all#res
@@ -43,6 +100,8 @@ Notes About Using the BMP180 Library.
 - Using the .startTemperature() and .startPressure() methods returns the time required to wait before using the .getTemperature() and .getPressure() methods. 
 - The .getTemperature() and .getPressure() methods return 0 if the measurement failed, or 1 if successful. 
 - The pressure sensor returns abolute pressure with .getPressure(), which varies with altitude. To remove the effects of altitude, use the sealevel function and your current altitude.
+
+This sensor also uses the Wire.h library used to communicate to sensors with the I2C communication protocol. To learn more about the I2C communication protocol check out [Harrison Gordon's work in our documentaiton repository](https://github.com/queens-satellite-team/documentation/blob/master/obc/i2c.md). 
 
 ## 3.3 Example
 
@@ -90,7 +149,6 @@ void loop()
 }
 ```
 
-
 # 4.0 IR Sensor
 
 ## 4.1 Hardware Requirements
@@ -101,6 +159,8 @@ void loop()
 
 # 5.0 Temperature Sensor 🌡️
 The TMP35/TMP36/TMP37 are low voltage, precision centigrade temperature sensors. They provide a voltage output that is linearly proportional to the Celsius (centigrade) temperature. The TMP35/ TMP36/TMP37 do not require any external calibration to provide typical accuracies of ±1°C at +25°C and ±2°C over the −40°C to +125°C temperature range. **[Datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf)**
+
+<img src="https://github.com/queens-satellite-team/Space-School/blob/18f2d531abfe9a697c59f18389db6cbc8da6a0c9/lab4/lab4-images/temperature-sensor.jpeg" width="500" height="500">
 
 ## 5.1 🛠️ Hardware Requirements
 - 2.7 V to 5.5 V Maximum Input Supply 
@@ -120,18 +180,22 @@ int input_pin = 0;
 int analog_data;
 float voltage_reading;
 float temperatureC; 
-	@@ -57,10 +64,10 @@ void setup()
+
+void setup()
+{
+}
+
 void loop()
 {
-  // read the analog input
-  analog_input = analogRead(sensor_pin);
+   // read the analog input
+   analog_input = analogRead(sensor_pin);
   
-  // convert analog input to a voltage value
-  voltage_reading = analog_input * (5.0/1024.0); 
+   // convert analog input to a voltage value
+   voltage_reading = analog_input * (5.0/1024.0); 
   
-  // convert voltage value to a temperature value
-  temperatureC = (voltage_reading - 0.5) * 100; 
-  
+   // convert voltage value to a temperature value
+   temperatureC = (voltage_reading - 0.5) * 100; 
+}
 ``` 
 
    
