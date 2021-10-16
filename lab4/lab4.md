@@ -18,17 +18,78 @@
 
 ## 2.3 Example
 
+
 # 3.0 Barometric Pressure Sensor
 The BMP180 is a high precision digital pressure sensors for consumer applications. 
 
 ## 3.1 🛠️ Hardware Requirements
-- the four pins you need are labeled +, -, CL, and DA. (If you're wondering, the fifth pin labeled IO allows you to alter the I/O voltage for very low voltage processors (e.g. 1.8V). This pin is disabled by default, and you can normally leave that pin disconnected.)
-- 
+
+- **Pin + (VDD):** This is the power connection to the sensor. Needs to be connected to 3.3 volt power supply. (On the Arduino Uno/Nano: 3V3)
+- **Pin - (GND):** This is the ground connection to the sensor. Needs to be connected to the ground of the power supply. (On the Arduino Uno/Nano: GND) 
+- **Pin DA (SDA):** This is the I2C data communication line. Needs to be connected to any pin labeled SDA. (On the Arduino Uno/Nano: A4) 
+- **Pin CL (SCL):** This is the I2C clock communication line. Neends to be connected to any pin labelled SCL. (On the Arduino Uno/Nano: A5) 
+- **Pin IO (VDDIO):** This is the input/output voltage control line. Leave this disconnected unless you're connecting to a lower-voltage microprocessor. 
 
 ## 3.2 💻  Software Requirements
-- I2C interface
+To easily communicate with this sesnor we can use a pre-written library. Libraries are collections of software functions geared towards a single purpose, such as communicating with a specific device. Fortunately there is a pre-written Arduino library called SFE_BMP180 that allows you to easily talk to the BMP180 sensor. This library is not included with the stock Arduino software, but don't worry, installing new libraries is easy.
+
+1. Follow this link: https://learn.sparkfun.com/tutorials/bmp180-barometric-pressure-sensor-hookup-/all#res
+2. Follow the instructions in the **_Installing the Arduino Library_** section. 
+3. Open any example sketch from _File > Examples > Examples from Custom Libraries_ 
+4. Compile the sketch to verify that the software is working correctly. 
+
+Notes About Using the BMP180 Library.
+- You must first get a temperature measurement to perform a pressure reading.
+- Using the .startTemperature() and .startPressure() methods returns the time required to wait before using the .getTemperature() and .getPressure() methods. 
+- The .getTemperature() and .getPressure() methods return 0 if the measurement failed, or 1 if successful. 
+- The pressure sensor returns abolute pressure with .getPressure(), which varies with altitude. To remove the effects of altitude, use the sealevel function and your current altitude.
 
 ## 3.3 Example
+
+```
+#include <SFE_BMP180.h>
+#include <Wire.h>
+
+#define ALTITUDE 1655.0 
+
+SFE_BMP180 pressure_sensor;
+
+void setup()
+{
+    // start up the pressure sensor 
+    pressure_sensor.begin(); 
+}
+
+void loop()
+{
+    char status;
+    double T,P,p0,a;
+    
+    // You must first get a temperature measurement to perform a pressure reading.
+    status = pressure.startTemperature();
+    delay(status);
+    
+    // Retrieve the completed temperature measurement, measurement is stored in the variable T.
+    status = pressure.getTemperature(T);
+    
+    // Start a pressure measurement: the parameter is the oversampling setting, from 0 to 3 (highest res, longest wait).
+    status = pressure.startPressure(3);
+    delay(status);
+    
+    // Retrieve the completed pressure measurement, measurement is stored in the variable P.
+    status = pressure.getPressure(P,T);
+    
+    // Retrieve the relative (sea-level) pressure, measurement is stored in the variable p0. 
+    p0 = pressure.sealevel(P, ALTITUDE);
+    
+    // Retreive the current altitude from the pressure reading
+    a = pressure.altitude(P,p0);
+    
+    // include a delay to not overwork the sensor
+    delay(5000); 
+}
+```
+
 
 # 4.0 IR Sensor
 
