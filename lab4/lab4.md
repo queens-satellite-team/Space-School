@@ -19,7 +19,7 @@
 ## 2.3 Example
 
 
-# 3.0 Barometric Pressure Sensor
+# 3.0 Barometric Pressure Sensor ☁️ 
 The BMP180 is a high precision digital pressure sensors for consumer applications. **[Datasheet](https://cdn-shop.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf)**
 
 <img src="https://github.com/queens-satellite-team/Space-School/blob/e697f3d8fc927e8535929e84a08d4a9251217532/lab4/lab4-images/pressure_sensor_pinout.jpeg" width="500" height="500">
@@ -103,6 +103,8 @@ void loop()
 # 5.0 Temperature Sensor 🌡️
 The TMP35/TMP36/TMP37 are low voltage, precision centigrade temperature sensors. They provide a voltage output that is linearly proportional to the Celsius (centigrade) temperature. The TMP35/ TMP36/TMP37 do not require any external calibration to provide typical accuracies of ±1°C at +25°C and ±2°C over the −40°C to +125°C temperature range. **[Datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf)**
 
+<img src="https://github.com/queens-satellite-team/Space-School/blob/18f2d531abfe9a697c59f18389db6cbc8da6a0c9/lab4/lab4-images/temperature-sensor.jpeg" width="500" height="500">
+
 ## 5.1 🛠️ Hardware Requirements
 - 2.7 V to 5.5 V Maximum Input Supply 
 - The TMP36 is specified from −40°C to +125°C, provides a 750 mV output at 25°C. 
@@ -121,7 +123,11 @@ int input_pin = 0;
 int analog_data;
 float voltage_reading;
 float temperatureC; 
-	@@ -57,10 +64,10 @@ void setup()
+
+void setup()
+{
+}
+
 void loop()
 {
   // read the analog input
