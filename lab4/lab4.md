@@ -1,7 +1,7 @@
 # Introduction 
 Hello! Welcome to the fourth lab of Space School! In this lab we are going to design the software for your payload. In this lab you will find the hardware that we have purchased for the payloads along with the software requirements, hardware requirements and example code. In your groups you will be selecting which sensors you want to implement and developing the software to put them together.
 
-If you have any questions please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
+If you have any questions, please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
 # Goals of Lab 4
 1️⃣ Select your sensors.
@@ -12,7 +12,7 @@ If you have any questions please feel free to reach out to Emma Paczkowski, Sean
 
 
 # 1.0 Photoresistive Sensor
-A photoresistor, or light-dependent resistor (LDR) is a resistor whose resistance will decrease when incident light intensity increase; in other words, it exhibits photoconductivity. This sensor has an adjustable dial so that you can set a light threshold for the sensor to detect. When the ambient light intensity does not reach the threshold value, the sensor output is high ; when the ambient light level exceeds the set threshold, the sendor outputs a low value.
+A photoresistor, or light-dependent resistor (LDR) is a resistor whose resistance will decrease when incident light intensity increase; in other words, it exhibits photoconductivity. This sensor has an adjustable dial so that you can set a light threshold for the sensor to detect. When the ambient light intensity does not reach the threshold value, the sensor output is high; when the ambient light level exceeds the set threshold, the sensor outputs a low value.
 
 <img src="https://github.com/queens-satellite-team/Space-School/blob/fcfae3bbd3c562e2c20e1b6e5a6f9f731f0fa6e3/lab4/lab4-images/photosensitive-brightness-resistance-sensor-module.jpg" alt="Photoresistive Sensor" width="300">
 
@@ -31,7 +31,7 @@ There are no extra software requirements
 /*
   Photoresistive Sensor
 
-  This example shows how to read from a photoresistive snesor
+  This example shows how to read from a photoresistive sensor
   The circuit:
 */
 
@@ -66,11 +66,11 @@ This is the [Gikfun GY-521 MPU-6050 3 Axis Accelerometer Gyroscope](https://www.
 - **Pin XDA:** This is the I2C auxiliary data line. Used if the sensor is to be an I2C master while connected to external sensors.
 - **Pin XCL:** This is the I2C auxiliary clock line. Used if the sensor is to be an I2C master while connected to external sensors.
 - **Pin AD0:** If this pin is LOW, the I2C address of the board will be 0x68. Otherwise, if the pin is HIGH, the address will be 0x69.
-- **Pin INT:** This is the interupt pin. The sensor uses this digital ouput to send an interupt to another sensor or controller.
+- **Pin INT:** This is the interrupt pin. The sensor uses this digital output to send an interrupt to another sensor or controller.
 
 ## 2.2 💻 Software Requirements
 
-- Import the **Wire** card library. This library is required for any I2C device. To learn more about the I2C communication protocol check out [Harrison Gordon's work in our documentaiton repository](https://github.com/queens-satellite-team/documentation/blob/master/obc/i2c.md). 
+- Import the **Wire** card library. This library is required for any I2C device. To learn more about the I2C communication protocol check out [Harrison Gordon's work in our documentation repository](https://github.com/queens-satellite-team/documentation/blob/master/obc/i2c.md). 
 - The sensor stores the acceleration and gyroscopic data in things called [registers](https://www.javatpoint.com/computer-registers). You can read and write to these registers to get the desired data. The [datasheet](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf) contains all of the names, address, and purpose for each register. These explain where the numbers like `0x3B` and `0x68` come from in the example below. 
 
 There is also an outstanding library that can be used to interact with the accelerometer / gyroscope [found here!](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050) This library has support for [Processing](https://processing.org/) which can be used to visualize the motions of the accelerometer. 
@@ -130,7 +130,7 @@ The BMP180 is a high precision digital pressure sensors for consumer application
 - **Pin IO (VDDIO):** This is the input/output voltage control line. Leave this disconnected unless you're connecting to a lower-voltage microprocessor. 
 
 ## 3.2 💻 Software Requirements
-To easily communicate with this sesnor we can use a pre-written library. Libraries are collections of software functions geared towards a single purpose, such as communicating with a specific device. Fortunately there is a pre-written Arduino library called SFE_BMP180 that allows you to easily talk to the BMP180 sensor. This library is not included with the stock Arduino software, but don't worry, installing new libraries is easy.
+To easily communicate with this sensor, we can use a pre-written library. Libraries are collections of software functions geared towards a single purpose, such as communicating with a specific device. Fortunately, there is a pre-written Arduino library called SFE_BMP180 that allows you to easily talk to the BMP180 sensor. This library is not included with the stock Arduino software, but don't worry, installing new libraries is easy.
 
 1. Follow this link: https://learn.sparkfun.com/tutorials/bmp180-barometric-pressure-sensor-hookup-/all#res
 2. Follow the instructions in the **_Installing the Arduino Library_** section. 
@@ -141,9 +141,9 @@ Notes About Using the BMP180 Library.
 - You must first get a temperature measurement to perform a pressure reading.
 - Using the .startTemperature() and .startPressure() methods returns the time required to wait before using the .getTemperature() and .getPressure() methods. 
 - The .getTemperature() and .getPressure() methods return 0 if the measurement failed, or 1 if successful. 
-- The pressure sensor returns abolute pressure with .getPressure(), which varies with altitude. To remove the effects of altitude, use the sealevel function and your current altitude.
+- The pressure sensor returns absolute pressure with .getPressure(), which varies with altitude. To remove the effects of altitude, use the sea-level function and your current altitude.
 
-This sensor also uses the Wire.h library used to communicate to sensors with the I2C communication protocol. To learn more about the I2C communication protocol check out [Harrison Gordon's work in our documentaiton repository](https://github.com/queens-satellite-team/documentation/blob/master/obc/i2c.md). 
+This sensor also uses the Wire.h library used to communicate to sensors with the I2C communication protocol. To learn more about the I2C communication protocol check out [Harrison Gordon's work in our documentation repository](https://github.com/queens-satellite-team/documentation/blob/master/obc/i2c.md). 
 
 ## 3.3 Example
 
@@ -199,10 +199,10 @@ The TMP35/TMP36/TMP37 are low voltage, precision centigrade temperature sensors.
 ## 4.1 🛠️ Hardware Requirements
 - 2.7 V to 5.5 V Maximum Input Supply 
 - The TMP36 is specified from −40°C to +125°C, provides a 750 mV output at 25°C. 
-- Analog Signal Ouput 
+- Analog Signal Output 
 
 ## 4.2 💻 Software Requirements
-- Analog to Digital Conversion : Digial Voltage Value = Analog Input Voltage * Input Voltage / 1024.0  
+- Analog to Digital Conversion : Digital Voltage Value = Analog Input Voltage * Input Voltage / 1024.0  
 - Conversion Factor: Temperate C = [Vout in mV - 500mV] / (10mV / 1 °C)
 
 ## 4.3 Example
@@ -234,7 +234,7 @@ void loop()
 
    
 # 5.0 SD Card Reader/Writer
-The SD Card reader/writer is used to store data that you collect during your flight on an SD card. More infomation can be found with the [data sheet](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-microsd-spi-sdio.pdf)  
+The SD Card reader/writer is used to store data that you collect during your flight on an SD card. More information can be found with the [data sheet](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-microsd-spi-sdio.pdf)  
 
 ## 5.1 Hardware Requirements
 ### Pinouts 📌
@@ -343,4 +343,3 @@ void loop() {
   // nothing happens after setup
 }
 ```
-
