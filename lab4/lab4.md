@@ -28,7 +28,7 @@ This is the [Gikfun GY-521 MPU-6050 3 Axis Accelerometer Gyroscope](https://www.
 
 ## 2.2 💻 Software Requirements
 
-- Import the **Wire** card library. This library is required for any I2C device. 
+- Import the **Wire** card library. This library is required for any I2C device. To learn more about the I2C communication protocol check out [Harrison Gordon's work in our documentaiton repository](https://github.com/queens-satellite-team/documentation/blob/master/obc/i2c.md). 
 - The sensor stores the acceleration and gyroscopic data in things called [registers](https://www.javatpoint.com/computer-registers). You can read and write to these registers to get the desired data. The [datasheet](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf) contains all of the names, address, and purpose for each register. These explain where the numbers like `0x3B` and `0x68` come from in the example below. 
 
 There is also an outstanding library that can be used to interact with the accelerometer / gyroscope [found here!](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050) This library has support for [Processing](https://processing.org/) which can be used to visualize the motions of the accelerometer. 
@@ -100,6 +100,8 @@ Notes About Using the BMP180 Library.
 - Using the .startTemperature() and .startPressure() methods returns the time required to wait before using the .getTemperature() and .getPressure() methods. 
 - The .getTemperature() and .getPressure() methods return 0 if the measurement failed, or 1 if successful. 
 - The pressure sensor returns abolute pressure with .getPressure(), which varies with altitude. To remove the effects of altitude, use the sealevel function and your current altitude.
+
+This sensor also uses the Wire.h library used to communicate to sensors with the I2C communication protocol. To learn more about the I2C communication protocol check out [Harrison Gordon's work in our documentaiton repository](https://github.com/queens-satellite-team/documentation/blob/master/obc/i2c.md). 
 
 ## 3.3 Example
 
