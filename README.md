@@ -31,14 +31,15 @@ The week numbers correspond to the weeks of the school semester. We meet weekly 
 - Week 2: Intro to Space School 
 - Week 3: Coding and Arduino (lab 1)
 - Week 4: Sensors and Arduino (lab 2)
-- Week 5: Developing Payload Software (lab 3)
-- Week 6: Intro to Soldering (lab 4)
-- Week 7: Soldering Payload Circuit (lab 5)
-- Week 8: Testing and Validation (lab 6)
-- Week 9: Into to CAD (lab 7)
-- Week 10: Developing Payload Chassis (lab 8)
-- Week 11: Integration (lab 9)
-- Week 12: Integration (lab 9)
+- Week 5: Mission Analysis (lab 3)
+- Week 6: Developing Payload Software (lab 4)
+- Week 7: Intro to Soldering (lab 5)
+- Week 8: Soldering Payload Circuit (lab 6)
+- Week 9: Budgeting (lab 7)
+- Week 10: Into to CAD (lab 8)
+- Week 11: Developing Payload Chassis (lab 9)
+- Week 12: Integration (lab 10)
+
 ## Feedback
 PLEASE give us any feedback you have.  You can either send any of us individual messages, fill out the [feedback form](https://forms.gle/ZNMfWeRQVinnbxpEA) or both!
 
