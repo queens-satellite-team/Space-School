@@ -130,15 +130,15 @@ void setup()
 
 void loop()
 {
-  // read the analog input
-  analog_input = analogRead(sensor_pin);
+   // read the analog input
+   analog_input = analogRead(sensor_pin);
   
-  // convert analog input to a voltage value
-  voltage_reading = analog_input * (5.0/1024.0); 
+   // convert analog input to a voltage value
+   voltage_reading = analog_input * (5.0/1024.0); 
   
-  // convert voltage value to a temperature value
-  temperatureC = (voltage_reading - 0.5) * 100; 
-  
+   // convert voltage value to a temperature value
+   temperatureC = (voltage_reading - 0.5) * 100; 
+}
 ``` 
 
    
