@@ -20,7 +20,9 @@
 
 
 # 3.0 Barometric Pressure Sensor
-The BMP180 is a high precision digital pressure sensors for consumer applications. 
+The BMP180 is a high precision digital pressure sensors for consumer applications. **[Datasheet](https://cdn-shop.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf)**
+
+<img src="https://github.com/queens-satellite-team/Space-School/blob/e697f3d8fc927e8535929e84a08d4a9251217532/lab4/lab4-images/pressure_sensor_pinout.jpeg" width="500" height="500">
 
 ## 3.1 🛠️ Hardware Requirements
 
@@ -89,7 +91,6 @@ void loop()
     delay(5000); 
 }
 ```
-
 
 # 4.0 IR Sensor
 
