@@ -3,12 +3,45 @@
 # Goals of Lab 4
 
 # 1.0 Photoresistive Sensor
+A photoresistor, or light-dependent resistor (LDR) is a resistor whose resistance will decrease when incident light intensity increase; in other words, it exhibits photoconductivity. This sensor has an adjustable dial so that you can set a light threshold for the sensor to detect. When the ambient light intensity does not reach the threshold value, the module DO-side output high ; when the ambient light level exceeds the set threshold, DO terminal output low.
+
+<img src="https://github.com/queens-satellite-team/Space-School/blob/fcfae3bbd3c562e2c20e1b6e5a6f9f731f0fa6e3/lab4/lab4-images/photosensitive-brightness-resistance-sensor-module.jpg" alt="Photoresistive Sensor" width="300">
 
 ## 1.1 Hardware Requirements
+- Pin out:
+	- VCC (3.3-5V)
+	- GND
+	- Digital Output
+- adjustable potentiometer to adjust the sensitivity
 
 ## 1.2 Software Requirements
+There are no extra software requirements 
 
 ## 1.3 Example
+```
+/*
+  Photoresistive Sensor
+
+  This example shows how to read from a photoresistive snesor
+  The circuit:
+*/
+
+#define photoresistivePin 11
+
+void setup()
+{
+ Serial.begin(9600);
+}
+void loop()
+{
+ if (digitalRead(photoresistivePin)){
+    Serial.println("Dark");
+ } else {
+    Serial.println("Light");
+ }
+ delay(100);
+}
+```
 
 # 2.0 Accelerometer
 
