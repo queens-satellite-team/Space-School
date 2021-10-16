@@ -3,15 +3,15 @@
 # Goals of Lab 4
 
 # 1.0 Photoresistive Sensor
-A photoresistor, or light-dependent resistor (LDR) is a resistor whose resistance will decrease when incident light intensity increase; in other words, it exhibits photoconductivity. This sensor has an adjustable dial so that you can set a light threshold for the sensor to detect. When the ambient light intensity does not reach the threshold value, the module DO-side output high ; when the ambient light level exceeds the set threshold, DO terminal output low.
+A photoresistor, or light-dependent resistor (LDR) is a resistor whose resistance will decrease when incident light intensity increase; in other words, it exhibits photoconductivity. This sensor has an adjustable dial so that you can set a light threshold for the sensor to detect. When the ambient light intensity does not reach the threshold value, the sensor output is high ; when the ambient light level exceeds the set threshold, the sendor outputs a low value.
 
 <img src="https://github.com/queens-satellite-team/Space-School/blob/fcfae3bbd3c562e2c20e1b6e5a6f9f731f0fa6e3/lab4/lab4-images/photosensitive-brightness-resistance-sensor-module.jpg" alt="Photoresistive Sensor" width="300">
 
 ## 1.1 Hardware Requirements
 - Pin out:
-	- VCC (3.3-5V)
-	- GND
-	- Digital Output
+	- VCC: This is the power connection to the sensor. Needs to be connected to 3.3 or 5.0 volt power supply. (On the Arduino Uno/Nano: 3V3) (the breakout board has a voltage regulator).
+	-  GND: This is the ground connection to the sensor. Needs to be connected to the ground of the power supply. (On the Arduino Uno/Nano: GND)
+	-D0 Digital Output: THis is the pin that sends the digital signal form the sensor to the arduino.
 - adjustable potentiometer to adjust the sensitivity
 
 ## 1.2 Software Requirements
