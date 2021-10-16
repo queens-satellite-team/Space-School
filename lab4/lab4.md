@@ -165,6 +165,10 @@ Pull ups are provided on all SDIO logic pins.
 Note that when inserted, the SD card extends slightly beyond the edge of the PCB. 
 
 ## 6.2 Software Requirements
+You will need to import 2 libraries. To import a library, in the Arduino IDE go to -> Sketch -> Include Libraries -> (library name)
+
+- Import the **SPI** library. Note that an Arduino board only has 2 SPI connections.
+- Import the **SD** card library.
 
 ## 6.3 Example
 ```
