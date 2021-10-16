@@ -3,12 +3,45 @@
 # Goals of Lab 4
 
 # 1.0 Photoresistive Sensor
+A photoresistor, or light-dependent resistor (LDR) is a resistor whose resistance will decrease when incident light intensity increase; in other words, it exhibits photoconductivity. This sensor has an adjustable dial so that you can set a light threshold for the sensor to detect. When the ambient light intensity does not reach the threshold value, the module DO-side output high ; when the ambient light level exceeds the set threshold, DO terminal output low.
+
+<img src="https://github.com/queens-satellite-team/Space-School/blob/fcfae3bbd3c562e2c20e1b6e5a6f9f731f0fa6e3/lab4/lab4-images/photosensitive-brightness-resistance-sensor-module.jpg" alt="Photoresistive Sensor" width="300">
 
 ## 1.1 Hardware Requirements
+- Pin out:
+	- VCC (3.3-5V)
+	- GND
+	- Digital Output
+- adjustable potentiometer to adjust the sensitivity
 
 ## 1.2 Software Requirements
+There are no extra software requirements 
 
 ## 1.3 Example
+```
+/*
+  Photoresistive Sensor
+
+  This example shows how to read from a photoresistive snesor
+  The circuit:
+*/
+
+#define photoresistivePin 11
+
+void setup()
+{
+ Serial.begin(9600);
+}
+void loop()
+{
+ if (digitalRead(photoresistivePin)){
+    Serial.println("Dark");
+ } else {
+    Serial.println("Light");
+ }
+ delay(100);
+}
+```
 
 # 2.0 Accelerometer / Gyroscope 🧭
 This is the [Gikfun GY-521 MPU-6050 3 Axis Accelerometer Gyroscope](https://www.amazon.ca/Gikfun-MPU-6050-Accelerometer-Gyroscope-EK1091x3C/dp/B07JPK26X2/ref=sr_1_32?crid=1JQ9V4LAR8E4I&dchild=1&keywords=arduino+sensor&qid=1632086125&sprefix=arduino+sen%2Caps%2C188&sr=8-32) This sensor contains a 3-axis gyroscope, a 3-axis accelerometer, a digital motion processor (DMP), and a temperature sensor. The digital motion processor can be used to process complex algorithms directly on the board. Usually, the DMP processes algorithms that turn the raw values from the sensors into stable position data. **[Datasheet](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf)**
