@@ -191,29 +191,21 @@ void loop()
 }
 ```
 
-# 4.0 IR Sensor
-
-## 4.1 Hardware Requirements
-
-## 4.2 Software Requirements
-
-## 4.3 Example
-
-# 5.0 Temperature Sensor 🌡️
+# 4.0 Temperature Sensor 🌡️
 The TMP35/TMP36/TMP37 are low voltage, precision centigrade temperature sensors. They provide a voltage output that is linearly proportional to the Celsius (centigrade) temperature. The TMP35/ TMP36/TMP37 do not require any external calibration to provide typical accuracies of ±1°C at +25°C and ±2°C over the −40°C to +125°C temperature range. **[Datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf)**
 
 <img src="https://github.com/queens-satellite-team/Space-School/blob/18f2d531abfe9a697c59f18389db6cbc8da6a0c9/lab4/lab4-images/temperature-sensor.jpeg" width="500" height="500">
 
-## 5.1 🛠️ Hardware Requirements
+## 4.1 🛠️ Hardware Requirements
 - 2.7 V to 5.5 V Maximum Input Supply 
 - The TMP36 is specified from −40°C to +125°C, provides a 750 mV output at 25°C. 
 - Analog Signal Ouput 
 
-## 5.2 💻 Software Requirements
+## 4.2 💻 Software Requirements
 - Analog to Digital Conversion : Digial Voltage Value = Analog Input Voltage * Input Voltage / 1024.0  
 - Conversion Factor: Temperate C = [Vout in mV - 500mV] / (10mV / 1 °C)
 
-## 5.3 Example
+## 4.3 Example
 
 ```
 // set the analog input pin
@@ -241,10 +233,10 @@ void loop()
 ``` 
 
    
-# 6.0 SD Card Reader/Writer
+# 5.0 SD Card Reader/Writer
 The SD Card reader/writer is used to store data that you collect during your flight on an SD card. More infomation can be found with the [data sheet](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-microsd-spi-sdio.pdf)  
 
-## 6.1 Hardware Requirements
+## 5.1 Hardware Requirements
 ### Pinouts 📌
 <image src="https://github.com/queens-satellite-team/Space-School/blob/d50a7fe230cbf65b194a88ed02787b5a0b94e26a/lab4/lab4-images/sd_card_pinout.JPG" alt = "SD Card Reader Pinout Diagram" width="500" height="500"> 
 	
@@ -270,13 +262,13 @@ If you're using SDIO to connect to your SD cards, the pins have the following fu
 Pull ups are provided on all SDIO logic pins.
 Note that when inserted, the SD card extends slightly beyond the edge of the PCB. 
 
-## 6.2 Software Requirements
+## 5.2 Software Requirements
 You will need to import 2 libraries. To import a library, in the Arduino IDE go to -> Sketch -> Include Libraries -> (library name)
 
 - Import the **SPI** library. Note that an Arduino board only has 2 SPI connections.
 - Import the **SD** card library.
 
-## 6.3 Example
+## 5.3 Example
 ```
 /*
   SD card read/write
