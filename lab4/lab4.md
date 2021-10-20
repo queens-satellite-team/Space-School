@@ -6,7 +6,7 @@ If you have any questions, please feel free to reach out to Emma Paczkowski, Sea
 # Goals of Lab 4
 1️⃣ Select your sensors.
 
-2️⃣ Use the example code to develop your software for yoru toasSat.
+2️⃣ Use the example code to develop your software for your toasSat.
 
 3️⃣ Use the hardware requirements to help piece you sensors all together.
 
