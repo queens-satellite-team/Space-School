@@ -5,87 +5,58 @@ If you have any questions, please feel free to reach out to Emma Paczkowski, Sea
 
 # Goals of Lab 5
 
-- [Context](https://gitlab.xiphos.ca/xiphos/internal/xiphos-qa/robotframework-hw-tests/-/wikis/Rework%20and%20Cleaning%20Guide#context)
-- [Guidelines for reworks (soldering)](https://gitlab.xiphos.ca/xiphos/internal/xiphos-qa/robotframework-hw-tests/-/wikis/Rework%20and%20Cleaning%20Guide#guidelines-for-reworks)
-- [Preparation](https://gitlab.xiphos.ca/xiphos/internal/xiphos-qa/robotframework-hw-tests/-/wikis/Rework%20and%20Cleaning%20Guide#preparation)
-- [Resistor/capacitor](https://gitlab.xiphos.ca/xiphos/internal/xiphos-qa/robotframework-hw-tests/-/wikis/Rework%20and%20Cleaning%20Guide#removing-resistorscapacitors)
-- [Power barrel/RJ45/header](https://gitlab.xiphos.ca/xiphos/internal/xiphos-qa/robotframework-hw-tests/-/wikis/Rework%20and%20Cleaning%20Guide#soldering-tht-connectors)
-- [Tips](https://gitlab.xiphos.ca/xiphos/internal/xiphos-qa/robotframework-hw-tests/-/wikis/Rework%20and%20Cleaning%20Guide#tips)
-- [Guidelines for cleaning](https://gitlab.xiphos.ca/xiphos/internal/xiphos-qa/robotframework-hw-tests/-/wikis/Rework%20and%20Cleaning%20Guide#guidelines-for-cleaning)
-- [When you’re done](https://gitlab.xiphos.ca/xiphos/internal/xiphos-qa/robotframework-hw-tests/-/wikis/Rework%20and%20Cleaning%20Guide#when-youre-done)
+We will learn how to...
 
-**Acronyms**:
+1️⃣ Prepare our design, and work station in order to solder. 
 
-| Acronym | Meaning |
-| ------ | ------ |
-| CM  | Contract Manufacturer (SigmaPoint) |
-| DMM | Digital MultiMeter |
-| PO  |  Purchase Order |
-| PN  | Part Number |
-| IPA | IsoPropyl Alcohol |
-| FOD | Foreign Object Debris |
-| SMT | Surface Mount Technology |
-| THT | Through-Hole Technology |
-| XSC | your guess. |
+2️⃣ Solder components together. 
 
-# Context
+3️⃣ Remove components that have been soldered. 
 
-### Target audience
-  - Test Team members
-  - HW Team members who do reworks (a.k.a Adriel up to now)
+4️⃣ Clean up the mess left behind. 
 
-### Reasons for reworking boards at XSC
+# Step 0 Motivation 
 
-- Fitting **custom configurations**
-  - RJ45, Ethernet header, power barrel, VCC_FLEX, GND jumpers, brownout/min input voltage, input voltage range, USB routing, regulator mode, etc.
-- **Repairing boards** without resorting to the CM
-  - Bad soldering, chipped resistors, etc.
-- **Development** trials
-  - Jumper wires to bypass or short components, etc. 
+There are many ways to assemble a circuit together, with the most common way to start being with a breadboard. However, there are a few issues when working with breadboards. 
 
-### Why this wiki?
+| Breadboard Advantages | Breadboard Disadvantages | 
+| --- | --- | 
+| It has easy to quick to check for easy and complex circuits both and it has easily verified circuits at the initial stage, so it can save time. | It is unreliable. |
+| Quick to check component around. | Difficult to replicate. |
+| It is easy to adjust. | It is temporary. |
+| It is flexible. | It is heavier. |
+| No drilling holes. | A breadboard is noisier than properly laid-out circuit boards, sometimes far too noisy. |
+| No soldering required. | It is difficult to troubleshoot due to human error and some poor connections problem. |
+| It can be debugged easily. | It almost always, take up more physical space than the final circuit board design. |
+| A solderless connection makes it reusable. | Difficult to modify complex SMD component for prototyping. |
+| Cheap and connections can be changed. | It works very poorly for high-speed design. |
 
-- The team is growing fast, the workload is growing fast
-  - → more and more people get to rework Qcards and/or inspect boards that have been reworked at XSC
-- ![image](uploads/914af68417070c432f59f76ab9e50daa/image.png) We have recently had several issues coming from reworks, that we must prevent:
-  - Wrong rework performed
-  - Incomplete cleaning 
-    - Including causing rust marks to appear 
-  - Escapes during inspection
-    - It’s never good when a customer notices something that you have not
+## Step 1 - Setup and Preparation
 
-# Guidelines for reworks
+Soldering is the process of A typical soldering setup will look like the setup below. 
 
-## Preparation
+<img src="https://user-images.githubusercontent.com/48306876/138369534-d5a16ec6-54cc-47ad-b637-541d8964920c.png" width=250 height=250> 
 
-- **Confirm what rework should be done!**
-  - Consistency between Redmine Assembly ticket, office dashboard, TRAC (customer should be asked to confirm their PO config there)
-  - Confirm the component PN is correct
-  - Confirm the component orientation (headers, diodes, etc.)
+The tools in your arsenal include: 
+
+- Soldering Iron
+  - This is what melts the solder 
+The sponge is to clean the tip of the soldering iron and remove any excess solder.
 
 
-![image](uploads/7dc035005c3ab95ba39175f2a6cc64eb/image.png)
-![image](uploads/b39c3568c57d14b793ea0c1987f7ad37/image.png)
+**Confirm what needs to be done!**
+  - Confirm that component part numbers, resistor values, etc. are all correct. 
+  - Confirm the component orientation (headers, diodes, etc.). 
+  - Confirm the nominal layout of your design (are buttons accesible, LEDs visible). 
 
-- **Ensure Qcard cleanliness in the rework area**: 
-  - Light brush to remove FODs
-  - IPA + cotton swab to remove residues/marks
+**Clean components and work area.**
+  - Use a small brush to lightly brush away any foreign object debris (FODs) such a dust, hair, small particles.
+  - Use isopropyl alcohal and a cotton swab to remove any residues or marks on your components. 
 
-![image](uploads/fa676db24fc63d523256aec55528c778/image.png)
-![image](uploads/881a48661aa782203485b779c3c8fb32/image.png)
-
-- Check flux pen expiry date
-
-![image](uploads/7bbdb810ea6426e772991f98c4e22cb4/image.png)
-
-- Turn on the fume extractor
-  - Our solder contains lead (as opposed to the solder paste used by the CM). Better not breath it in...
-
-![image](uploads/2b2a07911b5010232979fe35887851e6/image.png)
-
-- **Iron tip**:
-  - Size adapted to rework (larger joints/holes → thicker gauge more convenient)
-  - Cleaning: thermal (wet sponge), abrasive (metal sponge), chemical (tip tinner)
+**Determine what kind of soldering is being used.**
+  - Solder can come leaded or lead-free. With QSET, you will be only using lead-free solder, but going out in industry you may encounter leaded solder.
+  - If using leaded solder, ensure you have sufficient venthilation (it is better not to breathe it in). 
+  - Turn on the fume extractor, or perform your soldering outside. 
 
 ![image](uploads/85431f243382de70aaa384eb5055f91a/image.png)
 
