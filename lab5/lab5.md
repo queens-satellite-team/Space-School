@@ -15,7 +15,7 @@ We will learn how to...
 
 4️⃣ Clean up the mess left behind. 
 
-# Step 0 Motivation 
+# Section 1 - Motivation 
 
 There are many ways to assemble a circuit together, with the most common way to start being with a breadboard. However, there are a few issues when working with breadboards. 
 
@@ -31,64 +31,66 @@ There are many ways to assemble a circuit together, with the most common way to 
 | A solderless connection makes it reusable. | Difficult to modify complex SMD component for prototyping. |
 | Cheap and connections can be changed. | It works very poorly for high-speed design. |
 
-## Step 1 - Setup and Preparation
+So we want a solution that is a bit more permanate, can allow our ciruit to be a bit more compact, and allow us align our components the way we want. 
 
-Soldering is the process of A typical soldering setup will look like the setup below. 
+# Section 2 - Setup and Preparation
 
-<img src="https://user-images.githubusercontent.com/48306876/138369534-d5a16ec6-54cc-47ad-b637-541d8964920c.png" width=250 height=250> 
+[Soldering](https://en.wikipedia.org/wiki/Soldering) is the process of joining two or more items together by melting an additional filler metal (solder) into the joint. When you solder a circuit together you are providing a **strong electrical connection** as well as a **strong mechanical connection** to the components of the ciruit.  A typical soldering setup will have an iron to heat and melt the solder, a sponge to clean the tip of the soldering iron, some solder to join the components together, and a holster to hold onto the hot iron when not being used. A typical setup is given below. 
 
-The tools in your arsenal include: 
+| Typical Soldering Station | Soldering Tools in Action |
+| --- | --- |
+| <img src="https://user-images.githubusercontent.com/48306876/138369534-d5a16ec6-54cc-47ad-b637-541d8964920c.png" width=500 height=500>|<img src="https://user-images.githubusercontent.com/48306876/138381744-767f6dce-d6ac-4ed2-b14e-4ab1ef2b4058.png" width=500 height=500> |
 
-- Soldering Iron
-  - This is what melts the solder 
-The sponge is to clean the tip of the soldering iron and remove any excess solder.
-
-
-**Confirm what needs to be done!**
+** Confirm what needs to be done!**
   - Confirm that component part numbers, resistor values, etc. are all correct. 
   - Confirm the component orientation (headers, diodes, etc.). 
   - Confirm the nominal layout of your design (are buttons accesible, LEDs visible). 
 
-**Clean components and work area.**
+** Clean components and work area.**
   - Use a small brush to lightly brush away any foreign object debris (FODs) such a dust, hair, small particles.
   - Use isopropyl alcohal and a cotton swab to remove any residues or marks on your components. 
 
-**Determine what kind of soldering is being used.**
+** Determine what kind of soldering is being used.**
   - Solder can come leaded or lead-free. With QSET, you will be only using lead-free solder, but going out in industry you may encounter leaded solder.
   - If using leaded solder, ensure you have sufficient venthilation (it is better not to breathe it in). 
   - Turn on the fume extractor, or perform your soldering outside. 
 
-![image](uploads/85431f243382de70aaa384eb5055f91a/image.png)
+** Set your soldering iron temperature.**
+  - If you have a temperature display you should set it for about ~760 °F. 
+  - You can increase the temperature if you are soldering a something with a large thermal inertia (GND traces, large components).
 
-- **Solder thickness** to be chosen depending on nature of rework. Usually:
-  - Thinnest for SMT resistors
-  - A bit larger for THT pins
-- **Iron temperature**: ~760degF, a bit hotter if large thermal inertia (GND traces, large components)
+# Section 2.0 - Soldering Components
 
-## Removing resistors/capacitors
+## 2.1 - Soldering Through-Hole Components
 
-To remove a resistor or capacitor:
+⚠️ Through hole comonents are difficult to be de-soldered so make sure you’re doing the right thing. ⚠️
 
-- Apply flux on both solder joints
+**Step 1::** Spool off some solder from its reel and have it readily avaiable to be put on the iron. 
 
-![image](uploads/5de0662c32a5365de5e71f4955c12f10/image.png)
-- Use 2 irons to reflow both joints simultaneously
-  - The component should come off smoothly, sticking to one of the irons.
-  - If it sticks to one pad, you can reflow that joint while gently pulling the component with tweezers
+**Step 2:** Hold component in place against the PCB or protoboard (usually with one hand). 
 
-![image](uploads/e6abb2b53c5e86b7c1f7dc5a26214add/image.png)
-- Clean the pads to remove leftover solder, using solder braid.
-  - Common mistakes to avoid:
-    - Using too large braid
-    - Overheating the pads (re-apply flux as necessary)
-  - The pads should end up clean and flat.
+**Step 3:** With your other hand, apply flux on the pins and pads on the side where of the board where you will be directly apply the solder to (solder source side). 
 
-![image](uploads/a255e3f9eb986869d3a4eb57b9f63775/image.png)
+**Step 4:** With your other hand, put some solder on your iron and quickly transfer to the joint. This is called _tacking_. 
+ 
+**Step 5:** _Tack_ the opposite end of the component to hold it in place, so you can free up your first hand. 
 
+**Step Six:** Check the commenent is correctly positioned before proceeding with other joints, and begin to add more solder if necessary. This is called _reflow_ as you will have to make the solder melt once again and let it flow into the joint.
 
-## Soldering resistors/capacitors
+**Step Seven:** Touch-up any of the tacks so they have the right shape and aspect. 
 
-To solder a resistor or capacitor:
+**Tips**
+  - Do not solder from solder destination side! 
+    - This is prone to create air gaps in the hole
+    - The heat could damage the connector
+  - IPC Class III requirement is 75% vertical fill, starting from solder source side. 
+  - If in doubt, reflow the solder source side bringing additional solder
+
+| ✔️ | ✖️ |
+| --- | --- |
+| <img src="https://user-images.githubusercontent.com/48306876/138387160-d99a18a1-fe27-4f06-87dd-a70c785a2707.png" height=300 width=300>| <img src="https://user-images.githubusercontent.com/48306876/138387337-c0183cda-7ed0-43f5-8bca-45d4540e775b.png" height=300 width=300>|
+
+## 2.2 - Soldering Surface Mount Components
 
 - Check the resistor/capacitor value with a DMM
 - Apply flux on pad A
@@ -112,31 +114,25 @@ To solder a resistor or capacitor:
 
 ![image](uploads/2f0f6accfd2f227ec8166a98a2df1040/image.png)
 
-## Soldering THT connectors
+# Section 3 - Removing Components 
 
-![image](uploads/914af68417070c432f59f76ab9e50daa/image.png) **Through hole connectors cannot be de-soldered**, so make sure you’re doing the right thing!
+To remove a resistor or capacitor:
 
-To solder a power barrel/RJ45/header:
+- Apply flux on both solder joints
 
-- Check connector integrity (cleanliness, no bent pin, no apparent short)
-- Maintain connector in place against the PCB (usually with the hand) 
-- With your other hand, apply flux on pins and pads, solder source side
-- With your other hand, do the _tacking_ (quick incomplete solder to maintain the connector in place):
-  - Put some solder on the iron tip, then quickly transfer to the joint
-  - Do that on 1 or 2 opposite joints of the connector, so you can free up your first hand
-  - Check the connector is correctly positioned before proceeding with other joints
+![image](uploads/5de0662c32a5365de5e71f4955c12f10/image.png)
+- Use 2 irons to reflow both joints simultaneously
+  - The component should come off smoothly, sticking to one of the irons.
+  - If it sticks to one pad, you can reflow that joint while gently pulling the component with tweezers
 
-![image](uploads/31e5eb37a5e4a68f8b621fa445e354ba/image.png)
-- Reflow all other joints
-- Touch-up the tacks so they have the right shape and aspect
+![image](uploads/e6abb2b53c5e86b7c1f7dc5a26214add/image.png)
+- Clean the pads to remove leftover solder, using solder braid.
+  - Common mistakes to avoid:
+    - Using too large braid
+    - Overheating the pads (re-apply flux as necessary)
+  - The pads should end up clean and flat.
 
-![image](uploads/914af68417070c432f59f76ab9e50daa/image.png) **Do not solder from solder destination side**:
-- This is prone to create air gaps in the hole
-- The heat could damage the connector
-- IPC Class III requirement is 75% vertical fill, starting from solder source side. 
-  - If in doubt, reflow the solder source side bringing additional solder
-
-![image](uploads/810ed42622a85ab84883fdfc8940a75a/image.png)
+![image](uploads/a255e3f9eb986869d3a4eb57b9f63775/image.png)
 
 ## Tips
 
@@ -163,7 +159,7 @@ To solder a power barrel/RJ45/header:
     - IPC-A-610 is your friend to make a call on what is acceptable.
     - If in doubt, ask a colleague to cross-check.
 
-# Guidelines for cleaning
+# Section Four - Cleaning 
 
 ![image](uploads/4e9d84410d9145f7de175e63e82e2186/image.png) Reworks require the microscope, **cleaning does require the microscope as well**.
 
@@ -196,12 +192,3 @@ Several passes:
   - Any residue from a no-clean process is a defect for IPC Class III
 - Leave to dry at least 30min before powering-on again
   - Current procedure. Being discussed here though: https://gitlab.xiphos.ca/xiphos/internal/xiphos-qa/robotframework-hw-tests/-/issues/166
-
-# When you're done
-
-- Power off the irons
-- Turn off the fume extractor
-- Tidy up and clean-up the solder station
-- ![image](uploads/4e9d84410d9145f7de175e63e82e2186/image.png) Update the Redmine HW ticket with your rework! 
-
-![image](uploads/57d687d42ef55c004535faeb306f8ae1/image.png)
