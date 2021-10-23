@@ -82,7 +82,7 @@ So we want a solution that is a bit more permanate, can allow our ciruit to be a
 
 # Section 4.0 - Soldering Components
 
-## 4.1 - Soldering Through-Hole Components
+## 4.1 Steps for Soldering Through Hole Components
 
 ![Screen Shot 2021-10-23 at 8 36 20 AM](https://user-images.githubusercontent.com/48306876/138556510-b7da9d1f-fc2c-4358-89bf-339ffa5820f1.png)
 
@@ -103,98 +103,94 @@ So we want a solution that is a bit more permanate, can allow our ciruit to be a
   - IPC Class III requirement is 75% vertical fill, starting from solder source side. 
   - If you are getting large balls of solder on your joints try reducing the amount of solder you are applying, increasing the heat slightly, or holding the iron on the solder pad for an additional second in step 1. 
 
-## 4.2 - Example 
+## 4.2 Examples of Good and Bad Solder Joints
 
 ![image](https://user-images.githubusercontent.com/48306876/138556468-fb7db75c-0716-429c-b1d5-f39c1bee82f2.png)
 
 The above image mentions [wetting](https://www.adhesives.org/adhesives-sealants/science-of-adhesion/wetting#:~:text=Wetting%20is%20the%20ability%20of,greater%20the%20degree%20of%20wetting.). This is essentially the degree to how well the 'liquid' solder formed unto the metal surfaces. 
 
-## 4.3 Practice 
+## 4.3 Solder Practice 
 We are going to create the blinky circuit we initially made in [Space School Lab One](https://github.com/queens-satellite-team/Space-School/blob/main/lab1/lab1.md) to practice our soldering skills prior to tackling the payload. Please assemble the required components (black and red wire, an LED, and a 1000 Ohm resistor, and a [perfboard](https://en.wikipedia.org/wiki/Perfboard) / protoboard) and make all the necceseccary solder connections. Your final result should look similiar to the photo below. 
 
 ![Screen Shot 2021-10-23 at 9 14 22 AM](https://user-images.githubusercontent.com/48306876/138557845-97b0a103-ef29-4b2b-a232-e5fd805e453e.png)
 
 # Section 5 - Removing Components 
 
-To remove a resistor or capacitor:
+## 5.1 Steps for Removing Components 
 
-- Apply flux on both solder joints
+⚠️ The photos below are for surface mounted components (SMD), but the steps still apply to through-hole components (THT) like the resistor and LED we just soldered. ⚠️
 
-![image](uploads/5de0662c32a5365de5e71f4955c12f10/image.png)
-- Use 2 irons to reflow both joints simultaneously
-  - The component should come off smoothly, sticking to one of the irons.
-  - If it sticks to one pad, you can reflow that joint while gently pulling the component with tweezers
+**Step 1:** Apply flux on both solder joints. 
 
-![image](uploads/e6abb2b53c5e86b7c1f7dc5a26214add/image.png)
-- Clean the pads to remove leftover solder, using solder braid.
-  - Common mistakes to avoid:
-    - Using too large braid
-    - Overheating the pads (re-apply flux as necessary)
-  - The pads should end up clean and flat.
+![image](https://user-images.githubusercontent.com/48306876/138558980-a3e0d14b-93b2-469c-b088-256776f63072.png)
 
-![image](uploads/a255e3f9eb986869d3a4eb57b9f63775/image.png)
+**Step 2:** Apply heat to solder joint to reflow solder and pull out component when loose. 
 
-## Tips
+![image](https://user-images.githubusercontent.com/48306876/138559055-4e320d01-4770-47c4-a1cc-e1f3a354026b.png)
 
-- If you **struggle to get a good reflow**:
-  - Re-apply flux on pads and pins
-  - The trace may have a high thermal inertia (e.g. power barrel GND pins), in which case you can:
-    - Increase the iron temperature
-    - Increase the contact time between iron and pad before applying the solder
-    - Change the iron tip for a larger tip
-    - Move the iron on the pad around the pin during reflow
-    - Use 2 irons simultaneously to reflow the solder joint 
+_For SMD, use 2 irons to reflow both joints simultaneously. The component should come off smoothly, sticking to one of the irons. If it sticks to one pad, you can reflow that joint while gently pulling the component with tweezers_
 
-![image](uploads/b58317e2b5074966847b141643c7881d/image.png)
+_For THT, apply a small amount of new solder to the old solder joint to make the solder reflow faster._
 
-- During rework, protect nearby sensitive areas with **Kapton tape** (U19 when soldering Ethernet connector on a Q7, connectors, SD card slots, mounting holes, some vias, etc.)
-  - Be mindful that droplets of flux can spread several centimeters away from the solder joint during reflow.
-- Whenever applying solder on the iron tip before putting in contact with joint, do not exceed a few seconds
-  - Otherwise the flux core of the solder melts on the iron tip, and solder is harder to transfer to the joint 
-- If you’re uncomfortable/inexperienced, try out a **dummy rework on a decommissioned Qcard** first
+**Step 3:** Clean the pads to remove leftover solder, using solder braid.
 
-- ![image](uploads/4e9d84410d9145f7de175e63e82e2186/image.png) Be mindful that every time we rework a board, there is a **risk to damage something** (heat, sharp tools, handling jigs…)
-  - No matter how rushed you are, cautiousness takes precedence.
-  - We do not want to compromise quality for anything that we sell, but sometimes “the best is the enemy of the good”! 
-    - IPC-A-610 is your friend to make a call on what is acceptable.
-    - If in doubt, ask a colleague to cross-check.
+![image](https://user-images.githubusercontent.com/48306876/138559176-acc41ea9-49de-4e47-9bd5-cc1674bd9b7e.png)
 
-## 5.2 Example
+## 5.2 Common Mistakes and Tips During Reworks 
 
-## 5.3 Pracice 
+_Mistake: Avoid using too large of braid. Spead out the copper braid so that it spans the entire solder pad, and apply heat ontop of the braid. You should see the solder being sucked into the braid._
+
+_Mistake: Be careful not to overheat the pads. You can re-apply flux as necessary so that the pads end up clean and flat._
+
+_Mistake: Whenever applying solder on the iron tip before putting in contact with joint, do not exceed a few seconds. Otherwise the flux core of the solder melts on the iron tip, and solder is harder to transfer to the joint._
+
+_Tip: If you struggle to get a good reflow, re-apply flux on pads and pins._
+
+_Tip: If what you are soldering has a high thermal inertia (GND pins, large power resistors and capacitors), in which case you can:_
+  - _Increase the iron temperature._  
+  - _Increase the contact time between iron and pad before applying the solder._
+  - _Change the iron tip for a larger tip._  
+  - _Move the iron on the pad around the pin during reflow._
+  - _Use 2 irons simultaneously to reflow the solder joint._
+
+_Tip: During rework, protect nearby sensitive areas with tape, preferably **kapton tape**, if component is sensitive to [electrostatic discharge](https://en.wikipedia.org/wiki/Electrostatic_discharge)._
+
+## 5.3 Practice Removing a Component 
 My aplogies! I made a mistake earlier when I mentioned to solder a 1000 Ohm resistor for your blinky circuit -- it really should be a 330 Ohm resitory. To practice removing a component, please follow the steps outlined in Section 5 to remove the 1000 Ohm resistor for your blinky ciruit and replace it with a 330 Ohm resistor. 
-
 
 # Section 6 - Cleaning 
 
-![image](uploads/4e9d84410d9145f7de175e63e82e2186/image.png) Reworks require the microscope, **cleaning does require the microscope as well**.
+## 6.1 Steps for Cleaning  
 
-![image](uploads/be8af2b761e9cd1415d875fa7f5c185f/image.png)
+**Step 1:** Use flux remover with cotton swabs. Several rounds may be required (don’t be shy with the flux remover). Cleaning dark flux traces can require a good scrubbing! You may have to exert quite some pressure for a few seconds.
 
-Several passes:
+**Step 2:** Use isopropyl alcohol with cotton swabs. Several rounds may be required (don’t be shy with the isopropyl alcohol).
 
-- **1.** Flux remover with cotton swabs
-  - Several rounds may be required. Don’t be shy with the flux remover.
-  - Cleaning dark flux traces can require a good scrubbing! You may have to exert quite some pressure for a few seconds.
-- **2.** IPA with cotton swabs
-  - Several rounds may be required. Don’t be shy with the IPA.
-- **3.** IPA with light brush to remove whitish IPA traces
-- **4.** (to remove the last dry IPA traces, you can use a dry cotton swab to scrub them) 
+![image](https://user-images.githubusercontent.com/48306876/138560484-d1e3f67d-3731-43a5-826f-3c6697398391.png)
 
-![image](uploads/a5315fb28aeed0aaf563bbcaa4e10067/image.png)
-![image](uploads/b254db17c1d441c9158b6d6f1e9e1541/image.png)
+**Step 3:** Use a light small brush, and a small amount of additional isopropyl alcohol to remove whitish traces of isopropyl alcohol. 
 
-- When possible, tilt the board so that flux remover/IPA do not flow below other components
-- Bear in mind that that droplets of flux can spread several centimeters away from the solder joint during reflow.
-- Make sure there is no FOD left on the board 
-  - solder ball, loose component dropped on the board, hair, etc.
-- For through-hole components, do not forget to clean the solder destination side
+![image](https://user-images.githubusercontent.com/48306876/138560507-8e7e6da4-2a2f-4010-9acd-0d2997cd308e.png)
 
-![image](uploads/cffc0023745510ef7b796853cfd2a478/image.png) ![image](uploads/03269b30f04adaa75588c7ec6ffd5c17/image.png)
+**Step 4:** Use a dry cotton swab to remove the last dry traces of isopropyl alcohol.  
 
-- ![image](uploads/4e9d84410d9145f7de175e63e82e2186/image.png) After cleaning, the solder joints, nearby components, and PCB should be pristine!
-  - The flux is corrosive
-  - Wet flux residues may create conductive paths
-  - Any residue from a no-clean process is a defect for IPC Class III
-- Leave to dry at least 30min before powering-on again
-  - Current procedure. Being discussed here though: https://gitlab.xiphos.ca/xiphos/internal/xiphos-qa/robotframework-hw-tests/-/issues/166
+![image](https://user-images.githubusercontent.com/48306876/138560521-b4e27857-d004-4e0f-a608-0c0ac00581df.png)
+
+## 6.2 Good Cleaning Practices 
+
+_Tip: When possible, tilt the board so that flux remover/isopropyl alcohol does not flow below other components._
+
+_Tip: Bear in mind that that droplets of flux can spread several centimeters away from the solder joint during reflow._
+
+_Tip: Make sure there is no debris left on the board (solder ball, loose component dropped on the board, hair, etc.).
+
+_Tip: For through-hole components, do not forget to clean the solder destination side._
+
+![image](https://user-images.githubusercontent.com/48306876/138560603-abc2d203-78bd-40f0-a437-22795395c478.png)
+
+_Tip: Remove all flux! The flux is corrosive, wet flux residues may create conductive paths._
+
+_Tip: Leave to dry at least 30min before powering-on again. Solder needs time to completely solidify._
+
+## 6.3 Finish Blinky Circuit 
+Now that we have our components soldered (and we made sure they were the right components) and clean let's move on to getting this ciruit blinking! Connect your hardware to your arduino and follow the steps in [Space School Lab One](https://github.com/queens-satellite-team/Space-School/blob/main/lab1/lab1.md) to implement the software and verify the hardware connections to the arduino for this circuit. 
