@@ -17,7 +17,11 @@ We will learn how to...
 
 # Section 1 - Motivation 
 
-There are many ways to assemble a circuit together, with the most common way to start being with a breadboard. However, there are a few issues when working with breadboards. 
+There are many ways to assemble a circuit together. The most common way to start is with a [breadboard](https://en.wikipedia.org/wiki/Breadboard). Breadboards have internal connections that allow for quick work when piecing together new components of a ciruit. In the photo below, we see all the shared connections inside of a breadboard. The centre ciruit area in green has a shared connection for each column along with a divider in the middle (the top of the column and the bottom of the column are not connected), and the rows coloured blue and red show that there is a shared connection across the entire line (the top blue and red lines are not connected to the bottom blue and red lines). 
+
+![image](https://user-images.githubusercontent.com/48306876/138555396-737f73e0-560d-4cb3-94b0-bc2318304226.png)
+
+Let us take a look at some pros and cons of using a breadboard. 
 
 | Breadboard Advantages | Breadboard Disadvantages | 
 | --- | --- | 
@@ -31,90 +35,86 @@ There are many ways to assemble a circuit together, with the most common way to 
 | A solderless connection makes it reusable. | Difficult to modify complex SMD component for prototyping. |
 | Cheap and connections can be changed. | It works very poorly for high-speed design. |
 
-So we want a solution that is a bit more permanate, can allow our ciruit to be a bit more compact, and allow us align our components the way we want. 
+So we want a solution that is a bit more permanate, can allow our ciruit to be a bit more compact, and allow us align our components the way we want. Our solution will be to solder! 
 
-# Section 2 - Setup and Preparation
+# Section 2 - Soldering Tools 
+[Soldering](https://en.wikipedia.org/wiki/Soldering) is the process of joining two or more items together by melting an additional filler metal (solder) into the joint. When you solder a circuit together you are providing a **strong electrical connection**. While a solder connection can stay together with greater strength than a breadboard, it is up to you to make sure all components also have a **strong mechanical connection** by twisting wires together and ensuring compontents are not under stress. A typical soldering setup will have the following:
 
-[Soldering](https://en.wikipedia.org/wiki/Soldering) is the process of joining two or more items together by melting an additional filler metal (solder) into the joint. When you solder a circuit together you are providing a **strong electrical connection** as well as a **strong mechanical connection** to the components of the ciruit.  A typical soldering setup will have an iron to heat and melt the solder, a sponge to clean the tip of the soldering iron, some solder to join the components together, and a holster to hold onto the hot iron when not being used. A typical setup is given below. 
+**Soldering Iron:** this supplies the heat in order to melt the solder so that it can flow into the joint. A soldering iron is composed of a heated metal tip and an insulated handle.❗ Please do not touch any part of the metal end when the soldering iron is on.❗  
 
-| Typical Soldering Station | Soldering Tools in Action |
-| --- | --- |
-| <img src="https://user-images.githubusercontent.com/48306876/138369534-d5a16ec6-54cc-47ad-b637-541d8964920c.png" width=500 height=500>|<img src="https://user-images.githubusercontent.com/48306876/138381744-767f6dce-d6ac-4ed2-b14e-4ab1ef2b4058.png" width=500 height=500> |
+<img src="https://user-images.githubusercontent.com/48306876/138555772-d5ea32e9-71ab-46a6-b17e-90f50688157f.png" width=200 height=200)>
 
-** Confirm what needs to be done!**
+**Flux Pen:** this prepares the metal surfaces for soldering by cleaning and removing any oxides and impurities. Flux allows the heat to be transferred to the metals more easily.❗ If using rosin core solder, you do not need to use flux when soldering. ❗
+
+<img src="https://user-images.githubusercontent.com/48306876/138556039-b4a0b860-b751-4b91-874d-a6db35f763eb.png" width=200 height=200)>
+
+**Sponge:** this is used to clean the tip of the soldering iron, removing any excess soldering that has been left behind. ❗ Make sure that the sponge is slightly damp before wiping away any solder. ❗
+
+<img src="https://user-images.githubusercontent.com/48306876/138556208-8e7add71-cffe-4ce9-85de-7eed264e7dd0.png" width=200 height=200)>
+
+**Brass Wool:** this is also used to clean the tip of the soldering iron by removing any excess soldering that has been left behind. ❗ Brass wool is soft and will not scratch the soldering iron tip. Steel wool is not a replacement. ❗
+
+<img src="https://user-images.githubusercontent.com/48306876/138556310-ae29be8c-cb34-4fc4-8b09-c25c16393bf2.png" width=200 height=200)>
+
+**Solder:** this is the filler material used to fill in the joint of the solder connection. Solder is a metal alloy which means it is a combination of atleast two different types of metal, typically lead (Pb) and tin (Sn); however, lead-free solder may also contain copper, silver, bismuth, indium, zinc, antimony, and traces of other metals. ❗ You can also find rosin- and acid-core solder. These have rosin or acid in the centre of the solder wire. Acid core is used for plumbing application, while rosin-core is used for electronics. Rosin-core solder has a _flux_ like material at its centre to assist in the soldering process just like using a flux pen. ❗
+
+<img src="https://user-images.githubusercontent.com/48306876/138556671-38913eb7-b041-4ac7-bd50-7357fbd154db.png" width=200 height=200)>
+
+# Section 3 - Setup and Preparation
+
+**Step 1: Confirm what needs to be done.**
   - Confirm that component part numbers, resistor values, etc. are all correct. 
   - Confirm the component orientation (headers, diodes, etc.). 
   - Confirm the nominal layout of your design (are buttons accesible, LEDs visible). 
 
-** Clean components and work area.**
+**Step 2: Clean components and work area.**
   - Use a small brush to lightly brush away any foreign object debris (FODs) such a dust, hair, small particles.
   - Use isopropyl alcohal and a cotton swab to remove any residues or marks on your components. 
 
-** Determine what kind of soldering is being used.**
+**Step 3: Determine what kind of soldering is being used.**
   - Solder can come leaded or lead-free. With QSET, you will be only using lead-free solder, but going out in industry you may encounter leaded solder.
   - If using leaded solder, ensure you have sufficient venthilation (it is better not to breathe it in). 
   - Turn on the fume extractor, or perform your soldering outside. 
 
-** Set your soldering iron temperature.**
+**Step 4: Set your soldering iron temperature.**
   - If you have a temperature display you should set it for about ~760 °F. 
-  - You can increase the temperature if you are soldering a something with a large thermal inertia (GND traces, large components).
+  - You can increase the temperature if you are soldering something with a large thermal inertia (GND traces, large components).
 
-# Section 2.0 - Soldering Components
+# Section 4.0 - Soldering Components
 
-## 2.1 - Soldering Through-Hole Components
+## 4.1 - Soldering Through-Hole Components
+
+![Screen Shot 2021-10-23 at 8 36 20 AM](https://user-images.githubusercontent.com/48306876/138556510-b7da9d1f-fc2c-4358-89bf-339ffa5820f1.png)
 
 ⚠️ Through hole comonents are difficult to be de-soldered so make sure you’re doing the right thing. ⚠️
 
-**Step 1::** Spool off some solder from its reel and have it readily avaiable to be put on the iron. 
+**Step 0:** Securly fasten component from the top side of the protoboard, flip protoboard to the back to expose solder pad and metal leg of the component. 
 
-**Step 2:** Hold component in place against the PCB or protoboard (usually with one hand). 
+**Step 1:** Heat the solder pad for ~2 seconds. 
 
-**Step 3:** With your other hand, apply flux on the pins and pads on the side where of the board where you will be directly apply the solder to (solder source side). 
+**Step 2:** Apply solder to the component and the pad. Do not just apply the solder to the iron. 
 
-**Step 4:** With your other hand, put some solder on your iron and quickly transfer to the joint. This is called _tacking_. 
- 
-**Step 5:** _Tack_ the opposite end of the component to hold it in place, so you can free up your first hand. 
+**Step 3:** Remove the solder when there is just enough, but do not let go off the iron. Let the heat from the iron flow the solder into a nice shape. 
 
-**Step Six:** Check the commenent is correctly positioned before proceeding with other joints, and begin to add more solder if necessary. This is called _reflow_ as you will have to make the solder melt once again and let it flow into the joint.
-
-**Step Seven:** Touch-up any of the tacks so they have the right shape and aspect. 
+**Step 4:** Quickly pull the soldering iron straight up (not directly away from the solder connection) to remove the soldering iron and you can move onto the next joint. 
 
 **Tips**
-  - Do not solder from solder destination side! 
-    - This is prone to create air gaps in the hole
-    - The heat could damage the connector
+  - Do not solder from solder destination side (solder from the bottom)!
   - IPC Class III requirement is 75% vertical fill, starting from solder source side. 
-  - If in doubt, reflow the solder source side bringing additional solder
+  - If you are getting large balls of solder on your joints try reducing the amount of solder you are applying, increasing the heat slightly, or holding the iron on the solder pad for an additional second in step 1. 
 
-| ✔️ | ✖️ |
-| --- | --- |
-| <img src="https://user-images.githubusercontent.com/48306876/138387160-d99a18a1-fe27-4f06-87dd-a70c785a2707.png" height=300 width=300>| <img src="https://user-images.githubusercontent.com/48306876/138387337-c0183cda-7ed0-43f5-8bca-45d4540e775b.png" height=300 width=300>|
+## 4.2 - Example 
 
-## 2.2 - Soldering Surface Mount Components
+![image](https://user-images.githubusercontent.com/48306876/138556468-fb7db75c-0716-429c-b1d5-f39c1bee82f2.png)
 
-- Check the resistor/capacitor value with a DMM
-- Apply flux on pad A
-- Put a tiny amount solder on the iron tip, then quickly transfer to pad A
-  - To form a small shiny uniform dome on pad A 
+The above image mentions [wetting](https://www.adhesives.org/adhesives-sealants/science-of-adhesion/wetting#:~:text=Wetting%20is%20the%20ability%20of,greater%20the%20degree%20of%20wetting.). This is essentially the degree to how well the 'liquid' solder formed unto the metal surfaces. 
 
-![image](uploads/4d296528bcdc976c39a6df951d2692da/image.png)
-- Position component and hold it in place with tweezers. 
-  - Because of the presence of solder on pad A, it will rest at an angle from the PCB
+## 4.3 Practice 
+We are going to create the blinky circuit we initially made in [Space School Lab One](https://github.com/queens-satellite-team/Space-School/blob/main/lab1/lab1.md) to practice our soldering skills prior to tackling the payload. Please assemble the required components (black and red wire, an LED, and a 1000 Ohm resistor, and a [perfboard](https://en.wikipedia.org/wiki/Perfboard) / protoboard) and make all the necceseccary solder connections. Your final result should look similiar to the photo below. 
 
-![image](uploads/d067f00c6a5fcdf3a1669f77694b1b42/image.png)
-- Reflow solder on pad A
-  - The component should now be flush against the PCB.
+![Screen Shot 2021-10-23 at 9 14 22 AM](https://user-images.githubusercontent.com/48306876/138557845-97b0a103-ef29-4b2b-a232-e5fd805e453e.png)
 
-![image](uploads/5ca400c836b9cf485265c8a1801b6653/image.png)
-- Apply flux on pad B
-- Put a tiny amount of solder on the iron tip, then quickly transfer to pad B
-
-![image](uploads/225e88e751b2620c433d34cea8e77211/image.png)
-- Touch-up either side that requires it to meet IPC Class III criteria (joint concavity, aspect, dimensions, quantity of solder, etc.)
-
-![image](uploads/2f0f6accfd2f227ec8166a98a2df1040/image.png)
-
-# Section 3 - Removing Components 
+# Section 5 - Removing Components 
 
 To remove a resistor or capacitor:
 
@@ -159,7 +159,13 @@ To remove a resistor or capacitor:
     - IPC-A-610 is your friend to make a call on what is acceptable.
     - If in doubt, ask a colleague to cross-check.
 
-# Section Four - Cleaning 
+## 5.2 Example
+
+## 5.3 Pracice 
+My aplogies! I made a mistake earlier when I mentioned to solder a 1000 Ohm resistor for your blinky circuit -- it really should be a 330 Ohm resitory. To practice removing a component, please follow the steps outlined in Section 5 to remove the 1000 Ohm resistor for your blinky ciruit and replace it with a 330 Ohm resistor. 
+
+
+# Section 6 - Cleaning 
 
 ![image](uploads/4e9d84410d9145f7de175e63e82e2186/image.png) Reworks require the microscope, **cleaning does require the microscope as well**.
 
