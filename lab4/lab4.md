@@ -222,7 +222,7 @@ void setup()
 void loop()
 {
    // read the analog input
-   analog_input = analogRead(sensor_pin);
+   analog_input = analogRead(input_pin);
   
    // convert analog input to a voltage value
    voltage_reading = analog_input * (5.0/1024.0); 
