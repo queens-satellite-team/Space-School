@@ -5,15 +5,17 @@ If you have any questions, please feel free to reach out to Emma Paczkowski, Sea
 
 # Goals of Lab 5
 
-We will learn how to...
+We will learn...
 
-1️⃣ Prepare our design, and workstation in order to solder. 
+1️⃣ What soldering is. 
 
-2️⃣ Solder components together. 
+2️⃣ How to prepare our design, and workstation in order to solder. 
 
-3️⃣ Remove components that have been soldered. 
+3️⃣ How to solder components together. 
 
-4️⃣ Clean up the mess left behind. 
+4️⃣ How to remove components that have been previously soldered. 
+
+5️⃣ How to clean up the mess left behind after soldering. 
 
 # Section 1 - Motivation 
 
@@ -29,9 +31,9 @@ Let us look at some pros and cons of using a breadboard.
 | Quick to check component around. | Difficult to replicate. |
 | It is easy to adjust. | It is temporary. |
 | It is flexible. | It is heavier. |
-| No drilling holes. | A breadboard is noisier than properly laid-out circuit boards, sometimes far too noisy. |
-| No soldering required. | It is difficult to troubleshoot due to human error and some poor connections problem. |
-| It can be debugged easily. | It almost always, take up more physical space than the final circuit board design. |
+| No drilling holes. | A breadboard can cause signals to be [noisy](https://en.wikipedia.org/wiki/Noise_(signal_processing)). |
+| No soldering required. | Prone to human error and some poor connections problem. |
+| You can fix mistakes quickly | It almost always, take up more physical space than the final circuit board design. |
 | A solderless connection makes it reusable. | Difficult to modify complex SMD component for prototyping. |
 | Cheap and connections can be changed. | It works very poorly for high-speed design. |
 
