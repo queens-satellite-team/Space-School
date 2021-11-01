@@ -46,7 +46,7 @@ So, we want a solution that is a bit more permanent, can allow our circuit to be
 
 <img src="https://user-images.githubusercontent.com/48306876/138555772-d5ea32e9-71ab-46a6-b17e-90f50688157f.png" width=200 height=200)>
 
-**Flux Pen:** this prepares the metal surfaces for soldering by cleaning and removing any oxides and impurities. Flux allows the heat to be transferred to the metals more easily.❗ If using rosin core solder, you do not need to use flux when soldering. ❗
+**Flux Pen:** this prepares the metal surfaces for soldering by cleaning and removing any oxides and impurities. Flux allows the heat to be transferred to the metals more easily.❗ If using rosin core solder (a special kind of solder we will talk a bit more later), you do not need to use flux when soldering. ❗
 
 <img src="https://user-images.githubusercontent.com/48306876/138556039-b4a0b860-b751-4b91-874d-a6db35f763eb.png" width=200 height=200)>
 
@@ -79,22 +79,22 @@ So, we want a solution that is a bit more permanent, can allow our circuit to be
   - Turn on the fume extractor, or perform your soldering outside. 
 
 **Step 4: Set your soldering iron temperature.**
-  - If you have a temperature display you should set it for about ~760 °F. 
+  - If you have a temperature display you should set it for about ~760 °F or ~404 °C. 
   - You can increase the temperature if you are soldering something with a large thermal inertia (GND traces, large components).
 
 # Section 4.0 - Soldering Components
 
-## 4.1 Steps for Soldering Through Hole Components
+## 4.1 Steps for [Soldering Through Hole Components](https://en.wikipedia.org/wiki/Through-hole_technology)
 
 ![Screen Shot 2021-10-23 at 8 36 20 AM](https://user-images.githubusercontent.com/48306876/138556510-b7da9d1f-fc2c-4358-89bf-339ffa5820f1.png)
 
-⚠️ Through hole components are difficult to be de-soldered so make sure you’re doing the right thing. ⚠️
+⚠️ [Through hole components](https://en.wikipedia.org/wiki/Through-hole_technology) are difficult to be de-soldered so make sure you’re doing the right thing. ⚠️
 
 **Step 0:** Securely fasten component from the top side of the protoboard, flip protoboard to the back to expose solder pad and metal leg of the component. 
 
 **Step 1:** Heat the solder pad for ~2 seconds. 
 
-**Step 2:** Apply solder to the component and the pad. Do not just apply the solder to the iron. 
+**Step 2:** Unwind some solder from the spool, and apply to the component and the pad. Do not just apply the solder to the iron. 
 
 **Step 3:** Remove the solder when there is just enough, but do not let go off the iron. Let the heat from the iron flow the solder into a nice shape. 
 
