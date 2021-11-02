@@ -27,18 +27,24 @@ By the end of Space School you will gain experience in the following areas:
 
 ## Content Overview
 The week numbers correspond to the weeks of the school semester. We meet weekly on Wednesdays 7:00 - 8:30 pm EST on Teams until further notice. 
+
+Semester One - Fall 
 - Week 1: QSET taster event
 - Week 2: Intro to Space School 
 - Week 3: Coding and Arduino (lab 1)
 - Week 4: Sensors and Arduino (lab 2)
 - Week 5: Mission Analysis (lab 3)
-- Week 6: Developing Payload Software (lab 4)
-- Week 7: Intro to Soldering (lab 5)
-- Week 8: Soldering Payload Circuit (lab 6)
-- Week 9: Budgeting (lab 7)
-- Week 10: Into to CAD (lab 8)
-- Week 11: Developing Payload Chassis (lab 9)
-- Week 12: Integration (lab 10)
+- Week 6: Starting Payload Software (lab 4)
+- Week 7: Working with Hardware (lab 4)
+- Week 8: Finishing Payload Software (lab 4)
+- Week 9: Intro to Soldering (lab 5)
+- Week 10: Soldering Payload Circuit (lab 6)
+- Week 11: Budgeting (lab 7)
+- Week 12: Into to CAD (lab 8)
+
+Semester Two - Winter 
+- Week 1: Developing Payload Chassis (lab 9)
+- Week 2: Integration (lab 10)
 
 ## Feedback
 PLEASE give us any feedback you have.  You can either send any of us individual messages, fill out the [feedback form](https://forms.gle/ZNMfWeRQVinnbxpEA) or both!
