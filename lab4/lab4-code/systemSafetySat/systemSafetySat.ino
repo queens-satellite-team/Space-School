@@ -25,6 +25,9 @@
  *  - SD CARD MOSI --> LV1 --> HV1 --> DIGITAL PIN 11
  *  - SD CARD MISO --> LV1 --> HV1 --> DIGITAL PIN 12
  *  - SD CARD SCLK --> LV1 --> HV1 --> DIGITAL PIN 13
+ *  - ARDUINO 3.3V --> LV
+ *  - ARDUINO 5.0  --> HV
+ *  - ARDUINO GND  --> GND
  */
 
 
