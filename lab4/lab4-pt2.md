@@ -31,8 +31,27 @@ Once the code is able to be succesfuly compiled, we can upload it to the Arduino
 
 ![image](https://user-images.githubusercontent.com/48306876/140007601-1c0ce126-b360-4b9d-a343-59c3ff612379.png)
 
-# Section 3 - Payload Up To Date
+# Section 3 - Logic Level Shifter 
+
+For some sensors and devices you can not connect them directly to the Arduino. For us, these are the SD card writer and the acceleromter. We must change these voltages in order to protect these sensors from being fried.
+
+The PIN connections are as follows:
+HV  --> Arduino 5.0 V
+HV1 --> Arduino CSN  (Pin 10) 
+HV2 --> Arduino MOSI (Pin 11)
+HV3 --> Arduino MISO (Pin 12)
+HV4 --> Arduino SCLK (Pin 13)
+
+LV  --> Arduino 3.3 V
+LV1 --> Device CSN  
+LV2 --> Device MOSI 
+LV3 --> Device MISO
+LV4 --> Device SCLK
+
+<img src="https://user-images.githubusercontent.com/48306876/140240662-8386f521-4656-43d9-a618-72da9aed458b.png" width=500 height=500>
+
+# Section 4 - Payload Up To Date
 
 Before moving on to lab 5 your payload should look something like the photo below with the addition of an SD card writer (the toastSat Payload below does not include one yet, but yours should). 
 
-![IMG_0207](https://user-images.githubusercontent.com/48306876/140006482-feb81814-aeec-4860-9608-ca048084c2e8.jpg)
+<img src="https://user-images.githubusercontent.com/48306876/140006482-feb81814-aeec-4860-9608-ca048084c2e8.jpg" width=500 height=500>
