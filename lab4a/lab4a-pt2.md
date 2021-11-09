@@ -1,5 +1,5 @@
 # Introduction 
-Hello! Welcome to the second part of the fourth lab of Space School! This is an incomplete lab in order to provide supplimentary information to aid in the development of your toastSat payloads. **By the end of this lab you should have picked out one or two sensors, have all hardware connections made on a breadboard, and all software written.** 
+Hello! Welcome to the second part of the fourth lab (part a) of Space School! This is an incomplete lab in order to provide supplimentary information to aid in the development of your toastSat payloads. **By the end of this lab you should have picked out one or two sensors, have all hardware connections made on a breadboard, and all software written.** 
 
 As a note, the Arduinos we are using in these labs are the Arduino Nano Every and they are slightly different than the Arduino Nano. Please follow the steps in Section 2 to make sure you can communicate with your board correctly. 
 
