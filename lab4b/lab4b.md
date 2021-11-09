@@ -23,7 +23,8 @@ The SD card reader is used to store data that you collect during your flight on 
 - **Pin 3V:** This is the power pin. MicroSD cards must use 3.3V, so take care to only hook 3.3V to this pin. Hooking 5V or VBAT to this pin will damage your microSD card.
 - **Pin GND:** common ground for power and logic.
 	
-*Logic Pins*
+**Logic Pins**
+	
 - **Pin DET:** - Detect whether a microSD card is inserted. This pin is connected to **GND** internally when there's no card, but when one is inserted it is pulled up to **3V** with a 4.7kΩ resistor. That means that when the pin's logic level is **False** there's no card and when it's **True** there is. This is not required to communicate with the SD card reader.
 - **PIN CLK:** - This is the SPI **C**lock pin /** SCLK** **S**erial **C**lock, its an input to the chip and controlls the timing of the communication between these two devices.
 - **PIN SO:** - This is the **S**erial **O**ut / **M**aster **I**n **S**lave **O**ut pin, for data sent from the SD card to your Arduino. 
