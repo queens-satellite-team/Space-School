@@ -15,8 +15,9 @@ The SD card reader is used to store data that you collect during your flight on 
 
 # 1.1 🛠️ Hardware Requirements
 <p align="center">
-	<image src="https://user-images.githubusercontent.com/48306876/140847317-a65d1230-d4b2-425a-8e64-ec22f1ff5486.png" width="900" height="800">
+	<image src="https://user-images.githubusercontent.com/48306876/141688776-0fdb859b-ac57-4c73-af1c-43a1899fdbde.png" width="900" height="800">
 </p>
+
 
 **Power Pins**
     
