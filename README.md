@@ -37,13 +37,13 @@ Semester One - Fall
 - Week 6: Introduction to Payload (lab 4)
 - Week 7: SensorsStarting Payload Software (lab 4)
 - Week 8: Working with Hardware (lab 4)
-- Week 9: Incorporating the SD card (lab4c)
-- Week 10: Finishing Payload Software (lab 4)
-- Week 11: Budgeting (lab 7)
+- Week 9: Incorporating the SD card (lab4)
+- Week 10: Finishing Payload Software (lab 4c)
+- Week 11: Budgeting (lab 5)
 
 Semester Two - Winter 
-- Week 1: Intro to Soldering (lab 5)
-- Week 2: Soldering Payload Circuit (lab 6)
+- Week 1: Intro to Soldering (lab 6)
+- Week 2: Soldering Payload Circuit (lab 7)
 - Week 3: Into to CAD (lab 8)
 - Week 4: Developing Payload Chassis (lab 9)
 - Week 5: Integration (lab 10)
