@@ -22,7 +22,10 @@ Are you done with your payload software?
    [] The data is properly getting sent to the SD card.
   **Stretch Goal Checklist**:  
    [] Get a code review from someone on the team to see if there are ways to improve your code and make it more efficient.  
-   [] Create a GitHub repositor for your ToastSat team & upload your code to it.
+   [] Create a GitHub repositor for your ToastSat team & upload your code to it.  
+    
+    Github is much more than a place where we just post our labs.  At some point during your time on the team you will need to learn to use it. If you are keen I would suggest starting now.  Here are some resources to learn more about Github. Learning to use github can be a bit of a learning curve so please do not hesitate to reach out!!!
+    - [An Intro to Git and GitHub for Beginners (Tutorial)](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
 # 2 - Create Circuit Diagram
 When we come back from winter break we are going to jump into soldering. Having a wiring diagram ready will make this easier!
