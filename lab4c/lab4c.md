@@ -4,10 +4,10 @@ And we're back! Welcome to the fourth lab (part c) of Space School! In this lab 
 If you have any questions, please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
 # Goals of Lab 4 C / The rest of the semester
+
 1️⃣ Finish payload software.  
 2️⃣ Create wiring diagram.  
 3️⃣ Prepare for end of semester presentation.  
-
 
 # 1 - Finish Payload Software
 Are you done with your payload software?
@@ -33,7 +33,9 @@ When we come back from winter break we are going to jump into soldering. Having 
 A circuit diagram is a simple visual representation of the physical connections and physical layout of an electrical system or circuit. It shows how the electrical wires are interconnected and can also show where sensors and components are connected to the system. With this diagram you should be able to answer questions such as which pins on the arduino do I connect my temperature sensor to? or what value is the resistor for my LED?
 ### How can you create a circuit diagram?
 1. **Pick your Tool**: There are many tools you can use to create a wiring diagram. In the past the team has used Draw.io as it facilitates collaboration but feel free to find other tools or even draw it on a piece of paper. 
-2. **Know your Symbols**: There are specific symbols that correlate to certain electric components such as resistors and LEDs. Make sure you are using the correct symbols to match the components you are using and if the comonents requires a vlaue, such as a resistor, make sure to add that too. For your Arduino and sensors, since there is no predefined symbol, I would suggest you make a labeled box and label the inputs/outputs they have.  
+2. **Know your Symbols**: There are specific symbols that correlate to certain electric components such as resistors and LEDs. Make sure you are using the correct symbols to match the components you are using and if the comonents requires a vlaue, such as a resistor, make sure to add that too. For your Arduino and sensors, you can make a labeled box and specify the inputs/outputs that they have, or you can use the images of all the electronics we have been using for our toastSats found in the [lab4c-images](https://github.com/queens-satellite-team/Space-School/tree/main/lab4c/lab4c-images) folder to assist in your schematic making. 
+
+
 **Circuit Components Reference Sheet:** 
 
 <p align="center">
@@ -42,13 +44,12 @@ A circuit diagram is a simple visual representation of the physical connections 
   For wire connections use the following convention to avoid miscommunication of your circuit diagram.  
 **Wire Connection Reference Sheet:**  
  <p align="center">
-  <img src ="https://github.com/queens-satellite-team/Space-School/blob/1bf425da49d097869d6ce60f6c5d4bae6ffef9e6/lab4c/lab4c-images/wire_connections.png" width = "450" alt ="Wire Connection Reference Sheet">
- 
+  <img src ="https://github.com/queens-satellite-team/Space-School/blob/1bf425da49d097869d6ce60f6c5d4bae6ffef9e6/lab4c/lab4c-images/wire_connections.png" width = "450" alt ="Wire Connection Reference Sheet">   
   
 # 3 - Prepare for end of Semester Presentation
-The team is holding a [full team meeting November 29 7:30pm - 8:30pm on teams](https://teams.microsoft.com/l/meetup-join/19%3a228819f05c6048ba9648b700fe70780f%40thread.tacv2/1636333553327?context=%7b%22Tid%22%3a%22d61ecb3b-38b1-42d5-82c4-efb2838b925c%22%2c%22Oid%22%3a%22435b5691-4e74-41b9-bf46-569822016814%22%7d) to give everyone an update on the overall state of the team and to showcase what the team has accomplished this term.  In this meeting we would like to give your team a chance to showcase the incredible work you have been doing this semester in Space School in the format of a "3-2-1 presentation". What that means is that we are asking you to create **3** slides, present for **2** minutes and answer **1** minute of questions.  This is optional but highly encouraged, and great practice!
+The team is holding a [full team meeting November 29 7:30pm - 8:30pm on teams](https://teams.microsoft.com/l/meetup-join/19%3a228819f05c6048ba9648b700fe70780f%40thread.tacv2/1636333553327?context=%7b%22Tid%22%3a%22d61ecb3b-38b1-42d5-82c4-efb2838b925c%22%2c%22Oid%22%3a%22435b5691-4e74-41b9-bf46-569822016814%22%7d) to give everyone an update on the overall state of the team and to showcase what the team has accomplished this term.  In this meeting we would like to give your team a chance to showcase the incredible work you have been doing this semester in Space School in the format of a "3-2-1 presentation". What that means is that we are asking you to create **3** slides, present for **2** minutes and answer **1** minute of questions. This is optional but highly encouraged, and great practice!
 
 ### Goals of the presentation
 - Introduce yourself to the team
-- Talk about what you have done/learnt in Space School
+- Talk about what you have done/learned in Space School
 - Have fun! This is not a serious presentation. 
