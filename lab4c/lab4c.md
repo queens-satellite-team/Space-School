@@ -29,9 +29,10 @@ When we come back from winter break we are going to jump into soldering and crea
 A wiring diagram is a simple visual representation of the physical connections and physical layout of an electrical system or circuit. It shows how the electrical wires are interconnected and can also show where sensors and components are connected to the system. With this diagram you should be able to answer questions such as which pins on the arduino do I connect my temperature sensor to? or what value is the resistor for my LED?
 ### How can you create a wiring diagram?
 1. **Pick your Tool**: There are many tools you can use to create a wiring diagram. In the past the team has used Draw.io as it is easy to collaborate but feel free to find other tools or even draw it on a piece of paper. 
-2. **Know your Symbols**: There are specific symbols that correlate to certain electric components such as resistors and LEDs. Make sure you are using the correct symbols to match the components you are using. For your Arduino and Sensors, since there is no predefined symbol, I would suggest you make a box and label the inputs/outputs they have.
+2. **Know your Symbols**: There are specific symbols that correlate to certain electric components such as resistors and LEDs. Make sure you are using the correct symbols to match the components you are using. For your Arduino and Sensors, since there is no predefined symbol, I would suggest you make a box and label the inputs/outputs they have.  
 Reference Sheet:
-
+<p align="center">
+  <img src ="https://github.com/queens-satellite-team/Space-School/blob/7a8f8b0a162e4b1ba45a42242deae169e958a081/lab4c/lab4c-images/electric_symbols.png" width = "450" alt ="electric symbol reference sheet">
 
 # 3 - Prepare for end of Semester Presentation
 The team is holding a [full team meeting November 29 7:30pm - 8:30pm on teams](https://teams.microsoft.com/l/meetup-join/19%3a228819f05c6048ba9648b700fe70780f%40thread.tacv2/1636333553327?context=%7b%22Tid%22%3a%22d61ecb3b-38b1-42d5-82c4-efb2838b925c%22%2c%22Oid%22%3a%22435b5691-4e74-41b9-bf46-569822016814%22%7d) to give everyone an update as to what the team has been upto and showcase the work members have been working on.  In this meeting we would like to give your team a chance to showcase the incredible work you have been doing this semester in Space School in the format of a "3-2-1 presentation". What that means is that we are asking you to create **3** slides, present for **2** minutes and answer **1** minute of questions.  This is optional but highly encouraged.
