@@ -1,5 +1,5 @@
 # Introduction 
-And we're back! Welcome to the fourth lab (part c) of Space School! In this lab we are going to focus on the goals for the remainder of the semester which include finishing the payload software, creating a circuit diagram of your toast satand preparing for the end of semester presentation for the full team meeting on November 29th. With school getting busier towards the end of the semester and only having two weeks of space school left we have rejigged the format and moved soldering to the second semester.  Please see the [readme](https://github.com/queens-satellite-team/Space-School) of this repository for the updated schedule. 
+And we're back! Welcome to the fourth lab (part c) of Space School! In this lab we are going to focus on the goals for the remainder of the semester which include finishing the payload software, creating a circuit diagram of your toast sat, and preparing a short presentation for the full team meeting on November 29th. With school getting busier towards the end of the semester and only having two weeks of space school left we have rejigged the format and moved soldering to the second semester.  Please see the [readme](https://github.com/queens-satellite-team/Space-School) of this repository for the updated schedule. 
 
 If you have any questions, please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
@@ -13,7 +13,7 @@ If you have any questions, please feel free to reach out to Emma Paczkowski, Sea
 Are you done with your payload software?
 - **NO**
   - Please use the previous labs as a reference for completing your payload software.
-  - Please ask questions if you need assistance whether that be during the Space School session or not. We are always happy to help:)
+  - Please ask questions if you need assistance whether that be during the Space School session or not. We are always happy to help :)
 - **YES**
   - **Complete this checklist**:  
    [] The code compiles.  
@@ -22,10 +22,10 @@ Are you done with your payload software?
    [] The data is properly getting sent to the SD card.
   **Stretch Goal Checklist**:  
    [] Get a code review from someone on the team to see if there are ways to improve your code and make it more efficient.  
-   [] Upload your code to a GitHub repository.   
+   [] Create a GitHub repositor for your ToastSat team & upload your code to it.
 
 # 2 - Create Circuit Diagram
-When we come back from winter break we are going to jump into soldering and creating a wiring diagram will facilitate this process.
+When we come back from winter break we are going to jump into soldering. Having a wiring diagram ready will make this easier!
 ### What is a circuit diagram?
 A circuit diagram is a simple visual representation of the physical connections and physical layout of an electrical system or circuit. It shows how the electrical wires are interconnected and can also show where sensors and components are connected to the system. With this diagram you should be able to answer questions such as which pins on the arduino do I connect my temperature sensor to? or what value is the resistor for my LED?
 ### How can you create a circuit diagram?
@@ -43,7 +43,7 @@ A circuit diagram is a simple visual representation of the physical connections 
  
   
 # 3 - Prepare for end of Semester Presentation
-The team is holding a [full team meeting November 29 7:30pm - 8:30pm on teams](https://teams.microsoft.com/l/meetup-join/19%3a228819f05c6048ba9648b700fe70780f%40thread.tacv2/1636333553327?context=%7b%22Tid%22%3a%22d61ecb3b-38b1-42d5-82c4-efb2838b925c%22%2c%22Oid%22%3a%22435b5691-4e74-41b9-bf46-569822016814%22%7d) to give everyone an update on the overall state of the team and to showcase different members projets.  In this meeting we would like to give your team a chance to showcase the incredible work you have been doing this semester in Space School in the format of a "3-2-1 presentation". What that means is that we are asking you to create **3** slides, present for **2** minutes and answer **1** minute of questions.  This is optional but highly encouraged.
+The team is holding a [full team meeting November 29 7:30pm - 8:30pm on teams](https://teams.microsoft.com/l/meetup-join/19%3a228819f05c6048ba9648b700fe70780f%40thread.tacv2/1636333553327?context=%7b%22Tid%22%3a%22d61ecb3b-38b1-42d5-82c4-efb2838b925c%22%2c%22Oid%22%3a%22435b5691-4e74-41b9-bf46-569822016814%22%7d) to give everyone an update on the overall state of the team and to showcase what the team has accomplished this term.  In this meeting we would like to give your team a chance to showcase the incredible work you have been doing this semester in Space School in the format of a "3-2-1 presentation". What that means is that we are asking you to create **3** slides, present for **2** minutes and answer **1** minute of questions.  This is optional but highly encouraged, and great practice!
 
 ### Goals of the presentation
 - Introduce yourself to the team
