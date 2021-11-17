@@ -24,7 +24,7 @@ Are you done with your payload software?
    [] Get a code review from someone on the team to see if there are ways to improve your code and make it more efficient.  
    [] Create a GitHub repositor for your ToastSat team & upload your code to it.  
     
-    Github is much more than a place where we just post our labs.  At some point during your time on the team you will need to learn to use it. If you are keen I would suggest starting now.  Here are some resources to learn more about Github. Learning to use github can be a bit of a learning curve so please do not hesitate to reach out!!!
+    Github is much more than a place where we just post our labs.  At some point during your time on the team you will need to learn to use it. If you are keen I would suggest starting now.  Here are some resources to learn more about Github. Learning to use github can be a bit of a learning curve so please do not hesitate to reach out!!! If you do not want to do a deep dive into github see if you can create a repository and add your code just using hte web interface.
     - [An Intro to Git and GitHub for Beginners (Tutorial)](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
 # 2 - Create Circuit Diagram
