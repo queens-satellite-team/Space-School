@@ -51,7 +51,7 @@ int led_pins[] = {2, 3, 4};             // green, red, blue leds in that order
 float temperature_values[NUM_TEMP_SENS];
 float temp_average;
 float temp_celsius;
-byte raw_voltage;
+float raw_voltage;
 byte analog_input;
 unsigned long time_stamp; 
 
