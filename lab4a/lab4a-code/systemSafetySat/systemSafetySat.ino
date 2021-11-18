@@ -52,7 +52,7 @@ float temperature_values[NUM_TEMP_SENS];
 float temp_average;
 float temp_celsius;
 float raw_voltage;
-byte analog_input;
+int analog_input;
 unsigned long time_stamp; 
 
 File myFile;
