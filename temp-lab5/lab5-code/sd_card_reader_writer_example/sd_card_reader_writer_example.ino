@@ -7,7 +7,7 @@
  ** MOSI - pin 11
  ** MISO - pin 12
  ** CLK - pin 13
- ** CS - pin 4 (for MKRZero SD: SDCARD_SS_PIN)
+ ** CS - pin 10 (for MKRZero SD: SDCARD_SS_PIN)
 
   This example code is in the public domain.
 
@@ -28,7 +28,7 @@ void setup() {
 
   Serial.print("Initializing SD card...");
 
-  if (!SD.begin(4)) {
+  if (!SD.begin(10)) {
     Serial.println("initialization failed!");
     while (1);
   }
