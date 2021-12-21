@@ -1,7 +1,7 @@
 # Introduction 
 Hello! Welcome to the fourth lab of Space School! In this lab we are going to focus on building the hardware and software for our toastSats. We will begin by focusing on one electronic device at a time, and in future labs we will piece some of these different components together to make a payload system. **By the end of this lab you should have picked out one or two sensors, have all hardware connections made on a breadboard, and have all the required software written.** 
 
-As a note, the Arduinos we are using in these labs are the _Arduino Nano Every_ and they are slightly different than the _Arduino Nano_. Please follow the steps in Section ### to make sure you can communicate with your board correctly. 
+As a note, the Arduinos we are using in these labs are the _Arduino Nano Every_ and they are slightly different than the _Arduino Nano_. Please follow the steps in _Section 4: Uploading Code To An Arduino_ to make sure you can communicate with your board correctly. 
 
 # Goals of Lab 4
 
@@ -21,7 +21,11 @@ There are many ways to assemble a circuit together. The most common way to start
 
 # Section 2: Building the Hardware
 
-Sensors are ordered below acording to their difficulty; the first sensor is the least difficult and increases to the most difficult. 
+In this section, we focus on how to connect each one of the sensors to our Arduino Nano Every. Sensors are ordered below acording to their difficulty; the first sensor is the least difficult and increases to the most difficult. The pin out for the Arduino Nano Every is given below. 
+
+<p align="center">
+	<image src="https://user-images.githubusercontent.com/48306876/147003068-310568e6-bf67-4a1d-835d-a231ddbfba60.png" width="400" height="350">
+</p>
 
 ## 2.1.0 Photoresistive Sensor
 A photoresistor, or light-dependent resistor (LDR) is a resistor whose resistance will decrease when incident light intensity increase; in other words, it exhibits photoconductivity. This sensor has an adjustable dial so that you can set a light threshold for the sensor to detect. When the ambient light intensity does not reach the threshold value, the sensor output is high; when the ambient light level exceeds the set threshold, the sensor outputs a low value.
