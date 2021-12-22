@@ -1,9 +1,9 @@
 # Introduction 
-And we're back! Welcome to the seventh lab of Space School! In this lab we are going to focus on the goals for the remainder of the semester which include finishing the payload software, creating a circuit diagram of your toast sat, and preparing a short presentation for the full team meeting on November 29th. With school getting busier towards the end of the semester and only having two weeks of space school left we have rejigged the format and moved soldering to the second semester.  Please see the [readme](https://github.com/queens-satellite-team/Space-School) of this repository for the updated schedule. 
+And we're back! Welcome to the seventh lab of Space School! In this lab we are going to focus on the goals for the remainder of the semester which include finishing the payload software, creating a circuit diagram of your toast sat, and preparing a short presentation for the full team meeting on November 29th.
 
 If you have any questions, please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
-# Goals of Lab 6 / The rest of the semester
+# Goals of Lab 7 / The Rest of the Semester
 
 1️⃣ Finish payload software.  
 
@@ -11,32 +11,36 @@ If you have any questions, please feel free to reach out to Emma Paczkowski, Sea
 
 3️⃣ Prepare for end of semester presentation.  
 
-# 1 - Finish Payload Software
+# Section 1: Finish Payload Software
 Are you done with your payload software?
-- **NO**
-  - Please use the previous labs as a reference for completing your payload software.
-  - Please ask questions if you need assistance whether that be during the Space School session or not. We are always happy to help :)
-- **YES**
-  - **Complete this checklist**:  
-   [] The code compiles.  
-   [] The code successfully uploads to the board.  
-   [] The values that I am getting make sense. 
-   [] The data is properly getting sent to the SD card.
-  **Stretch Goal Checklist**:  
-   [] Get a code review from someone on the team to see if there are ways to improve your code and make it more efficient.  
-   [] Create a GitHub repositor for your ToastSat team & upload your code to it.  
+**NO**
+ - Please use the previous labs as a reference for completing your payload software.
+ - Please ask questions if you need assistance whether that be during the Space School session or not. We are always happy to help :)
+
+**YES**
+- **Complete this checklist**:  
+  - [ ] The code compiles.  
+  - [ ] The code successfully uploads to the board.  
+  - [ ] The values that I am getting make sense. 
+  - [ ] The data is properly getting sent to the SD card.
+  
+ - **Stretch Goal Checklist**:  
+   - [ ] Get a code review from someone on the team to see if there are ways to improve your code and make it more efficient.  
+   - [ ] Create a GitHub repositor for your ToastSat team & upload your code to it.  
     
-    Github is much more than a place where we just post our labs.  At some point during your time on the team you will need to learn to use it. If you are keen I would suggest starting now.  Here are some resources to learn more about Github. Learning to use github can be a bit of a learning curve so please do not hesitate to reach out!!! If you do not want to do a deep dive into github see if you can create a repository and add your code just using hte web interface.
-    - [An Intro to Git and GitHub for Beginners (Tutorial)](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+Github is much more than a place where we post our labs.  At some point during your time on the team you will need to learn to use it. If you are keen I would suggest starting now. Learning to use github can be a bit of a learning curve so please do not hesitate to reach out!!! If you do not want to do a deep dive into github see if you can create a repository and add your code just using hte web interface. Here are some resources to learn more about Github:
 
-# 2 - Create Circuit Diagram
+- [An Intro to Git and GitHub for Beginners (Tutorial)](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+
+# Section 2: Create Circuit Diagram
 When we come back from winter break we are going to jump into soldering. Having a wiring diagram ready will make this easier!
-### What is a circuit diagram?
-A circuit diagram is a simple visual representation of the physical connections and physical layout of an electrical system or circuit. It shows how the electrical wires are interconnected and can also show where sensors and components are connected to the system. With this diagram you should be able to answer questions such as which pins on the arduino do I connect my temperature sensor to? or what value is the resistor for my LED?
-### How can you create a circuit diagram?
-1. **Pick your Tool**: There are many tools you can use to create a wiring diagram. In the past the team has used Draw.io as it facilitates collaboration but feel free to find other tools or even draw it on a piece of paper. 
-2. **Know your Symbols**: There are specific symbols that correlate to certain electric components such as resistors and LEDs. Make sure you are using the correct symbols to match the components you are using and if the comonents requires a vlaue, such as a resistor, make sure to add that too. For your Arduino and sensors, you can make a labeled box and specify the inputs/outputs that they have, or you can use the images of all the electronics we have been using for our toastSats found in the [lab4c-images](https://github.com/queens-satellite-team/Space-School/tree/main/lab4c/lab4c-images) folder to assist in your schematic making. 
 
+## 2.2 What is a circuit diagram?
+A circuit diagram is a simple visual representation of the physical connections and physical layout of an electrical system or circuit. It shows how the electrical wires are interconnected and can also show where sensors and components are connected to the system. With this diagram you should be able to answer questions such as: "Which pins on the Arduino do I connect my temperature sensor to?" or "What value is the resistor for my LED?"
+
+## 2.2 How can you create a circuit diagram?
+1. **Pick your Tool**: There are many tools you can use to create a wiring diagram. In the past the team has used [draw.io](https://app.diagrams.net/) as it facilitates collaboration but feel free to find other tools or even draw it on a piece of paper. 
+1. **Know your Symbols**: There are specific symbols that correlate to certain electric components such as resistors and LEDs. Make sure you are using the correct symbols to match the components you are using and if the comonents requires a vlaue, such as a resistor, make sure to add that too. For your Arduino and sensors, you can make a labeled box and specify the inputs/outputs that they have, or you can use the images of all the electronics we have been using for our toastSats found in the _lab 7 images folder_ to assist in your schematic making. 
 
 **Circuit Components Reference Sheet:** 
 
@@ -48,8 +52,8 @@ A circuit diagram is a simple visual representation of the physical connections 
  <p align="center">
   <img src ="https://github.com/queens-satellite-team/Space-School/blob/1bf425da49d097869d6ce60f6c5d4bae6ffef9e6/lab4c/lab4c-images/wire_connections.png" width = "450" alt ="Wire Connection Reference Sheet">   
   
-# 3 - Prepare for end of Semester Presentation
-The team is holding a [full team meeting November 29 7:30pm - 8:30pm on teams](https://teams.microsoft.com/l/meetup-join/19%3a228819f05c6048ba9648b700fe70780f%40thread.tacv2/1636333553327?context=%7b%22Tid%22%3a%22d61ecb3b-38b1-42d5-82c4-efb2838b925c%22%2c%22Oid%22%3a%22435b5691-4e74-41b9-bf46-569822016814%22%7d) to give everyone an update on the overall state of the team and to showcase what the team has accomplished this term.  In this meeting we would like to give your team a chance to showcase the incredible work you have been doing this semester in Space School in the format of a "3-2-1 presentation". What that means is that we are asking you to create **3** slides, present for **2** minutes and answer **1** minute of questions. This is optional but highly encouraged, and great practice!
+# Section 3: Prepare for end of Semester Presentation
+The team is holding a [full team meeting November 29 7:30pm - 8:30pm on teams]() to give everyone an update on the overall state of the team and to showcase what the team has accomplished this term. In this meeting we would like to give your team a chance to showcase the incredible work you have been doing this semester in Space School in the format of a "3-2-1 presentation". What that means is that we are asking you to create **3** slides, present for **2** minutes and answer **1** minute of questions. This is optional but highly encouraged, and great practice!
 
 ### Goals of the presentation
 - Introduce yourself to the team
