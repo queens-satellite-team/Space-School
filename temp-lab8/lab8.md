@@ -1,9 +1,9 @@
 # Introduction 
-Hello! Welcome to the eigth lab of Space School! In this lab we are going to begin with some soldering basics to help prepare for the undertaking of soldering your entire payload. In this lab you will find some basic guidelines and tips to perform various soldering tasks sush as installing a component and removing components.
+Hello! Welcome to the eighth lab of Space School! In this lab we are going to begin with some soldering basics to help prepare for the undertaking of soldering your entire toastSat payload. In this lab you will find some basic guidelines and tips to perform various soldering tasks sush as installing components and removing components.
 
 If you have any questions, please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
-# Goals of Lab 5
+# Goals of Lab 8
 
 We will learn...
 
@@ -17,13 +17,9 @@ We will learn...
 
 5️⃣ How to clean up the mess left behind after soldering. 
 
-# Section 1 - Motivation 
+# Section 1: Motivation 
 
-There are many ways to assemble a circuit together. The most common way to start is with a [breadboard](https://en.wikipedia.org/wiki/Breadboard). Breadboards have internal connections that allow for quick work when piecing together new components of a ciruit. In the photo below, we see all the shared connections inside of a breadboard. The centre ciruit area in green has a shared connection for each column along with a divider in the middle (the top of the column and the bottom of the column are not connected), and the rows coloured blue and red show that there is a shared connection across the entire line (the top blue and red lines are not connected to the bottom blue and red lines). 
-
-![image](https://user-images.githubusercontent.com/48306876/138555396-737f73e0-560d-4cb3-94b0-bc2318304226.png)
-
-Let us look at some pros and cons of using a breadboard. 
+Right now, our circuit is assembled on a breadboard. Let us look at some pros and cons of using a breadboard. 
 
 | Breadboard Advantages | Breadboard Disadvantages | 
 | --- | --- | 
@@ -37,32 +33,47 @@ Let us look at some pros and cons of using a breadboard.
 | A solderless connection makes it reusable. | Difficult to modify complex SMD component for prototyping. |
 | Cheap and connections can be changed. | It works very poorly for high-speed design. |
 
-So, we want a solution that is a bit more permanent, can allow our circuit to be a bit more compact, and allow us to align our components the way we want. Our solution will be to solder! 
+Looking at these pros and cons, and knowing that we have certian mass, power, and volume constrains, can we think of anything that might be a bit better than a breadboard? We will want a solution that is a bit more permanent, can allow our circuit to be a bit more compact, and allow us to align our components the way we want. Our solution will be to solder! 
 
-# Section 2 - Soldering Tools 
+# Section 2: Soldering Tools 
 [Soldering](https://en.wikipedia.org/wiki/Soldering) is the process of joining two or more items together by melting an additional filler metal (solder) into the joint. When you solder a circuit together you are providing a **strong electrical connection**. While a solder connection can stay together with greater strength than a breadboard, it is up to you to make sure all components also have a **strong mechanical connection** by twisting wires together and ensuring components are not under stress. A typical soldering setup will have the following:
 
-**Soldering Iron:** this supplies the heat in order to melt the solder so that it can flow into the joint. A soldering iron is composed of a heated metal tip and an insulated handle.❗ Please do not touch any part of the metal end when the soldering iron is on.❗  
+### 2.1 Soldering Iron
+This supplies the heat in order to melt the solder so that it can flow into the joint. A soldering iron is composed of a heated metal tip and an insulated handle.❗ Please do not touch any part of the metal end when the soldering iron is on.❗  
 
-<img src="https://user-images.githubusercontent.com/48306876/138555772-d5ea32e9-71ab-46a6-b17e-90f50688157f.png" width=200 height=200)>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/48306876/138555772-d5ea32e9-71ab-46a6-b17e-90f50688157f.png" width=200 height=200)>
+</p>
 
-**Flux Pen:** this prepares the metal surfaces for soldering by cleaning and removing any oxides and impurities. Flux allows the heat to be transferred to the metals more easily.❗ If using rosin core solder (a special kind of solder we will talk a bit more later), you do not need to use flux when soldering. ❗
+### 2.2 Flux Pen
+This prepares the metal surfaces for soldering by cleaning and removing any oxides and impurities. Flux allows the heat to be transferred to the metals more easily.❗ If using rosin core solder (a special kind of solder we will talk a bit more later), you do not need to use flux when soldering. ❗
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/48306876/138556039-b4a0b860-b751-4b91-874d-a6db35f763eb.png" width=200 height=200)>
+</p>
 
-**Sponge:** this is used to clean the tip of the soldering iron, removing any excess soldering that has been left behind. ❗ Make sure that the sponge is slightly damp before wiping away any solder. ❗
+### 2.3 Sponge
+This is used to clean the tip of the soldering iron, removing any excess soldering that has been left behind. ❗ Make sure that the sponge is slightly damp before wiping away any solder. ❗
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/48306876/138556208-8e7add71-cffe-4ce9-85de-7eed264e7dd0.png" width=200 height=200)>
+</p>
+  
+### 2.4 Brass Wool
+This is also used to clean the tip of the soldering iron by removing any excess soldering that has been left behind. ❗ Brass wool is soft and will not scratch the soldering iron tip. Steel wool is not a replacement. ❗
 
-**Brass Wool:** this is also used to clean the tip of the soldering iron by removing any excess soldering that has been left behind. ❗ Brass wool is soft and will not scratch the soldering iron tip. Steel wool is not a replacement. ❗
-
+<p align="center">
 <img src="https://user-images.githubusercontent.com/48306876/138556310-ae29be8c-cb34-4fc4-8b09-c25c16393bf2.png" width=200 height=200)>
+</p>
 
-**Solder:** this is the filler material used to fill in the joint of the solder connection. Solder is a metal alloy which means it is a combination of at least two different types of metal, typically lead (Pb) and tin (Sn); however, lead-free solder may also contain copper, silver, bismuth, indium, zinc, antimony, and traces of other metals. ❗ You can also find rosin- and acid-core solder. These have rosin or acid in the centre of the solder wire. Acid core is used for plumbing application, while rosin-core is used for electronics. Rosin-core solder has a _flux_ like material at its centre to assist in the soldering process just like using a flux pen. ❗
+### 2.5 Solder
+This is the filler material used to fill in the joint of the solder connection. Solder is a metal alloy which means it is a combination of at least two different types of metal, typically lead (Pb) and tin (Sn); however, lead-free solder may also contain copper, silver, bismuth, indium, zinc, antimony, and traces of other metals. ❗ You can also find rosin- and acid-core solder. These have rosin or acid in the centre of the solder wire. Acid core is used for plumbing application, while rosin-core is used for electronics. Rosin-core solder has a _flux_ like material at its centre to assist in the soldering process just like using a flux pen. ❗
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/48306876/138556671-38913eb7-b041-4ac7-bd50-7357fbd154db.png" width=200 height=200)>
+</p>
 
-# Section 3 - Setup and Preparation
+# Section 3: Setup and Preparation
 
 **Step 1: Confirm what needs to be done.**
   - Confirm that component part numbers, resistor values, etc. are all correct. 
@@ -82,13 +93,15 @@ So, we want a solution that is a bit more permanent, can allow our circuit to be
   - If you have a temperature display you should set it for about ~760 °F or ~404 °C. 
   - You can increase the temperature if you are soldering something with a large thermal inertia (GND traces, large components).
 
-# Section 4.0 - Soldering Components
+# Section 4: Soldering Components
 
-## 4.1 Steps for [Soldering Through Hole Components](https://en.wikipedia.org/wiki/Through-hole_technology)
+You can follow these steps for soldering [through-hole technology](https://en.wikipedia.org/wiki/Through-hole_technology) components. 
 
-![Screen Shot 2021-10-23 at 8 36 20 AM](https://user-images.githubusercontent.com/48306876/138556510-b7da9d1f-fc2c-4358-89bf-339ffa5820f1.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48306876/138556510-b7da9d1f-fc2c-4358-89bf-339ffa5820f1.png")>
+</p>
 
-⚠️ [Through hole components](https://en.wikipedia.org/wiki/Through-hole_technology) are difficult to be de-soldered so make sure you’re doing the right thing. ⚠️
+⚠️ Through hole components are difficult to be de-soldered so make sure you’re doing the right thing. ⚠️
 
 **Step 0:** Securely fasten component from the top side of the protoboard, flip protoboard to the back to expose solder pad and metal leg of the component. 
 
@@ -102,25 +115,29 @@ So, we want a solution that is a bit more permanent, can allow our circuit to be
 
 **Tips**
   - Do not solder from solder destination side (solder from the bottom)!
-  - IPC Class III requirement is 75% vertical fill, starting from solder source side. 
+  - [IPC-A-610](https://www.ipc.org/ipc-610-acceptability-electronics-assemblies-endorsement-program) Class III requirement is 75% vertical fill, starting from solder source side. 
   - If you are getting large balls of solder on your joints try reducing the amount of solder you are applying, increasing the heat slightly, or holding the iron on the solder pad for an additional second in step 1. 
 
-## 4.2 Examples of Good and Bad Solder Joints
+## 4.1 Examples of Good and Bad Solder Joints
 
-![image](https://user-images.githubusercontent.com/48306876/138556468-fb7db75c-0716-429c-b1d5-f39c1bee82f2.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48306876/138556468-fb7db75c-0716-429c-b1d5-f39c1bee82f2.png")>
+</p>
 
 The above image mentions [wetting](https://www.adhesives.org/adhesives-sealants/science-of-adhesion/wetting#:~:text=Wetting%20is%20the%20ability%20of,greater%20the%20degree%20of%20wetting.). This is essentially the degree to how well the 'liquid' solder formed unto the metal surfaces. 
 
-## 4.3 Solder Practice 
-We are going to create the blinky circuit we initially made in [Space School Lab One](https://github.com/queens-satellite-team/Space-School/blob/main/lab1/lab1.md) to practice our soldering skills prior to tackling the payload. Please assemble the required components (black and red wire, an LED, and a 1000 Ohm resistor, and a [perfboard](https://en.wikipedia.org/wiki/Perfboard) / protoboard) and make all the necessary solder connections. Your final result should look similar to the photo below. 
+## 4.2 Solder Practice 
+We are going to create the blinky circuit we initially made in [Space School Lab One](https://github.com/queens-satellite-team/Space-School/blob/main/lab1/lab1.md) to practice our soldering skills prior to tackling the payload. Please assemble the required components (black and red wire, an LED, and a 1000 Ohm resistor, and a [perfboard/ protoboard](https://en.wikipedia.org/wiki/Perfboard)) and make all the necessary solder connections. Your final result should look similar to the photo below. 
 
-![Screen Shot 2021-10-23 at 9 14 22 AM](https://user-images.githubusercontent.com/48306876/138557845-97b0a103-ef29-4b2b-a232-e5fd805e453e.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48306876/138557845-97b0a103-ef29-4b2b-a232-e5fd805e453e.png")>
+</p>
 
-# Section 5 - Removing Components 
+# Section 5: Removing Components 
 
 ## 5.1 Steps for Removing Components 
 
-⚠️ The photos below are for surface mounted components (SMD), but the steps still apply to through-hole components (THT) like the resistor and LED we just soldered. ⚠️
+⚠️ The photos below are for surface mounted components ([SMT](https://en.wikipedia.org/wiki/Surface-mount_technology#:~:text=Surface%2Dmount%20technology%20(SMT),%2Dmount%20device%20(SMD).)), but the steps still apply to through-hole components (THT) like the resistor and LED we just soldered. ⚠️
 
 **Step 1:** Apply flux on both solder joints. 
 
@@ -160,7 +177,7 @@ _Tip: During rework, protect nearby sensitive areas with tape, preferably **kapt
 ## 5.3 Practice Removing a Component 
 My apologies! I made a mistake earlier when I mentioned to solder a 1000 Ohm resistor for your blinky circuit -- it really should be a 330 Ohm resistor. To practice removing a component, please follow the steps outlined in Section 5 to remove the 1000 Ohm resistor for your blinky circuit and replace it with a 330 Ohm resistor. 
 
-# Section 6 - Cleaning 
+# Section 6: Cleaning 
 
 ## 6.1 Steps for Cleaning  
 
@@ -184,11 +201,9 @@ _Tip: When possible, tilt the board so that flux remover/isopropyl alcohol does 
 
 _Tip: Bear in mind that that droplets of flux can spread several centimeters away from the solder joint during reflow._
 
-_Tip: Make sure there is no debris left on the board (solder ball, loose component dropped on the board, hair, etc.).
+_Tip: Make sure there is no debris left on the board (solder ball, loose component dropped on the board, hair, etc.)._
 
 _Tip: For through-hole components, do not forget to clean the solder destination side._
-
-![image](https://user-images.githubusercontent.com/48306876/138560603-abc2d203-78bd-40f0-a437-22795395c478.png)
 
 _Tip: Remove all flux! The flux is corrosive, wet flux residues may create conductive paths._
 
