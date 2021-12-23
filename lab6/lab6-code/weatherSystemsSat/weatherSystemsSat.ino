@@ -2,14 +2,11 @@
  * Title:         Weather Systems Satellite 
  * Last Updated:  November 17th, 2021
  * Author:        Queen's Space Engineering Team - Satellite
- * Breif:         Example of a toastSat payload that utilizes the BMP180 pressure sensor
+ * Brief:         Example of a toastSat payload that utilizes the BMP180 pressure sensor
  *                  and the TMP36 temperature sensor. The time, temperature from the TMP36,  
  *                  and the temperature and pressure from the BMP180 are measured and
  *                  recorded onto an SD card. 
- *                Note: The contents of the SD card is overwritten upon reset of the Arduino. 
- *                  
- * Requirements:
- *  BMP180 Library: https://learn.sparkfun.com/tutorials/bmp180-barometric-pressure-sensor-hookup-/all#res
+ *                Note: The contents of the SD card is overwritten upon reset of the Arduino.             
  */
 
 /*****************************************************************
@@ -30,6 +27,9 @@
  *  - ARDUINO 3.3V --> LV
  *  - ARDUINO 5.0V --> HV
  *  - ARDUINO GND  --> GND
+ *
+ * Requirements:
+ *  BMP180 Library: https://learn.sparkfun.com/tutorials/bmp180-barometric-pressure-sensor-hookup-/all#res
  */
 
 
@@ -45,8 +45,8 @@
 /*****************************************************************
  * PIN SETUP and GLOBAL VARIABLES
  */
-int sd_card_csn = 10;   //output
-int temp_sens_pin = A6; //input
+const int sd_card_csn = 10;   //output
+const int temp_sens_pin = A6; //input
 
 // tmp36 temperature sensor
 int analog_input;
@@ -64,7 +64,7 @@ unsigned long time_stamp;
 /*****************************************************************
  * FUNCTION DECLARATIONS
  */
-double getPressure();
+double getPressure(void);
 
 /*****************************************************************
  * SETUP 
@@ -162,6 +162,7 @@ void loop(){
   Serial.print("press: ");
   Serial.println(kpa);
 
+  // save this loop's collected data to the sd-card by printing the data to in .csv formatting 
   myFile = SD.open("weather.csv", FILE_WRITE);
   if (myFile) {
     Serial.print("writing to weather.csv... ");
@@ -181,6 +182,7 @@ void loop(){
     myFile.close();
     Serial.println("done.");
   } else {
+    // if the file cannot be opened flash the LED and print an error message. 
     Serial.println("error opening weather.csv");
     digitalWrite(LED_BUILTIN, LOW);
     delay(100);
@@ -204,7 +206,13 @@ void loop(){
   delay(1000);
 }
 
-double getPressure() {
+/*****************************************************************
+ * FUNCTIONS
+ */
+@brief: gets the current pressure value as measured by the BMP180 sensor. 
+@param: void
+@return: pressure measurement in hPa, floating point number. 
+double getPressure(void) {
   status = pressure_sensor.startTemperature();
   if (status != 0) {
     delay(status);

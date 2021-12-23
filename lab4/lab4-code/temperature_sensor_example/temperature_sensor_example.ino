@@ -16,7 +16,6 @@ void loop()
   analog_data = analogRead(sensor_pin);
   
   // convert analog input to a voltage value 
-  // change 5.0 to 3.3 if using 3.3 volt supply
   voltage_reading = analog_data * (5.0/1024.0); 
   
   // convert voltage value to a temperature value
