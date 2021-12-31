@@ -34,19 +34,26 @@ The week numbers correspond to the weeks of the school semester. We meet weekly 
 - Week 3: Coding and Arduino (lab 1)
 - Week 4: Sensors and Arduino (lab 2)
 - Week 5: Mission Analysis (lab 3)
-- Week 6: Introduction to Payload (lab 4a)
-- Week 7: SensorsStarting Payload Software (lab 4a)
-- Week 8: Working with Hardware (lab 4b)
-- Week 9: Incorporating the SD card (lab4b)
-- Week 10: Finishing Payload Software (lab 4c)
-- Week 11: Budgeting (lab 4c)
+- Week 6: Introduction to Payload (lab 4)
+- Week 7: Starting Payload Software (lab 4)
+- Week 8: Working with Hardware (lab 5)
+- Week 9: Incorporating the SD card (lab 5)
+- Week 10: Finishing Payload Software (lab 6)
+- Week 11: Semester Wrap-Up (lab 7)
 
 **Semester Two - Winter** 
-- Week 1: Intro to Soldering (lab 5)
-- Week 2: Soldering Payload Circuit (lab 6)
-- Week 3: Into to CAD (lab 7)
-- Week 4: Developing Payload Chassis (lab 8)
-- Week 5: Integration (lab 9)
+- Week 1: Intro to Satellite Budgets (lab 8)
+- Week 2: Creating a ToastSat Budget (lab 9)
+- Week 3: Into to CAD (lab 10)
+- Week 4: Developing Payload Chassis (lab 11)
+- Week 5: Intro to QSET's subteams
+- Week 6: Selecting your destiny 
+- Week 7: intro to soldering (lab 12)
+- Week 8: soldering the payload (lab 13)
+- Week 9: integration (lab 14)
+- Week 10: final changes and integration part 2
+- Week 11: semester wrap up
+
 
 ## Feedback
 PLEASE give us any feedback you have.  You can either send any of us individual messages, fill out the [feedback form](https://forms.gle/ZNMfWeRQVinnbxpEA) or both!
