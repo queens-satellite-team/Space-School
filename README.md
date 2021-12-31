@@ -35,7 +35,7 @@ The week numbers correspond to the weeks of the school semester. We meet weekly 
 - Week 4: Sensors and Arduino (lab 2)
 - Week 5: Mission Analysis (lab 3)
 - Week 6: Introduction to Payload (lab 4)
-- Week 7: SensorsStarting Payload Software (lab 4)
+- Week 7: Starting Payload Software (lab 4)
 - Week 8: Working with Hardware (lab 5)
 - Week 9: Incorporating the SD card (lab 5)
 - Week 10: Finishing Payload Software (lab 6)
