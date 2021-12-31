@@ -48,11 +48,11 @@ The week numbers correspond to the weeks of the school semester. We meet weekly 
 - Week 4: Developing Payload Chassis (lab 11)
 - Week 5: Intro to QSET's subteams
 - Week 6: Selecting your destiny 
-- Week 7: intro to soldering (lab 12)
-- Week 8: soldering the payload (lab 13)
-- Week 9: integration (lab 14)
-- Week 10: final changes and integration part 2
-- Week 11: semester wrap up
+- Week 7: Intro to Soldering (lab 12)
+- Week 8: Soldering the Payload (lab 13)
+- Week 9: Integration (lab 14)
+- Week 10: Final Changes and Integration
+- Week 11: Winter Semester Wrap-Up
 
 
 ## Feedback
