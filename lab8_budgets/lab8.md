@@ -15,7 +15,32 @@ If you have any questions, please feel free to reach out to Emma Paczkowski, Sea
 
 ## What is a budget? 
 
-## What budgets are typically found on spacescraft? 
+A spacecraft budget, much like your own spending budget, tracks what you need and compares it against what you can afford. These include cost budgets, as your customer likely only wants to pay you a fixed amount of money and you need to buy the parts and pay for labour to build your satellite, but they extend into allocating how much power, memory, temperature, and control you can *spend*.
+
+> We will be talking about **satellite budgets** primarly, but this discussion is applicable to rovers and rockets as well.
+
+Budgets can be (and often are) as simple as a spreadsheet that tallys what you know about the need or demand in your spacecraft. These numbers are combined, sometimes by simple addition and other times through more complicated analysis, and compared against your capacity or limits that you can afford in your satellite. A tangible example of this is a mass budget; you have a limit to how heavy your satellite can be, so you add up all the components and you must be below that limit. Some budgets are definitive (i.e., they tell you a clear result) while others are estimations that serve as a first step towards more detailed analysis.
+
+## What budgets are typically found on spacecraft?
+
+There are no limits to what you can do a budget for on a spacecraft, but here is a list of some common examples.
+
+1. Mass Budget
+  - Tracks the mass of each component of the satellite as well as the uncertainty of the mass value (i.e., how confident we are in this value), sums all the values together, and reports how far off the current design is from the absolute limit for the spacecraft. 
+  - Managed by a Systems Engineer or the Structure/Mechanical subsystem team
+  - For a CubeSat, mass budgets are often tracked in [kg] (as the mass limit is usuall between 1 kg and 4 kg). 
+  - The mass budget is often divided by subsystem so we can track what portion of the total mass each system is using.
+  - The primary output of the mass budget is the **mass margin**, expressed as a percentage of the maximum mass. 
+  - A positive margin indicates that the current mass is *below* the mass limit (i.e., good) and a negative margin indicates that the design is over budget (i.e., bad).
+  - How much mass margin you want varies as the spacecraft moves through development, design, manufacturing, and launch preparation; start with a large mass margin and end with a small mass margin
+  - You want to have a large mass margin (maybe 10-20%) early in the design of the spacecraft in case some major problem arises later in the project.
+  - Only one mass budget is maintained (typically), although other subsystems could informally maintain their own mass budgets if desired.
+2. Power Budget
+3. Data Budget
+4. Link Budget
+5. Pointing Budget
+6. Delta-V (Propellant) Budget
+7. Cost Budget
 
 ## What budgets are to be included for out toastSats and why? 
 
