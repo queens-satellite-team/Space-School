@@ -25,22 +25,29 @@ Budgets can be (and often are) as simple as a spreadsheet that tallys what you k
 
 There are no limits to what you can do a budget for on a spacecraft, but here is a list of some common examples.
 
-1. Mass Budget
-  - Tracks the mass of each component of the satellite as well as the uncertainty of the mass value (i.e., how confident we are in this value), sums all the values together, and reports how far off the current design is from the absolute limit for the spacecraft. 
-  - Managed by a Systems Engineer or the Structure/Mechanical subsystem team
-  - For a CubeSat, mass budgets are often tracked in [kg] (as the mass limit is usuall between 1 kg and 4 kg). 
-  - The mass budget is often divided by subsystem so we can track what portion of the total mass each system is using.
-  - The primary output of the mass budget is the **mass margin**, expressed as a percentage of the maximum mass. 
-  - A positive margin indicates that the current mass is *below* the mass limit (i.e., good) and a negative margin indicates that the design is over budget (i.e., bad).
-  - How much mass margin you want varies as the spacecraft moves through development, design, manufacturing, and launch preparation; start with a large mass margin and end with a small mass margin
-  - You want to have a large mass margin (maybe 10-20%) early in the design of the spacecraft in case some major problem arises later in the project.
+### Mass Budget
+  - Tracks the mass of **each component** of the satellite as well as the **uncertainty** of the mass value (i.e., how confident we are in this value), sums all the values together, and reports how far off the current design is from the absolute limit for the spacecraft;
+  - Managed by a Systems Engineer or the Structure/Mechanical subsystem team;
+  - For a CubeSat, mass budgets are often tracked in **kg** (as the mass limit is usuall between 1 kg and 4 kg);
+  - The mass budget is often divided by subsystem so we can track what portion of the total mass each system is using;
+  - The primary output of the mass budget is the **mass margin**, expressed as a percentage of the maximum mass;
+  - A positive margin indicates that the current mass is *below* the mass limit (i.e., good) and a negative margin indicates that the design is over budget (i.e., bad);
+  - How much mass margin you want varies as the spacecraft moves through development, design, manufacturing, and launch preparation; start with a large mass margin and end with a small mass margin;
+  - You want to have a large mass margin (maybe 10-20%) early in the design of the spacecraft in case some major problem arises later in the project;
   - Only one mass budget is maintained (typically), although other subsystems could informally maintain their own mass budgets if desired.
-2. Power Budget
-3. Data Budget
-4. Link Budget
-5. Pointing Budget
-6. Delta-V (Propellant) Budget
-7. Cost Budget
+
+### Power Budget
+This budget will determine how well balanced power generation is with power consumption, with additional consideration for storage limitations of a battery system. Unlike the mass budget, the power generation and consumption is **dynamic**. We will need to explore these dynamics a little further in order to determine a simple way to estimate the power budget before moving on to more advanced techniques. To get started, let's discuss the basics of power generation, storage, and consumption.
+
+#### Power Generation
+Power generation occurs when the solar panels are exposed to the sunlight. We can estimate our input power 
+
+ 
+### Data Budget
+### Link Budget
+### Pointing Budget
+### Delta-V (Propellant) Budget
+### Cost Budget
 
 ## What budgets are to be included for out toastSats and why? 
 
