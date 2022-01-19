@@ -36,6 +36,10 @@ There are no limits to what you can do a budget for on a spacecraft, but here is
   - You want to have a large mass margin (maybe 10-20%) early in the design of the spacecraft in case some major problem arises later in the project;
   - Only one mass budget is maintained (typically), although other subsystems could informally maintain their own mass budgets if desired.
 
+<p align="center">
+  <img src ="https://user-images.githubusercontent.com/48306876/150068120-45627b82-f121-499e-9833-9c702d81ad09.png" width = "450" alt ="satellite component breakout">
+</p> 
+
 ### 1.2.2 Power Budget
 This budget will determine how well balanced power generation is with power consumption, with additional consideration for storage limitations of a battery system. Unlike the mass budget, the power generation and consumption is **dynamic**. We will need to explore these dynamics a little further in order to determine a simple way to estimate the power budget before moving on to more advanced techniques. To get started, let's discuss the basics of power generation, storage, and consumption.
 
@@ -54,7 +58,25 @@ To determine `A_effective`, we will need to know the how much of the solar panel
 
 #### Power Consumption
 
+
+<p align="center">
+  <img src ="https://user-images.githubusercontent.com/48306876/150068307-02cdcd60-a80a-4f97-95a8-0f02a54da525.png" width = "450" alt ="the little satellite that could">
+</p> 
+
 ### 1.2.3 Link Budget
+- Tracks all of the power gains and losses that a communication signal experiences during it's time starting from the transmitter, travelling through a medium, and picked up by the receiver;
+- Gain is anything that provides additional power to the communication signal. This may include power sent from the transmitter, power from an amplifier, and using different antenna configurations;
+- Losses are anything that takes away from the power (or introduces [noise](https://en.wikipedia.org/wiki/Noise_(signal_processing))) to the communication signal. This may include propogation loss, atmospheric absorption, resistances and impedances in the communication signal's path, and polarization mis-match;
+- Power levels are expressed in decibel-milliwatt (dBm), and power gains and losses are expressed in decibels (dB). Both are logarithmic measurements; adding decibels is equivalent to multiplying the actual power; 
+- For a satellite with two-way (duplex) communication, there is typically an unplink budget as well as a downlink budget. The direction of which is typically defined as an uplink from the ground to the satellite, and a downlink from the satellite to the ground;
+- The primary output of the link budget is the **link margin**, expressed as a measure of power and is the amount by which the received power exceeds the sensitiry of the receiver;
+- If the received power is sufficiently large (relative to the sensitivity of the receiver), which may be dependent on the communications protocol in use, the link will be useful for sending data;
+- A good link budget will also provide a measure in power of how much your communication signal can be discerned from the surrounding noise level. This is called the [signal-to-noise ratio](https://en.wikipedia.org/wiki/Signal-to-noise_ratio). This is to ensure that the signal we are listening for is intelligible;
+
+<p align="center">
+  <img src ="https://user-images.githubusercontent.com/48306876/150067611-ca874038-5767-4beb-88c3-8bae0e72709d.png" width = "450" alt ="Friis Free-Space Radio Circuit">
+</p> 
+
 ### 1.2.4 Data Budget
 ### 1.2.5 Pointing Budget
 ### 1.2.6 Delta-V (Propellant) Budget
@@ -80,11 +102,3 @@ The target mass of your toastSat is 100 grams. This include all of the component
 <p align="center">
   <img src ="https://user-images.githubusercontent.com/48306876/148651483-f6d84dc8-4b3b-412c-906e-6323e64390ae.png" width = "450" alt ="Nominal toastSat system ">
 </p> 
- 
-- Data Budget
-- Pointing Budget
-- Power Budget
-- Mass Budget
-- Propellent Budget
-- [Link Budget](https://en.wikipedia.org/wiki/Link_budget)
-- [Cost Budget](https://en.wikipedia.org/wiki/Budget)
