@@ -108,8 +108,8 @@ Attitude Determination and Control System can be broken into two aspects. One, a
 ### 1.2.7 Cost Budget
 **Goal:** To ensure your satellite stays within the allocated cost.  
 **Subsystem:** Operations.  
-**Constraints**: How much money you have access to
-**More Information:**
+**Constraints**: How much money you have access to.  
+**More Information:**  
 You need money to build a satellite and without it you will not build a satellite. #sponsorQSET #sponsorSpaceSchool #GiveMeTheMoney #WhoLetsEmmaWriteTheseLabs  
 
 ## 1.3 What budgets are to be included for our toastSats and why? 
