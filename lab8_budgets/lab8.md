@@ -26,7 +26,7 @@ Budgets can be (and often are) as simple as a spreadsheet that tallies what you 
 There are no limits to what you can do a budget for on a spacecraft, but here is a list of some common examples.
 
 ### 1.2.1 Mass Budget
-**Goal:** To ensure that the satellite stays within its mass budget.  
+**Goal:** To ensure that the satellite stays within its a specific mass.  
 **Subsystems:** Usually the mechanical/structural subsystem is responsible for this budget, however, as all subsystems have a mass the consideration extends to all subsystems.  
 **Constraints**: CubeSats have a predefined list of requirements which include a mass constraints. In the case of the toastSats by law the balloon has to stay within a mass constraint.  
 **More Information:**  
@@ -100,8 +100,8 @@ To determine `A_effective`, we will need to know how much of the solar panels ar
  - In the case of your toastSats you would need to ensure that you have enough storage on your SD card to last you the duration of the flight.
 ### 1.2.5 Pointing Budget
 **Goal:** Ensure the satellite is able to orient itself to a degree that is actually suitable for the mission. This is heavily dependent on the payload and may not be required
-**Subsystem:** Attitude Determination and Control System (ADCS)
-**Constraints**: satellite momentum, orbit, payload requirements
+**Subsystem:** Attitude Determination and Control System (ADCS)  
+**Constraints**: satellite momentum, orbit, payload requirementsy, communication system...  
 **More Information:**
 Attitude Determination and Control System can be broken into two aspects. One, attitude determination which is the process of controlling the orientation of an aerospace vehicle with respect to an inertial frame of reference or another entity such as the celestial sphere. Two, attitude control which is what allows the satellite to maneuver itself to point at a specified location.  
 
