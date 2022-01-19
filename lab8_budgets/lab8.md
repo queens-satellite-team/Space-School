@@ -13,7 +13,7 @@ If you have any questions, please feel free to reach out to Emma Paczkowski, Sea
 
 # Section 1: Budget Overview 📖
 
-## What is a budget? 
+## 1.1 What is a budget? 
 
 A spacecraft budget, much like your own spending budget, tracks what you need and compares it against what you can afford. These include cost budgets, as your customer likely only wants to pay you a fixed amount of money and you need to buy the parts and pay for labour to build your satellite, but they extend into allocating how much power, memory, temperature, and control you can *spend*.
 
@@ -21,11 +21,11 @@ A spacecraft budget, much like your own spending budget, tracks what you need an
 
 Budgets can be (and often are) as simple as a spreadsheet that tallys what you know about the need or demand in your spacecraft. These numbers are combined, sometimes by simple addition and other times through more complicated analysis, and compared against your capacity or limits that you can afford in your satellite. A tangible example of this is a mass budget; you have a limit to how heavy your satellite can be, so you add up all the components and you must be below that limit. Some budgets are definitive (i.e., they tell you a clear result) while others are estimations that serve as a first step towards more detailed analysis.
 
-## What budgets are typically found on spacecraft?
+## 1.2 What budgets are typically found on spacecraft?
 
 There are no limits to what you can do a budget for on a spacecraft, but here is a list of some common examples.
 
-### Mass Budget
+### 1.2.1 Mass Budget
   - Tracks the mass of **each component** of the satellite as well as the **uncertainty** of the mass value (i.e., how confident we are in this value), sums all the values together, and reports how far off the current design is from the absolute limit for the spacecraft;
   - Managed by a Systems Engineer or the Structure/Mechanical subsystem team;
   - For a CubeSat, mass budgets are often tracked in **kg** (as the mass limit is usuall between 1 kg and 4 kg);
@@ -36,7 +36,7 @@ There are no limits to what you can do a budget for on a spacecraft, but here is
   - You want to have a large mass margin (maybe 10-20%) early in the design of the spacecraft in case some major problem arises later in the project;
   - Only one mass budget is maintained (typically), although other subsystems could informally maintain their own mass budgets if desired.
 
-### Power Budget
+### 1.2.2 Power Budget
 This budget will determine how well balanced power generation is with power consumption, with additional consideration for storage limitations of a battery system. Unlike the mass budget, the power generation and consumption is **dynamic**. We will need to explore these dynamics a little further in order to determine a simple way to estimate the power budget before moving on to more advanced techniques. To get started, let's discuss the basics of power generation, storage, and consumption.
 
 #### Power Generation
@@ -54,14 +54,13 @@ To determine `A_effective`, we will need to know the how much of the solar panel
 
 #### Power Consumption
 
- 
-### Data Budget
-### Link Budget
-### Pointing Budget
-### Delta-V (Propellant) Budget
-### Cost Budget
+### 1.2.3 Link Budget
+### 1.2.4 Data Budget
+### 1.2.5 Pointing Budget
+### 1.2.6 Delta-V (Propellant) Budget
+### 1.2.7 Cost Budget
 
-## What budgets are to be included for out toastSats and why? 
+## 1.3 What budgets are to be included for out toastSats and why? 
 
 # Section 2: toastSat Mass Budget 🏋️
 Now that we have learned some of the ins and outs of spacecraft budgets, we are going to make the first budget for our toastSats. The goal for this section is to create your **mass budget**. Once teams are finished with their budgets, we hope to share them to the rest of Space School next session and highlight the creativity you can have with creating your budgets!  
