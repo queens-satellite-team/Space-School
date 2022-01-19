@@ -127,7 +127,7 @@ While budgets are tools that engineers use to characterize their systems and mis
 1. Budgets may contain parameters with a level of uncertainty, how may we include this level of uncertainty? 
 
 ## 2.2 Additional Mass Budget Information 
-The target mass of your toastSat is 100 grams. This includes all of the components outlined in the image below (electrical components, protoboard, structure, and wired connection to the "Toaster" power system). 
+The target mass of your toastSat is 94 grams. This includes all of the components outlined in the image below (electrical components, protoboard, structure, and wired connection to the "Toaster" power system). 
 
 <p align="center">
   <img src ="https://user-images.githubusercontent.com/48306876/148651483-f6d84dc8-4b3b-412c-906e-6323e64390ae.png" width = "450" alt ="Nominal toastSat system ">
