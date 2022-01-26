@@ -14,11 +14,21 @@ If you have any questions, please feel free to reach out to Emma Paczkowski, Sea
 - what is energy? 
 - ohm's law and equations for power
 
-## 1.1 Power Generation
+To get started, let's discuss the basics of power generation, storage, and consumption.
+
+## 1.1 Power Source and Generation
+Power generation occurs when the solar panels are exposed to the sunlight. We can estimate our input power as `P_in = I_solar * A_effective * e_panels`, where:
+- `I_solar = 1361` W/m^2 is the [solar irradiance](https://en.wikipedia.org/wiki/Solar_irradiance#Irradiation_at_the_top_of_the_atmosphere) at the top of the Earth's atmosphere (i.e., the amount of useful solar power per unit area in orbit);
+- `A_effective` (m^2) is the projected area of the satellite's solar panels perpendicular to the solar vector; and
+- `e_panels` is the efficiency of the solar panels in converting solar power, which will vary depending on the unit selected (20% - 30%) as well as the age.
+
+As long as we are about 1 AU from the Sun, we can assume `I_solar` will remain constant. Although constant, if/when the satellite ever enters a partial or complete shadow of the Earth, that irradiance will drop. For a first pass at estimating the power budget per orbit, we will need to determine how much time is spent in sunlight and eclipse.
+
+To determine `A_effective`, we will need to know how much of the solar panels are exposed to sun. For body mounted solar panels, we need to know the orientation of the satellite. If a face covered with solar panels is directly facing the sun, `A_effective = A_solar-panels`. If the satellite is at an obscure angle to the sun, we will need to determine the projected area of the panels as well as the loss due to incidence angle [need more info]. If a satellite face without panels is facing the sun, then `A_effective = 0`. This factor is driven by the design of the satellite as well as the attitude at a given time. For an initial estimate, this can be determined by which **mode** the satellite is expected to be operating in.
 
 ## 1.2 Power Storage
 
-## 1.3 Power Distribution
+## 1.3 Power Distribution, Regulation, & Control
 
 # Setion 2: toastSat Power Budget 🔋
 
