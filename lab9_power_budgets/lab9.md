@@ -48,3 +48,8 @@ Each toastSat will be powered through its USB connector connected to a [3.3V-5.0
   <img src ="https://user-images.githubusercontent.com/48306876/150847412-c4bcf39c-c56c-4b6a-947d-5179428e49b0.png" width = "450" alt ="boost converter"><img src ="https://user-images.githubusercontent.com/48306876/150847198-2602ffab-c3d7-419e-a0dd-080b975f62a4.png" width = "450" alt ="toastSat battery">
 </p> 
 
+## 2.3 Power Budget Outcomes
+After completely your power budget, you should be able to answer these questions regarding the flight of your toastSat. 
+
+1. How long will my toastSat fly for? Am I okay with this duration? 
+2. If I get access to my toastSat, how may I test my power budget and try to refine it? 
