@@ -10,11 +10,21 @@ If you have any questions, please feel free to reach out to Emma Paczkowski, Sea
 2️⃣ Begin working on your toastSat power budget.  
 
 # Section 1: Power Budget Overview 📖
-- what is power?
-- what is energy? 
-- ohm's law and equations for power
+Let us first start with the fundamentals, and review what [power](https://en.wikipedia.org/wiki/Power_(physics)) is. 
 
-To get started, let's discuss the basics of power generation, storage, and consumption.
+(1) `power (watt) = energy (joule) / time (second)`
+
+Now if we want to convert this idea of power into the language of electricity, namely **current** and **voltage**, we can use the following equation: 
+
+(2) `power (watt) = current (ampere) * voltage (volt)`
+
+We can put these two equations together, to determine how much energy we require given a certian electronic device operating for some time, or in the case of our toastSats, we can determine how long an electrical device can last depending on a finite amount of energy.
+
+(3) `energy (joule) = current (ampere) * voltage (volt) * time (second)`
+
+As a note, energy is often expressed as **watt-hours (Wh)** or **milli-watt-hours (mWh).** This notation allows us to by-pass the unit of **joules** and to express all our values in the context of power / watts. 
+
+Now that we've brushed up on power and energy, let us discuss the components of a power budget: generation, storage, and consumption. We are not going to talk about power  [distribution](https://en.wikipedia.org/wiki/Electric_power_distribution), [regulation](https://www.sunpower-uk.com/glossary/what-is-power-supply-regulation/#:~:text=Power%20supply%20regulation%20is%20the,the%20unregulated%20AC%20mains%20voltage.), and [control](https://en.wikipedia.org/wiki/Power_control), but just know that the wonderful world of **power** goes much past this lab.  
 
 ## 1.1 Power Source and Generation
 Power generation occurs when the solar panels are exposed to the sunlight. We can estimate our input power as `P_in = I_solar * A_effective * e_panels`, where:
@@ -28,7 +38,7 @@ To determine `A_effective`, we will need to know how much of the solar panels ar
 
 ## 1.2 Power Storage
 
-## 1.3 Power Distribution, Regulation, & Control
+## 1.3 Power Consumption
 
 # Setion 2: toastSat Power Budget 🔋
 
