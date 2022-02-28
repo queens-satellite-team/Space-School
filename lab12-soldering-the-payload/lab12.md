@@ -12,3 +12,11 @@ If you have any questions please feel free to reach out to Emma Paczkowski, Sean
 
 # Soldering 
 
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/48306876/155917277-68a2d10a-2332-46e3-8406-6a132b309a7c.png" >
+</p>  
+
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/48306876/155917109-3a89dd61-fdab-4631-ae89-aea3025d1ae6.png" >
+</p>  
+
