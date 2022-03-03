@@ -62,7 +62,7 @@ A [SOLIDWORKS guidbook](https://github.com/queens-satellite-team/Space-School/bl
 ## Definition of Done
 A completed ToastSat structure will abide by the following acceptance criteria:
 
-- [ ] The CAD model is within its allocated mass as defined in the teams mass budget.
+- [ ] The CAD model is within its allocated mass as defined in the teams mass budget (the total system mass is less than 94 grams).
 - [ ] The CAD model includes an attachment mechanism to the balloon gondola.
 - [ ] The CAD model is within a 10 x 10 x 10 cm volume.
 - [ ] The CAD model keeps all components of your design secure throughout the duration of the flight.
