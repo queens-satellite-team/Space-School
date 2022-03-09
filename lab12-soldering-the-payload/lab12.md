@@ -14,15 +14,38 @@ If you have any questions please feel free to reach out to Emma Paczkowski, Sean
 
 # 1.0 Layout
 
+The first thing that we should do when undertaking a soldering project is determine the layout of components. This will ensure that all our components will fit onto our board, as well as help with routing wires as we will fix the termination points in place that we will connect with wires later on. 
+
+As you are laying out your components there are a few things to consider: 
+- Think ahead about how you want your wires routed. It is much easier for troubleshooting if wires are not crossed and tangled. 
+- We are working with small connection points, so it is desirable to minimize that amount of wires that get connected to a single location. 
+- Wires take up physical space and so do your fingers. Leave space between components to help yourself place wires and hold them down for soldering. 
+
+An example layout is given below:
+
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/48306876/155917109-3a89dd61-fdab-4631-ae89-aea3025d1ae6.png", width="400" >
 </p>  
 
 # 2.0 Soldering the Components
 
+Now onto soldering! Here are some possibly helpful tips that I learned while soldering this payload: 
+
+- Plastic burns. Avoid placing the soldering iron directly on the plastic shielding of the wire. 
+- Different connection points and wires operate at different voltages and with different protocols. Use differently colored wires to distinguish between non-common circuitry. 
+- It is diffcult to hold the component / wire in place while also soldering. Use a rubber band, sticky tack, or gripper to help secure things in place. 
+
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/48306876/157448390-14d403fb-b6f8-4fa4-86f3-6ef9ef82ac2f.png"  width="400">
-</p>
+	<img src="https://user-images.githubusercontent.com/48306876/157448390-14d403fb-b6f8-4fa4-86f3-6ef9ef82ac2f.png"  width="200">
+</p> 
+
+There is limited room on the protoboard to route wires, and having all wires routed on the bottom may lead to unnecessary crossing and overlapping. I found using header pins as seen below helped by allowing wires to be routed on the top layer which I used to seperate the power and ground lines. This also helped if I had to replace a part or wanted to use any one in another project as there was no need for desoldering of the main components.
+
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/48306876/157106854-d95d4ec4-4a6f-4b07-a13c-9391b4bc4593.png" width="200" >
+</p> 
+
+❗ **NOTE** ❗ These are optional tips, but highly encouraged. If you have any other helpful tips please share them with a member of the Space School team and we can include them in the lab. 
 
 ## 2.1 Soldering the Arduino and Temperature Sensor
 
@@ -30,9 +53,7 @@ Sean forgot to take photos of this step.... please excuse this foolishness.
 
 ## 2.2 Soldering the Logic-Level Shifter
 
-<p align="center">
-	<img src="https://user-images.githubusercontent.com/48306876/157108454-fa823d94-ff0c-471f-839c-4b389a3fd4e8.png"  width="400">
-</p>
+Sean also forgot to take photos of this step.... what a guy...
 
 ## 2.3 Soldering the SD-Card Reader
 
@@ -100,7 +121,7 @@ Sean forgot to take photos of this step.... please excuse this foolishness.
 
 # 4.0 Verify Connections
 
-After you are finsihed soldering, please do not power on your toastSat yet! 
+After you are finsihed soldering, please do not power on your toastSat yet! You should verify if all conections are made between connection points, as well as there is no continuity between unlike pins. You can use a multimeter for this step in `resistance mode`. 
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/48306876/157448216-20293ef7-8613-49d0-ad81-85fe48879c1d.png"  width="400">
