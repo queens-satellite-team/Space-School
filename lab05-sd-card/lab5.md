@@ -12,7 +12,7 @@ If you have any questions, please feel free to reach out to Emma Paczkowski, Sea
 The SD card reader is used to store data that you collect during your flight on an SD card. Before powering on the SD card reader, we have to take note of what voltage levels we can use to talk to this device. This information can be found in the [data sheet](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-microsd-spi-sdio.pdf) and this thinking is a good-practice working with any sort of electronic device. The SD card reader has 3.3 volt logic; however, Arduinos 5.0 volt logic. To clarifiy with a simplified example, _5-volt logic_ is when a component's communication pins use 5.0 volts to represent a "1" or a HIGH state, and 0.0 volts to represent a "0" or a LOW state when communicating with devices. However, this SD card reader can only handle a maximum of about 3.3 volts when communicating. This means we have to put an additional electronic device between these two devices so we do not damage the SD card reader. This is our [logic level shifter](https://www.sparkfun.com/products/12009), that will take the same communication signal output from the Arduino, but scale it down to a safer voltage. The wiring diagram for the sd-card reader, logic-level shifter, and an arduino nano (every) is given below. 
 
 <p align="center">
-	<image src="https://user-images.githubusercontent.com/48306876/141688776-0fdb859b-ac57-4c73-af1c-43a1899fdbde.png" width="900" height="800">
+	<image src="https://user-images.githubusercontent.com/48306876/162848601-cb52a35e-b6de-4f0a-89ba-3a23b0a15c55.png" width="900" height="800">
 </p>
 
 More information for each compontent is given below. 
