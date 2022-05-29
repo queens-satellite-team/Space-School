@@ -45,7 +45,7 @@ You will need to import 2 libraries. To import a library, in the Arduino IDE go 
 
 # Section 2: Logic Level Shifter 
 
-For some sensors and devices you can not connect them directly to the Arduino. For us, this is only the sd-card reader. We must change the high voltage outputs from the Arduino Nano Every to to a samller voltage in order to protect these sensors from being fried.
+For some sensors and devices you can not connect them directly to the Arduino. For us, this is only the sd-card reader. We must change the high voltage outputs from the Arduino Nano Every to a samller voltage in order to protect these sensors from being fried.
 
 <p align="center">
 <image src="https://user-images.githubusercontent.com/48306876/140852633-a25e0dec-651b-4dfb-b579-adb0ea23dae9.png" width="300" height="300">
