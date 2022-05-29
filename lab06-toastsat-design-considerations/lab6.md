@@ -2,7 +2,7 @@
 
 Hello! Welcome to the sixth lab of Space School! In this lab we will review a complete example of a toastSat payload prototype. We will talk about some of the hardware features it has and the software associated with this prototype. This is a good opportunity to see some of the considerations that can go in a toastSat build as you continue working on your own toastSat. 
 
-If you have any questions, please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
+If you have any questions, please feel free to reach out to Sydney Caulfeild, Emma Paczkowski, Sean Tedesco, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
 # Goals of Lab 6 
 
