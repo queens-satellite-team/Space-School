@@ -1,7 +1,8 @@
 # Introduction 
 Salut! Welcome to the third lab of Space School! In this lab we take a small step back from the technical work done in the last two labs of Space School and pay some attention to the mission behind our toastSats. We look at the wide breadth of mission types on how satellites are used in order to gain some inspiration for developing our own simplified missions. We are then introduced to the design constraints and information regarding the balloon launch in order to guide our thoughts and implementation of our sensor suite. 
 
-If you have any questions please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
+
+If you have any questions please feel free to reach out to Sydney Caulfeild, Emma Paczkowski, Sean Tedesco, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
 # Goals of Lab 3 
 
