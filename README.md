@@ -42,15 +42,15 @@ The week numbers correspond to the weeks of the school semester. We meet weekly 
 - Week 11: Semester Wrap-Up (lab 7)
 
 **Semester Two - Winter** 
-- Week 1: Intro to Satellite Budgets (lab 8)
+- Week 1: Intro to Satellite Budgets and starting a mass budget (lab 8)
 - Week 2: Creating a ToastSat Budget (lab 9)
 - Week 3: Into to CAD (lab 10)
-- Week 4: Developing Payload Chassis (lab 11)
+- Week 4: Developing Payload Chassis (lab 10)
 - Week 5: Intro to QSET's subteams
 - Week 6: Selecting your destiny 
-- Week 7: Intro to Soldering (lab 12)
-- Week 8: Soldering the Payload (lab 13)
-- Week 9: Integration (lab 14)
+- Week 7: Intro to Soldering (lab 11)
+- Week 8: Soldering the Payload (lab 12)
+- Week 9: Integration (lab 13)
 - Week 10: Final Changes and Integration
 - Week 11: Winter Semester Wrap-Up
 
