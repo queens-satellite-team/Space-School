@@ -1,7 +1,7 @@
 # Introduction 
 And we're back! Welcome to the seventh lab of Space School! In this lab we are going to focus on the goals for the remainder of the semester which include finishing the payload software, creating a circuit diagram of your toast sat, and preparing a short presentation for the full team meeting on November 29th.
 
-If you have any questions, please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
+If you have any questions please feel free to reach out to Sydney Caulfeild, Emma Paczkowski, Sean Tedesco, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
 # Goals of Lab 7 / The Rest of the Semester
 
