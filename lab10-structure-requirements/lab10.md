@@ -2,7 +2,7 @@
 
 Hello! Welcome to the 10th lab of Space School! This lab will outline the requirements for the toastSat structure. It should be noted that this lab is structured differently than those in the past; instead of the usual format that resembles the steps to completion, you can think of lab 10 as an **assignment**. We will outline the necessary assumptions that can be made regarding the housing for all of the toastSats (the Toaster), provide resources to help guide the design of the structure, and a definition of what a completed assignment looks like (a _definition of done_).  Due to the midterm schedule the first week of lab 10 will be done on your team's own time. 
 
-If you have any questions please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team (especially the mech team). Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
+If you have any questions please feel free to reach out to Sydney Caulfeild, Emma Paczkowski, Sean Tedesco, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
 ## Summary
 Thus far in our toastSat journey each team has selected a sensor suite that has been used to create their payload which encompases both the arduino software and circuitry. There remain a few steps between where we currently are and launching the balloon. These include:
