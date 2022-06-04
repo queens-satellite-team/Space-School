@@ -1,7 +1,7 @@
 # Introduction 
 And we're back! Welcome to the eighth lab of Space School! We all hope you had an amazing holiday break, but now it is time for some more Space School. In this lab we are going to focus on a topic in engineering called `budgets`! These are extremely useful tools for engineers to characterize their space missions and start applying some real numbers to their mission design. 
 
-If you have any questions, please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
+If you have any questions please feel free to reach out to Sydney Caulfeild, Emma Paczkowski, Sean Tedesco, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
 # Goals of Lab 8
 
