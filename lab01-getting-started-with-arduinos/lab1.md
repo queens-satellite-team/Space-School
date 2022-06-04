@@ -2,7 +2,7 @@
 
 Hello! Welcome to the first lab of Space School! In this lab we will begin with getting the Arduino IDE up and running, then we will start exploring some of the different ways we can program our Arduino board to do some fun little actions for us. 
 
-If you have any questions please feel free to reach out to Thomas Sears, Emma Paczkowski, Piper Steffen, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found at the main page of this repository. 
+If you have any questions please feel free to reach out to Sydney Caulfeild, Thomas Sears, Emma Paczkowski, Sean Tedesco, or any other member of the QSAT Team. Contact info can be found at the main page of this repository. 
 
 # Goals of Lab 1 
 
