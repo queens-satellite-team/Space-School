@@ -1,7 +1,7 @@
 # Introduction 
 And we're back! Welcome to the ninth lab of Space School! We are continuing with our discussions on spacecraft budgets this week, focusing our attention to the power sub-system (EPS) and the `power budget`. Recall, that these budgets are extremely useful tools for engineers to characterize their space missions and start applying some real numbers to their mission design. The collection of budgets along with the list of system requirements is the foundation of any practical mission.
 
-If you have any questions, please feel free to reach out to Emma Paczkowski, Sean Tedesco, Piper Steffen, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
+If you have any questions please feel free to reach out to Sydney Caulfeild, Emma Paczkowski, Sean Tedesco, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository. 
 
 # Goals of Lab 9
 
