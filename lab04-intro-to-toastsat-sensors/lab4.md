@@ -3,6 +3,8 @@ Hello! Welcome to the fourth lab of Space School! In this lab we are going to fo
 
 As a note, the Arduinos we are using in these labs are the _Arduino Nano Every_ and they are slightly different than the _Arduino Nano_. Please follow the steps in _Section 4: Uploading Code To An Arduino_ to make sure you can communicate with your board correctly. 
 
+If you have any questions please feel free to reach out to Sydney Caulfeild, Emma Paczkowski, Sean Tedesco, Thomas Sears, or any other member of the QSAT Team. Contact info can be found in the [readme](https://github.com/queens-satellite-team/Space-School) of this repository.
+
 # Goals of Lab 4
 
 1️⃣ Learn the layout of breadboards to assist in building your sensor circuit.  
