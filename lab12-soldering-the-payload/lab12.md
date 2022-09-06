@@ -47,35 +47,39 @@ There is limited room on the protoboard to route wires, and having all wires rou
 
 ❗ **NOTE** ❗ These are optional tips, but highly encouraged. If you have any other helpful tips please share them with a member of the Space School team and we can include them in the lab. 
 
-## 2.1 Soldering the Arduino and Temperature Sensor
+## 2.1 Soldering the Arduino
 
 <p align="center">
 	<img src="https://github.com/queens-satellite-team/Space-School/blob/084a8aede60d75de6eb762ed15350f75c894e251/lab12-soldering-the-payload/lab12-images/IMG_0143.JPG"  width="400"><img src="https://github.com/queens-satellite-team/Space-School/blob/084a8aede60d75de6eb762ed15350f75c894e251/lab12-soldering-the-payload/lab12-images/IMG_0145.JPG"  width="400">
 </p>
 
-## 2.2 Soldering the Logic-Level Shifter
+## 2.2 Soldering the Temperature Sensor
+
+Sean forgot to take photos of this step... The temperature sensor is located underneath the ardunio and is soldered directly to the protoboard.
+
+## 2.3 Soldering the Logic-Level Shifter
 
 Sean also forgot to take photos of this step.... what a guy...
 
-## 2.3 Soldering the SD-Card Reader
+## 2.4 Soldering the SD-Card Reader
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/48306876/157108013-cd44a7e6-4b2c-4964-a180-c7529be59a90.jpg"  width="400"><img src="https://user-images.githubusercontent.com/48306876/157110511-3232cf90-d1f6-4f9c-ab0d-e907f0995c21.png"  width="400">
 </p>
 
-## 2.4 Soldering the Pressure Sensor
+## 2.5 Soldering the Pressure Sensor
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/48306876/157110775-8d3aa1dc-3690-4324-bae5-607842ee921b.png"  width="400"><img src="https://user-images.githubusercontent.com/48306876/157110898-fa5697e0-64c4-4262-9e72-40df4e4605a3.png"  width="400">
 </p>  
 
-## 2.5 Soldering the LED Circuit
+## 2.6 Soldering the LED Circuit
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/48306876/157115223-0cbc66a6-bab5-4885-9929-472c500cacb2.jpg"  width="400"><img src="https://user-images.githubusercontent.com/48306876/157111291-d4274201-5c37-4455-8b22-0b8b79f2bc65.png"  width="400">
 </p> 
 
-## 2.6 Final Soldered Layout
+## 2.7 Final Soldered Layout
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/48306876/157106854-d95d4ec4-4a6f-4b07-a13c-9391b4bc4593.png" width="300" ><img src="https://user-images.githubusercontent.com/48306876/157107176-a7a7a06c-80e8-4da2-a19d-c3bf4e700c33.png" width="300"><img src="https://user-images.githubusercontent.com/48306876/155917277-68a2d10a-2332-46e3-8406-6a132b309a7c.png"  width="300">
