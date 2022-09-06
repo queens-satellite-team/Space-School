@@ -49,7 +49,9 @@ There is limited room on the protoboard to route wires, and having all wires rou
 
 ## 2.1 Soldering the Arduino and Temperature Sensor
 
-Sean forgot to take photos of this step.... please excuse this foolishness. 
+<p align="center">
+	<img src="https://github.com/queens-satellite-team/Space-School/blob/084a8aede60d75de6eb762ed15350f75c894e251/lab12-soldering-the-payload/lab12-images/IMG_0143.JPG"  width="400"><img src="https://github.com/queens-satellite-team/Space-School/blob/084a8aede60d75de6eb762ed15350f75c894e251/lab12-soldering-the-payload/lab12-images/IMG_0145.JPG"  width="400">
+</p>
 
 ## 2.2 Soldering the Logic-Level Shifter
 
