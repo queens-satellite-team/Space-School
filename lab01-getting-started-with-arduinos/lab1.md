@@ -63,7 +63,7 @@ Most noticeably is the *Verify* and *Upload* buttons located on the top left. Th
 ## Step 3.1 - Blinky Hardware
 We are going to be attaching all of our components on a breadboard. To understand how the holes in a breadboard are connected electrically, please see the diagram below. 
 
-![Breadboard Connections](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/breadboard_diagram.png)
+![Breadboard Connections](https://github.com/queens-satellite-team/Space-School/blob/main/lab01-getting-started-with-arduinos/lab1-images/breadboard_diagram.png)
 
 Some things to note:
 - The Arduino is limited to a 15 mA output current for each of it's input/output pins acording to the [specifications](https://docs.arduino.cc/hardware/nano-every) provided by Arduino. 
@@ -80,14 +80,14 @@ Equipment:
 - 2 wires
 
 Steps:
-1. Connect your Arduino Nano Every to the board.
+1. Connect your Arduino Nano Every to the breadboard.
 2. Connect a wire from pin D12 (this pin was arbitrarily selected) to one end of your resistor.
 3. Regarding the LED, these devices are polarity sensitive which means it matters which way you place it in the circuit. If you place it the wrong way the circuit will not work. The shorter leg of the LED is the cathode *(negative terminal)* and the longer leg is the anode *(positve terminal)*. Connect the anode to one end of the resistor.
 4. Connect a wire from the cathode of your LED to the Arduion's ground pin.
 
 Your setup should look something like this:
 
-![Blinky Hardware Setup](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/blinking_led_breadboard_ex.jpg)
+![Blinky Hardware Setup](https://github.com/queens-satellite-team/Space-School/blob/main/lab01-getting-started-with-arduinos/lab1-images/blinking_led_breadboard_ex.jpg)
 
 ## Step 3.2 - Blinky Software
 1. Replace your code in the text box with the following. 
