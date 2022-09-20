@@ -15,7 +15,7 @@ If you have any questions please feel free to reach out to Sydney Caulfeild, Tho
 ## What is an Arduino? 
 An Arduino is a [microcontroller](https://www.youtube.com/watch?v=CqrQmQqpHXc), or a small computer than can perform instructions that we write. We can write a program - a series of instructions - that tells this small computer how it should interact with sensors, lights, and various input from human-users. We will be using these Arduinos as the on-board computer for our ToastSat, which is one of the six subsystems of our satellite. The basic parts of an Arduino Nano (the board you have today) are outlined below:
 
-![Tour of the Arduino Uno](https://github.com/queens-satellite-team/Space-School/blob/main/lab01-getting-started-with-arduinos/lab1-images/arduino_nano_every_diagram.png)
+![Tour of the Arduino Nano](https://github.com/queens-satellite-team/Space-School/blob/main/lab01-getting-started-with-arduinos/lab1-images/arduino_nano_every_diagram.png)
 
 Some key things to note:
 - D stands for digital and A stands for analog. You can read more about signal types [here](https://learn.sparkfun.com/tutorials/analog-vs-digital/all).
@@ -59,9 +59,6 @@ The Arduino IDE has some important features:
 Most noticeably is the *Verify* and *Upload* buttons located on the top left. The *Verify* button checks for any errors in your code (it will only check syntax errors though, not logical or procedural errors!) and the *Upload* button will upload the software into the hardware so the Arduino can operate as you specify in the code. 
 
 # Step 3 - Blinky Test
-First we are going to set up our hardware connections. We will take a look at the pins on the Arduino Uno and see if there is one we can use to turn off and on an LED. 
-
-![Arduino Uno Pinout](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/Pinout-UNOrev3_latest.png) 
 
 ## Step 3.1 - Blinky Hardware
 We are going to be attaching all of our components on a breadboard. To understand how the holes in a breadboard are connected electrically, please see the diagram below. 
