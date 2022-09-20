@@ -28,7 +28,7 @@ By the end of Space School you will gain experience in the following areas:
   - Get to know all the amazing people we have on the team 🙂
 
 ## Content Overview
-The week numbers correspond to the weeks of the school semester. Meeting times for the 2022-2023 have yet to be set. 
+The week numbers correspond to the weeks of the school semester.
 
 **Semester One - Fall** 
 - Week 3, Lab 1: Meet space school members and intro to Arduinos.
