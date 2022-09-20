@@ -15,7 +15,7 @@ If you have any questions please feel free to reach out to Sydney Caulfeild, Tho
 ## What is an Arduino? 
 An Arduino is a [microcontroller](https://www.youtube.com/watch?v=CqrQmQqpHXc), or a small computer than can perform instructions that we write. We can write a program - a series of instructions - that tells this small computer how it should interact with sensors, lights, and various input from human-users. We will be using these Arduinos as the on-board computer for our ToastSat, which is one of the six subsystems of our satellite. The basic parts of an Arduino Nano (the board you have today) are outlined below:
 
-![Tour of the Arduino Uno](https://github.com/queens-satellite-team/Space-School/blob/7f8071ea2d7ded19a6e13e2484f204bbb08ad3b6/lab1/lab1-images/arduino_nano_every_diagram.png)
+![Tour of the Arduino Uno](https://github.com/queens-satellite-team/Space-School/blob/main/lab01-getting-started-with-arduinos/lab1-images/arduino_nano_every_diagram.png)
 
 Some key things to note:
 - D stands for digital and A stands for analog. You can read more about signal types [here](https://learn.sparkfun.com/tutorials/analog-vs-digital/all).
