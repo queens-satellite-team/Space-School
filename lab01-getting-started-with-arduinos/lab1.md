@@ -109,7 +109,7 @@ A really cool feature of Tinkercad is that the code written here for the simulat
 We started with Tinkercad as it is a good simulation tool while we are away from our Arduinos, but when we do have a physical Arduino we will want to use the Arduino IDE. We will go through the steps to set this up now, so that it will be easier later on and allow you some flexibility on the way you work. The Arduino integrated development environment or [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) is a multipurpose toool to write the software and upload code to the arduino board. To get started download the required software from the [Arduino Download Page.](https://www.arduino.cc/en/software)
 
 ### Step 3.1 - Arduino IDE For Windows
-1. In the blue box titled *Download Options* select *Windows Win 7 and newer*. 
+1. In the blue box titled *Download Options* select *Windows Win 10 and newer*. 
 2. You should get an .exe file. Open the file and the Arduino installer program will open. 
 3. Select next on the liscence agreement. 
 4. Make sure all *components to install* are selected, and click next. 
