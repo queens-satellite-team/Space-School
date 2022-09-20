@@ -31,30 +31,7 @@ By the end of Space School you will gain experience in the following areas:
 The week numbers correspond to the weeks of the school semester. Meeting times for the 2022-2023 have yet to be set. 
 
 **Semester One - Fall** 
-- Week 1: QSET taster event
-- Week 2: Intro to Space School 
-- Week 3: Coding and Arduino (lab 1)
-- Week 4: Sensors and Arduino (lab 2)
-- Week 5: Mission Analysis (lab 3)
-- Week 6: Introduction to Payload (lab 4)
-- Week 7: Starting Payload Software (lab 4)
-- Week 8: Working with Hardware (lab 5)
-- Week 9: Incorporating the SD card (lab 5)
-- Week 10: Finishing Payload Software (lab 6)
-- Week 11: Semester Wrap-Up (lab 7)
-
-**Semester Two - Winter** 
-- Week 1: Intro to Satellite Budgets and starting a mass budget (lab 8)
-- Week 2: Creating a ToastSat Budget (lab 9)
-- Week 3: Into to CAD (lab 10)
-- Week 4: Developing Payload Chassis (lab 10)
-- Week 5: Intro to QSET's subteams
-- Week 6: Selecting your destiny 
-- Week 7: Intro to Soldering (lab 11)
-- Week 8: Soldering the Payload (lab 12)
-- Week 9: Integration (lab 13)
-- Week 10: Final Changes and Integration
-- Week 11: Winter Semester Wrap-Up
+- Week 3, Lab 1: Meet space school members and intro to Arduinos.
 
 
 ## Feedback
