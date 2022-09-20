@@ -15,9 +15,13 @@ If you have any questions please feel free to reach out to Sydney Caulfeild, Tho
 ## What is an Arduino? 
 An Arduino is a [microcontroller](https://www.youtube.com/watch?v=CqrQmQqpHXc), or a small computer than can perform instructions that we write. We can write a program - a series of instructions - that tells this small computer how it should interact with sensors, lights, and various input from human-users. We will be using these Arduinos as the on-board computer for our ToastSat, which is one of the six subsystems of our satellite. The basic parts of an Arduino Nano (the board you have today) are outlined below:
 
-![Tour of the Arduino Uno](https://github.com/queens-satellite-team/Space-School/blob/7f8071ea2d7ded19a6e13e2484f204bbb08ad3b6/lab1/lab1-images/arduino-uno-tour.jpeg)
+![Tour of the Arduino Uno](https://github.com/queens-satellite-team/Space-School/blob/7f8071ea2d7ded19a6e13e2484f204bbb08ad3b6/lab1/lab1-images/arduino_nano_every_diagram.png)
 
-For now keep note of where the digital and analog pins are, the usb connector, and the power port. The USB connector allows us to *upload* our set of instructions, or program, from our computer to the Arduino as well as supply power to it. We can also supply power to the Arduino through the power port with a battery. When the Arduino is powered this way, it will perform the program that was previously uploaded to it. Power configurations are shown below.
+Some key things to note:
+- D stands for digital and A stands for analog. You can read more about signal types [here](https://learn.sparkfun.com/tutorials/analog-vs-digital/all).
+- Notice hwere the USB connector is. This allows us to *upload* our set of instructions, or program, from our computer to the Arduino as well as supply power to it.
+
+Note that we can also supply power to the Arduino through the power port with a battery. When the Arduino is powered this way, it will perform the program that was previously uploaded to it. Power configurations are shown below.
 
 ![USB Powered Arduino](https://github.com/queens-satellite-team/Space-School/blob/0c69e70192f59fa8af48e341d15ac462e6f01af3/lab1/lab1-images/arduino-powered-usb.jpeg) ![Battery Powered Arduino](https://github.com/queens-satellite-team/Space-School/blob/0c69e70192f59fa8af48e341d15ac462e6f01af3/lab1/lab1-images/arduino-powered-battery.jpeg)
 
@@ -57,18 +61,36 @@ Most noticeably is the *Verify* and *Upload* buttons located on the top left. Th
 # Step 3 - Blinky Test
 First we are going to set up our hardware connections. We will take a look at the pins on the Arduino Uno and see if there is one we can use to turn off and on an LED. 
 
-![Arduino Uno Pinout](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/Pinout-UNOrev3_latest.png)
-
-While some pins have some extra functionality, pins D2 to D8 are simple input and output pins that will fulfil our needs for now. Anyone of these will work, but we will choose pin 8 for this setup. 
+![Arduino Uno Pinout](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/Pinout-UNOrev3_latest.png) 
 
 ## Step 3.1 - Blinky Hardware
-1. Using the diagram below as a reference, set up the hardware components (wires, resistor, and LED light) on the breadboard.
-- The Arduino is limited to a 20 mA output current for each of it's input/output pins acording to the [specifications](https://store.arduino.cc/usa/arduino-uno-rev3) provided by Arduino. This resistor will ensure a controlled amount of current will be drawn from the output pin. 
-- As an exercise, determine the minimum size resistor to be included in this circuit! Note that we can approxiate that the LED will have a constant voltage drop of ~0.7V in this circuit. It is not expected that you know how to do this yet.
-2. Regarding the LED, these devices are polarity sensitive which means it matters which way you place it in the circuit. If you place it the wrong way the circuit will not work. The shorter leg of the LED is the cathode *(negative terminal)* and the longer leg is the anode *(positve terminal)*. 
-- You can connect the cathode to ground, the anode to one end of the resistor, and the other end of the resistor to the arduino pinout. You circuit should be as follows. 
+We are going to be attaching all of our components on a breadboard. To understand how the holes in a breadboard are connected electrically, please see the diagram below. 
 
-![Blinky Hardware Setup](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/blinky-hw-setup.png)
+![Breadboard Connections](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/breadboard_diagram.png)
+
+Some things to note:
+- The Arduino is limited to a 15 mA output current for each of it's input/output pins acording to the [specifications](https://docs.arduino.cc/hardware/nano-every) provided by Arduino. 
+- As an optional exercise, determine the minimum size resistor to be included in this circuit! Note that we can approxiate that the LED will have a constant voltage drop of ~0.7V in this circuit. It is not expected that you know how to do this yet.
+
+We are now going to connect our components on the breadboard using the diagram below as a reference.
+
+Equipment:
+- 1 Arduino Nano Every
+- 1 breadboard
+- 1 USB cable
+- 1 220 ohm resistor
+- 1 LED light
+- 2 wires
+
+Steps:
+1. Connect your Arduino Nano Every to the board.
+2. Connect a wire from pin D12 (this pin was arbitrarily selected) to one end of your resistor.
+3. Regarding the LED, these devices are polarity sensitive which means it matters which way you place it in the circuit. If you place it the wrong way the circuit will not work. The shorter leg of the LED is the cathode *(negative terminal)* and the longer leg is the anode *(positve terminal)*. Connect the anode to one end of the resistor.
+4. Connect a wire from the cathode of your LED to the Arduion's ground pin.
+
+Your setup should look something like this:
+
+![Blinky Hardware Setup](https://github.com/queens-satellite-team/Space-School/blob/79665e8ba8a807e1ad268ef5515d1499b6250be8/lab1/lab1-images/blinking_led_breadboard_ex.jpg)
 
 ## Step 3.2 - Blinky Software
 1. Replace your code in the text box with the following. 
@@ -80,24 +102,24 @@ While some pins have some extra functionality, pins D2 to D8 are simple input an
 // Breif:         Simple program to make sure our hardware setup is working.  
 
 void setup() {
-  pinMode(8, OUTPUT);
+  pinMode(12, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(8, HIGH);
+  digitalWrite(12, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(8, LOW);
+  digitalWrite(12, LOW);
   delay(1000); // Wait for 1000 millisecond(s)
 }
 ```
 
 Let us take a look at some of these new functions that we are using! 
 
-`pinMode(8, OUTPUT);`
+`pinMode(12, OUTPUT);`
 - This lets the Arduino know that we want to use pin 8 as an ouput. This function can set pins to either input or output and can assign any of the digital pins. 
 
-`digitalWrite(8, HIGH);`
-`digitalWrite(8, LOW);`
+`digitalWrite(12, HIGH);`
+`digitalWrite(12, LOW);`
 - This changes wether or not the specified pin has a high voltage (5V) or a low voltage (0V). The digital pins are limited to these high and low states, and are typically 5V ouputs unless specified. 
 
 Again, more information regarding these and all the Arduino functions can be found [here](https://www.arduino.cc/reference/en/). This is a wonderful reference tool, and something to keep handy going forward.
