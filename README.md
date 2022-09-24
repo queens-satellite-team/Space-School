@@ -32,6 +32,27 @@ The week numbers correspond to the weeks of the school semester.
 
 **Semester One - Fall** 
 - Week 3, Lab 1: Meet space school members and intro to Arduinos.
+- Week 4, Lab 2: Arduinos, sensors, and GitHub.
+- Week 5, Lab 3: Soldering.
+- Fall Reading Week.
+- Week 6, Lab 4: Intro to CAD.
+- Week 7, Lab 4: Continuing of CAD & 3D printing.
+- Week 8, Lab 5: TOASTSAT PROJECTS BEGIN. Pick teams and discuss satellite missions.
+- Week 9, Lab 6: ToastSat design considerations.
+- Week 10, Lab 7: Intro to OBC and Payload subsystems. Pick mission and sensor, learn how we store data.
+- Week 11, Lab 8: Get your sensor working with Arduino.
+- Week 12, no lab for last week of class.
+
+**Semester One - Fall** 
+- Week 1, Lab 9: Intro to ACDS and EPS subsystems. Start working on circuit design and power system (battery).
+- Week 2, Lab 10: Intro to Mech and Comms. Start CAD stucture.
+- Week 3, Lab 10: Finish up CAD.
+- Week 4, Lab 11: Printing, integration, extra work periods.
+- Week 5, Lab 11: Integration, etc.
+- Week 6, Lab 11: Integration, etc.
+- Winter Reading Week.
+- Week 7, Lab 12: Jobs and internships relating to space!
+- Remainder of the semester will be spent planning the balloon launch and integrating all members onto a sub-team of their choice.
 
 
 ## Feedback
