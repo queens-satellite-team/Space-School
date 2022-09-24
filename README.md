@@ -38,12 +38,12 @@ The week numbers correspond to the weeks of the school semester.
 - Week 6, Lab 4: Intro to CAD.
 - Week 7, Lab 4: Continuing CAD & 3D printing.
 - Week 8, Lab 5: TOASTSAT PROJECTS BEGIN. Pick teams and discuss satellite missions.
-- Week 9, Lab 6: ToastSat design considerations.
+- Week 9, Lab 6: ToastSat missions and design considerations.
 - Week 10, Lab 7: Intro to OBC and Payload subsystems. Pick mission and sensor, learn how we store data.
 - Week 11, Lab 8: Get your sensor working with Arduino.
 - Week 12, no lab for last week of class.
 
-**Semester One - Fall** 
+**Semester Two - Winter** 
 - Week 1, Lab 9: Intro to ACDS and EPS subsystems. Start working on circuit design and power system (battery).
 - Week 2, Lab 10: Intro to Mech and Comms. Start CAD stucture.
 - Week 3, Lab 10: Finish up CAD.
