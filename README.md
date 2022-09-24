@@ -36,7 +36,7 @@ The week numbers correspond to the weeks of the school semester.
 - Week 5, Lab 3: Soldering.
 - Fall Reading Week.
 - Week 6, Lab 4: Intro to CAD.
-- Week 7, Lab 4: Continuing of CAD & 3D printing.
+- Week 7, Lab 4: Continuing CAD & 3D printing.
 - Week 8, Lab 5: TOASTSAT PROJECTS BEGIN. Pick teams and discuss satellite missions.
 - Week 9, Lab 6: ToastSat design considerations.
 - Week 10, Lab 7: Intro to OBC and Payload subsystems. Pick mission and sensor, learn how we store data.
