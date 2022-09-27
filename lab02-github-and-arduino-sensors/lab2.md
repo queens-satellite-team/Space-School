@@ -413,8 +413,13 @@ Some important definitions:
 - **Markdown:** a language that uses plain text formatting but contains inline text symbols that specify how to format the text. ".md" indicates that a file is written with markdown. Think of it as a fancy text file!
 - **ReadMe:** a ReadMe file contains information about the other files in the directory. It is usually a plain text file called readme.md.
 - **Repository:** a repository contains all of your project's files and each file's revision history. You can think of it as a folder.
-- **Branch:** branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Each repository has one default branch, and can have multiple other branches. How many branches does this repository have?
+- **Branch:** branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Each repository has one default branch, and can have multiple other branches. The motivation is that say you have finished all your code, but you want to try out a different approach. You don't want to lose your original working copy incase the new approach doesn't work. To avoid this, you could make a branch (or a copy) of your working version and start working here. That way your original version stays untouched. If you like the new version you can merge them together. How many branches does this repository have?
+
+Important Git commands:
+- **Add:** The git add command adds a change in your working directory to the staging area. When you make changes to a file, these changes are "untracked", so you need to add them to the staging area. The staging area contains files that are going to be part of the next commit.
 - **Commit:** You can save small groups of meaningful changes as commits. Similar to saving a file that's been edited, a commit records changes to one or more files in your branch. Git assigns each commit a unique ID, called a SHA or hash, that identifies the specific changes, when the changes were made, and who created the changes.
+- **Push:** The git push command is used to upload local repository content (i.e. what you are working on) to a remote repository (in our case GitHub).
+- **Pull:** If someone else has modified your code and uploaded it to GitHub, your local version will be out of date. This means you need to "pull" these new changes to your local working directory, so you use the pull command.
 
 We are not going to be using GitHub to it's full potential in Space School; we just want you to get familiar with the UI and start a repository. However, if you are interested in learning more, here are some useful and quick tutorials:
 - https://github.com/skills/introduction-to-github (~1 hour)
