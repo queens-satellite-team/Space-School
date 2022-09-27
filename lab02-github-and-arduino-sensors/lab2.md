@@ -414,6 +414,7 @@ Some important definitions:
 - **ReadMe:** a ReadMe file contains information about the other files in the directory. It is usually a plain text file called readme.md.
 - **Repository:** a repository contains all of your project's files and each file's revision history. You can think of it as a folder.
 - **Branch:** branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Each repository has one default branch, and can have multiple other branches. The motivation is that say you have finished all your code, but you want to try out a different approach. You don't want to lose your original working copy incase the new approach doesn't work. To avoid this, you could make a branch (or a copy) of your working version and start working here. That way your original version stays untouched. If you like the new version you can merge them together. How many branches does this repository have?
+![github branch](https://github.com/queens-satellite-team/Space-School/blob/labs_in_progress/lab02-github-and-arduino-sensors/lab2-images/branch_github.png)
 
 Important Git commands:
 - **Add:** The git add command adds a change in your working directory to the staging area. When you make changes to a file, these changes are "untracked", so you need to add them to the staging area. The staging area contains files that are going to be part of the next commit.
@@ -424,3 +425,44 @@ Important Git commands:
 We are not going to be using GitHub to it's full potential in Space School; we just want you to get familiar with the UI and start a repository. However, if you are interested in learning more, here are some useful and quick tutorials:
 - https://github.com/skills/introduction-to-github (~1 hour)
 - https://docs.github.com/en/get-started/quickstart/hello-world
+
+## Uploading Your Code
+
+### Step 1 - Create a repository
+- go to GitHub and click on your account icon -> Your Repositores. 
+- click "New".
+- Enter a Repository Name of your choosing (ex. QSET Space School).
+- Leave the repository as Public.
+- Select "Add a README file". We will not be filling that in today but if you're interested in learning markdown I recommend you add to this file describing what this repo is for (i.e. you are a student working on an engineering design team at Queen's and these are your projects).
+- Click "Create repository".
+
+### Step 2 - Download Git
+- Go to https://git-scm.com/downloads and download Git.
+- Once installed, open Git Bash. This is the command line you will be using to upload your changes to GitHub.
+- Run `git config --global user.name "FIRST_NAME LAST_NAME"` and `git config --global user.email "MY_NAME@example.com"` to set your name and email.
+
+### Step 3 - Team member with the script clones the repository
+Now that you have a _remote_ repository on GitHub, you want to clone it to your local work station. 
+The following steps should be done on the computer of the person who has the Arduino Script:
+- You need to navigate to the folder that has your Arduino script. You can do this by using `ls` to see which folder you are in right now, and `cd` to Change Directory into a directory that you want. For example, if I am in "Documents" and I want to move into a folder called "QSET", I would enter `cd QSET`.
+- Open the repository you just made on GitHub. Click the green "Code" button and copy the HTTPS link under "Clone".
+- Go back to Git Bash, and in your folder enter `git clone <https://github.com>` (without the <>).
+- Once this is complete, if you run `ls` you should now see your repository in your local folder!
+
+### Step 4 - Add your code to the repository
+Now we want to add our changes to the repo.
+- `cd` into your repository if you have not already.
+- Enter `git status` to see what your untracked changes are. You should see your new script.
+- Run `git add <script_name>`.
+- Run `git commit -m "Adding Arduino script to measure the temperature with a TMP36 sensor."`
+- Run `git push`.
+- Go to your repository on GitHub and refresh the page. You should now see your Arduino script! Take a minute to look for your commit of this file.
+
+### Step 5 - Add your teammates as collaborators
+- Go to your repository on GitHub and go to Settings.
+- Under "Access" click on "Collaborators and teams".
+- Select "Add People" and add your teammates.
+
+### Step 6 - Teammates clone the repo
+- Follow the same cloning instructions as above.
+- You should now also see the repo in your local folder that now has the Arduino script!
