@@ -327,9 +327,6 @@ As stated in section 2.1, when we use the analog inputs we have to map the maxim
 
 1. Click Start Simulation
 2. Open the serial monitor and observe the values. 
-3. Click on the TMP36 sensor to make the temperature slider appear. 
-4. Play with the slider to see how the temperature value changes.
-5. Verify your output with the photo below. 
 
 ![final temperature reading](https://github.com/queens-satellite-team/Space-School/blob/3577567d6b1087e243e1dc69c2789a75a1a7469c/lab2/lab2-images/temperature_reading.png)
 
