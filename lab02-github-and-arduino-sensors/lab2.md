@@ -138,7 +138,7 @@ Remember that you can use anywhere between 2.7V and 5.5V as the power supply. Fo
 
 ![TMP36 hardware setup v1](https://github.com/queens-satellite-team/Space-School/blob/labs_in_progress/lab02-github-and-arduino-sensors/tmp36_arduino.png)
 
-Please recreate this in your own Tinkercad dashboard, and that will be it for our hardware requirements! 
+Please recreate this using your Arduino, and that will be it for our hardware requirements! 
 
 ## 2.1 - Analog Inputs
 Before going forward with the software, we should take a moment to understand how the arduino board will interpret the voltage that it receives from the TMP36 sensor. The arduino uses an analog-to-digital converter or an [ADC](https://en.wikipedia.org/wiki/Analog-to-digital_converter) to convert the output of the sensor to something the microcontroller can understand. The microcontroller has an ADC to convert a *continuous real number* such as a voltage of 0.65418... volts to something that is a *discrete natural number* like a series of 0s and 1s. This means we have a second conversion or mapping to do. We must first convert temperature to a voltage, then we must convert the voltage into a digit. We will look at this more in Step 3.
