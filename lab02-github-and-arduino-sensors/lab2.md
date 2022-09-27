@@ -136,7 +136,7 @@ These sensors have little chips in them and while they're not that delicate, the
 
 Remember that you can use anywhere between 2.7V and 5.5V as the power supply. For this example, I'm showing it with a 5V supply but note that you can use this with a 3.3v supply just as easily. No matter what supply you use, the analog output voltage reading will range from about 0V (ground) to about 1.75V. We can connect our sensor to the arduino board without any intermittent connections, so our basic hardware setup will be as follows: 
 
-![TMP36 hardware setup v1](https://github.com/queens-satellite-team/Space-School/blob/b5f909abff8ab9da178e1989abed70ed6fba3ad8/lab2/lab2-images/tmp36-hw-setup-v1.0.png)
+![TMP36 hardware setup v1](https://github.com/queens-satellite-team/Space-School/blob/labs_in_progress/lab02-github-and-arduino-sensors/tmp36_arduino.png)
 
 Please recreate this in your own Tinkercad dashboard, and that will be it for our hardware requirements! 
 
