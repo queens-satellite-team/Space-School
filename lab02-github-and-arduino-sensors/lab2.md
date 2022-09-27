@@ -444,14 +444,15 @@ We are not going to be using GitHub to it's full potential in Space School; we j
 ### Step 3 - Team member with the script clones the repository
 Now that you have a _remote_ repository on GitHub, you want to clone it to your local work station. 
 The following steps should be done on the computer of the person who has the Arduino Script:
-- You need to navigate to the folder that has your Arduino script. You can do this by using `ls` to see which folder you are in right now, and `cd` to Change Directory into a directory that you want. For example, if I am in "Documents" and I want to move into a folder called "QSET", I would enter `cd QSET`.
+- You need to navigate to the parent folder of your Arduino script. You can do this by using `ls` to see which folder you are in right now, and `cd` to Change Directory into a directory that you want. `cd ../` goes up to the parent directory. For example, if I am in "Documents" and I want to move into a folder called "QSET", I would enter `cd QSET`.
 - Open the repository you just made on GitHub. Click the green "Code" button and copy the HTTPS link under "Clone".
 - Go back to Git Bash, and in your folder enter `git clone <https://github.com>` (without the <>).
 - Once this is complete, if you run `ls` you should now see your repository in your local folder!
 
 ### Step 4 - Add your code to the repository
 Now we want to add our changes to the repo.
-- `cd` into your repository if you have not already.
+- Move your script using the `mv` command (as shown in the demo) into your repository.
+- `cd` into your repository (`cd <repo_name>`).
 - Enter `git status` to see what your untracked changes are. You should see your new script.
 - Run `git add <script_name>`.
 - Run `git commit -m "Adding Arduino script to measure the temperature with a TMP36 sensor."`
