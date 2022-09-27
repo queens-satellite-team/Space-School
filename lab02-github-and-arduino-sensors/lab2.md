@@ -410,7 +410,7 @@ char my_variable = '9';
   
 </details>
 
-## Part 2: Using GitHub
+# Part 2: Using GitHub
 
 GitHub. Is. Amazing. Become friends with it now, and you can thank me later:) 
 
