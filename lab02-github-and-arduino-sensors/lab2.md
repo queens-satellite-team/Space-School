@@ -4,9 +4,9 @@
 
 2️⃣  Understand the basics and benefits of GitHub. Start your first repository and upload your code using Git.
 
-## Part 1: Temperature Sensors and Arduino
+# Part 1: Temperature Sensors and Arduino
 
-### Step 1.0 - TMP36 Overview
+## Step 1.0 - TMP36 Overview
 Our goal is to read the ambient temperature of our payload using a sensor. We can do this by using the TMP36 temperature sensor, which is an analog electronic device. In Step 1, we will figure out what exactly that means, and what are the characteristics of this sensor.
 
 ### 1.1 Analog vs. Digital Signals
@@ -129,7 +129,7 @@ To find the offset (b) value we want to look for a graph of the output character
 So for example, if the voltage out is 1V that means that the temperature is ((1000 mV - 500 mV) / 10 mV / °C) = 50 °C
 </details>
 
-# Step 2 - Hardware Connections 
+## Step 2 - Hardware Connections 
 As we saw in the [datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf), the style of the TMP36 sensor we are using is the "TO-92" package. This means the chip is housed in a plastic semi-cylinder with three legs. The legs can be bent easily to allow the sensor to be plugged into a breadboard. 
 
 These sensors have little chips in them and while they're not that delicate, they do need to be handled properly. Be careful of [static electricity](https://en.wikipedia.org/wiki/Electrostatic_discharge) when handling them and make sure the power supply is connected correctly.
@@ -140,13 +140,13 @@ Remember that you can use anywhere between 2.7V and 5.5V as the power supply. Fo
 
 Please recreate this using your Arduino, and that will be it for our hardware requirements! 
 
-## 2.1 - Analog Inputs
+### 2.1 - Analog Inputs
 Before going forward with the software, we should take a moment to understand how the arduino board will interpret the voltage that it receives from the TMP36 sensor. The arduino uses an analog-to-digital converter or an [ADC](https://en.wikipedia.org/wiki/Analog-to-digital_converter) to convert the output of the sensor to something the microcontroller can understand. The microcontroller has an ADC to convert a *continuous real number* such as a voltage of 0.65418... volts to something that is a *discrete natural number* like a series of 0s and 1s. This means we have a second conversion or mapping to do. We must first convert temperature to a voltage, then we must convert the voltage into a digit. We will look at this more in Step 3.
 
-# Step 3 - Software Implementation 
+## Step 3 - Software Implementation 
 So let us begin writing some code! Open the text editor and copy the lines of code shown below into your own monitor. Our first iteration will be to show what happens when we only read the anlog input with no conversion and no mapping. 
 
-## 3.1 Analog Input Reading
+### 3.1 Analog Input Reading
 
 ```
 // Title:         TMP36 Read Temperature Program
@@ -209,7 +209,7 @@ void loop() {
 
 ❓ Where in our code do we include that? 
 
-## 3.2 Including Conversion Factor
+### 3.2 Including Conversion Factor
 Let's now include the conversion factor we found by looking through the datasheet in the previous sections. We can keep the main structure of our code and just improve upon it. In the text editor copy the lines of code shown below into your own monitor.
 
 ```
@@ -273,7 +273,7 @@ We started with `Temperate C = [Vout in mV - 500mV] / (10mV / °C)` and converte
 ❓ Where in our code do we include that? 
 
 
-## 3.3 Including ADC Mapping
+### 3.3 Including ADC Mapping
 Now let us include both the conversion factor and the ADC mapping and see if we can get a value that is reflective of the actual temperature. In the text editor copy the lines of code shown below into your own monitor.
 
 ```
@@ -349,16 +349,16 @@ As stated in section 2.1, when we use the analog inputs we have to map the maxim
 
 Congratulations! You have sucessfully installed a sensor, used that sensor to produce an ouput voltage acording to the ambient temperature, converted that output voltage to a digital value, and display it to a human user. That is pretty sweet! Please feel free to try out some of the stretch goals and read though the extra information section if you are curious. 
 
-# Step 4 - Stretch Goals 
+## Step 4 - Stretch Goals 
 
-## 4.1 LED Indicator 
+### 4.1 LED Indicator 
 Once you get comfortable with working with the sensor see if you can include an LED light that turns on within a certain temperature range, and another LED that turns on at a different temperature range. For example, turn on a RED LED and off a BLUE LED when the temperature is greater than or equal to 20 °C, and turn off a RED LED and turn on a BLUE LED when the temperature is less than 20 °C. 
 
 🛠️ Hardware Consideration: We can use a similar hardware and software setup as we made in [LAB 1](https://github.com/queens-satellite-team/Space-School/tree/main/lab1) to get the LED powered. 
 
 💻 Software Consideration: You will need to include some [conditional statements](https://www.geeksforgeeks.org/decision-making-c-c-else-nested-else/) to implement the decision making of turning on and off the LEDs. 
 
-## 4.2 Multiple Inputs 
+### 4.2 Multiple Inputs 
 The temperature reading within a satellite may be different depending on the sensor's location. It may read warmer values closer to the battery, and microcontroller, while lower values closer to the outside structure. See if you can read values from multiple sensors at a time. Can you include some math in your code to average the results? How can you do this with the least amount of wiring? 
 
 🛠️ Hardware Consideration: Repeat the same steps in this lab to build the hardware connections for the sensor. Can you use the same power and ground lines for multiple sensors? Do you need a seperate analog input pin for each connected sensor on the arduino?
@@ -375,10 +375,10 @@ Average Temp: 26.2 °C
 
 ⚠️ Warning ⚠️ Using multiple analog sensors may lead to them interfering with eachother providing inconsistent readings. Some relevant discussions can be found [here](https://forums.adafruit.com/viewtopic.php?f=25&t=11597) and [here](https://forums.adafruit.com/viewtopic.php?f=25&t=14332).
 
-## 4.3 Datasheet Examples
+### 4.3 Datasheet Examples
 Look through the remaining pages of the [datasheet](https://cdn-learn.adafruit.com/assets/assets/000/010/131/original/TMP35_36_37.pdf) and find some of the cool examples that it provides. These are out of the scope for Space School, as well as 1st and 2nd year engineering, but it is still cool to see some of the differenet applications these sensors can be put through.
 
-## Extra Information 
+### Extra Information 
 
 <details>
 <summary>❗ Extra Information on Analog Inputs</summary>
