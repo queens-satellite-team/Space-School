@@ -196,12 +196,7 @@ void loop() {
 - The delay pauses the arduino's execution of the code at this line for the number of milliseconds specified. In this case we are waiting for 0.1s between telling the arduino board to continue. 
 
 1. Click Start Simulation
-2. Open the serial monitor and observe the values. 
-3. Click on the TMP36 sensor to make the temperature slider appear. 
-4. Play with the slider to see how the analog voltage value changes.
-5. Verify your output with the photo below. 
-
-![analog voltage reading](https://github.com/queens-satellite-team/Space-School/blob/60c58bc4ff0ed775c0aa3d22761b3a3bb9a68bf3/lab2/lab2-images/analog_voltage_reading.png)
+2. Open the serial monitor and observe the values (Tools -> Serial Monitor). 
 
 ❓ Does the value we print to the serial monitor match the temperature of the TMP36? If this was a voltage, would that seem pretty high? 
 
