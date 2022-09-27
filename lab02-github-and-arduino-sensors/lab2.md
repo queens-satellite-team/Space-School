@@ -1,14 +1,8 @@
 # Goals of Lab 2
 
-1️⃣  Learn how to strip a wire.
+1️⃣  Read values from a temperature sensor on your Arduino.
 
-2️⃣  Read values from a temperature sensor on your Arduino.
-
-3️⃣  Understand the basics and benefits of GitHub. Start your first repository and upload your code.
-
-## Stripping Wires
-
-Today we're starting with a quick demonstration on how to strip wires using wire strippers. [Here](https://www.youtube.com/watch?v=TZFTKbT4XFs) is a video tutorial for those who could not make the lab. This will be useful for when you start doing more circuit work and need more wires.
+2️⃣  Understand the basics and benefits of GitHub. Start your first repository and upload your code using Git.
 
 ## Temperature Sensor and Arduino
 
