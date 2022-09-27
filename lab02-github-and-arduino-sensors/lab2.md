@@ -431,7 +431,7 @@ We are not going to be using GitHub to it's full potential in Space School; we j
 ### Step 1 - Create a repository
 - go to GitHub and click on your account icon -> Your Repositores. 
 - click "New".
-- Enter a Repository Name of your choosing (ex. QSET Space School).
+- Enter a Repository Name of your choosing (ex. qset-space-school).
 - Leave the repository as Public.
 - Select "Add a README file". We will not be filling that in today but if you're interested in learning markdown I recommend you add to this file describing what this repo is for (i.e. you are a student working on an engineering design team at Queen's and these are your projects).
 - Click "Create repository".
