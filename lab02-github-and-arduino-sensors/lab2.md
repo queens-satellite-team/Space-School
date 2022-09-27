@@ -255,11 +255,6 @@ We started with `Temperate C = [Vout in mV - 500mV] / (10mV / °C)` and converte
 
 1. Click Start Simulation
 2. Open the serial monitor and observe the values. 
-3. Click on the TMP36 sensor to make the temperature slider appear. 
-4. Play with the slider to see how the analog voltage value changes.
-5. Verify your output with the photo below. 
-
-![without_analog_mapping_reading](https://github.com/queens-satellite-team/Space-School/blob/0f0cebe8573f15c58772ff7085d6da67a8c0aae1/lab2/lab2-images/without_analog_mapping_reading.png)
 
 ❓ Does the value we print to the serial monitor match the temperature of the TMP36?
 
