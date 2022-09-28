@@ -33,7 +33,7 @@ The week numbers correspond to the weeks of the school semester.
 **Semester One - Fall** 
 - Week 3, Lab 1: Meet space school members and intro to Arduinos.
 - Week 4, Lab 2: Arduinos, sensors, and GitHub.
-- Week 5, Lab 3: TBD.
+- Week 5, Lab 3: Finish temperature sensor lab and make sure Git and GitHub are working.
 - Fall Reading Week.
 - Week 6, Lab 4: Soldering.
 - Week 7, Lab 4: Intro to CAD and 3D printing.
