@@ -36,10 +36,10 @@ The week numbers correspond to the weeks of the school semester.
 - Week 5, Lab 3: Finish temperature sensor lab and make sure Git and GitHub are working.
 - Fall Reading Week.
 - Week 6, Lab 4: Soldering.
-- Week 7, Lab 4: Intro to CAD and 3D printing.
-- Week 8, Lab 5: TOASTSAT PROJECTS BEGIN. Pick teams and discuss satellite missions.
-- Week 9, Lab 6: ToastSat missions and design considerations.
-- Week 10, Lab 7: Intro to OBC and Payload subsystems. Pick mission and sensor, learn how we store data.
+- Week 7, Lab 4: Makeup lab (soldering, etc.).
+- Week 8, Lab 5: Intro to CAD and 3D printing.
+- Week 9, Lab 6: TOASTSAT PROJECTS BEGIN. Pick teams and discuss satellite missions. Pick mission/sensor for next week.
+- Week 10, Lab 7: Intro to OBC and Payload subsystems. Learn how we store data.
 - Week 11, Lab 8: Get your sensor working with Arduino.
 - Week 12, no lab for last week of class.
 
