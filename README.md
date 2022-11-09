@@ -41,7 +41,7 @@ The week numbers correspond to the weeks of the school semester.
 - Week 9, Lab 6: Intro to CAD and 3D printing. Continue to think about missions.
 - Week 10, Lab 7: Intro to OBC and Payload subsystems. Learn how we store data. Finalize your mission and sensors.
 - Week 11, Lab 8: Get your sensor working with Arduino.
-- Week 12, no lab for last week of class.
+- Week 12: optional work session (no lab for last week of class).
 
 **Semester Two - Winter** 
 - Week 1, Lab 9: Intro to ACDS and EPS subsystems. Start working on circuit design and power system (battery).
