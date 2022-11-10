@@ -39,11 +39,11 @@ The week numbers correspond to the weeks of the school semester.
 - Week 7, Lab 4: Makeup lab (soldering, etc.).
 - Week 8, Lab 5: TOASTSAT PROJECTS BEGIN. Pick teams and discuss satellite missions.
 - Week 9, Lab 6: Continue to learn about the ToastSat project, launch, and sensors for missions. Form groups.
-                 Git workshop (highly recommend for those new to git).
-- Week 10, Lab 7: Intro to OBC and Payload subsystems. Learn how we store data.
-                  Python workshop.
+                 (Git workshop, highly recommend for those new to git).
+- Week 10, Lab 7: Intro to satellite budgets. Talk about OBC and Payload subsystems. Learn how we store data.
+                  (Python workshop).
 - Week 11, Lab 8: Decide on what mission and sensors your team will use. Start learning how to work with the sensor.
-                  SolidWorks workshop (important!)
+                  (SolidWorks workshop, important!).
 - Week 12: optional work session (no lab for last week of class).
 
 **Semester Two - Winter** 
