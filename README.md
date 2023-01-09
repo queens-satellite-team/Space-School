@@ -47,15 +47,15 @@ The week numbers correspond to the weeks of the school semester.
 - Week 12: optional work session (no lab for last week of class).
 
 **Semester Two - Winter** 
-- Week 1, Lab 9: Intro to ACDS and EPS subsystems. Start working on circuit design and power system (battery).
-- Week 2, Lab 10: Intro to Mech and Comms. Start CAD stucture.
-- Week 3, Lab 10: Finish up CAD.
-- Week 4, Lab 11: Printing, integration, extra work periods.
-- Week 5, Lab 11: Integration, etc.
-- Week 6, Lab 11: Integration, etc.
+- Week 1, Lab 9: Intro to ACDS and EPS subsystems. Start designing your circuit (research sensor requirements, voltage from battery, etc.).
+- Week 2, Lab 10: Circuit design.
+- Week 3, Lab 10: Code.
+- Week 4, Lab 11: Code.
+- Week 5, Lab 11: Intro to Mech and Comms. Start CAD stucture.
+- Week 6, Lab 11: Integration.
 - Winter Reading Week.
-- Week 7, Lab 12: Jobs and internships relating to space!
-- Remainder of the semester will be spent planning the balloon launch and integrating all members onto a sub-team of their choice.
+- Week 7, Lab 12: Integration.
+- Remainder of the semester will be spent integrating all members onto a sub-team of their choice. Might add a lesson on job and internship opportunities in space.
 
 
 ## Feedback
